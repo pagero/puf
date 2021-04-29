@@ -1,18 +1,18 @@
+To indicate which specification and which rules apply the CustomizationID and ProfileID must be provided.
+
 |===
 |Applicable XPath |Description
 
-|`cbc:CustomizationID`
-|**Specification identifier** +
-Used to identify the correct UBL specification. +
-__Value to be set 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0#conformant#urn:pagero.com:puf:billing:1.0'__
+|Type |Element `cbc:CustomizationID` |Element `cbc:ProfileID`
+
+|*Invoice and credit note*
+|urn:pagero.com:puf:billing:1.0
+|urn:pagero.com:puf:billing:1.0
 |===
-*Example* +
-_CustomizationID populated with correct value_
+
+*Example of CustomizationID and ProfileID:*
 [source,xml]
 ----
-<Invoice>
-  <!-- Code omitted for clarity -->
-  <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0#conformant#urn:pagero.com:puf:billing:1.0</cbc:CustomizationID>
-  <!-- Code omitted for clarity -->
-</Invoice>
+<cbc:CustomizationID>urn:pagero.com:puf:billing:1.0</cbc:CustomizationID>
+<cbc:ProfileID>urn:pagero.com:puf:billing:1.0</cbc:ProfileID>
 ----

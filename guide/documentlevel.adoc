@@ -78,7 +78,7 @@ include::contractdocumentreference.adoc[]
 
 ==== cac:AdditionalDocumentReference
 
-include::attachment.adoc[]
+include::additionalDocumentReference.adoc[]
 
 ==== cac:ProjectReference
 

@@ -1,4 +1,4 @@
-In order to facilitate the use of Pagero UF specific extensions, a schema for the extensions is provided.
+In order to facilitate the use of PUF specific extensions, a schema for the extensions is provided.
 The `PUF-ExtensionComponent.xsd` can be found together with the other schemas in chapter <<_xml_schemas>>. This chapter provides an overview on how to use
 extensions.
 

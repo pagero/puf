@@ -1,15 +1,23 @@
-Since Pagero UF is an extension of the http://docs.peppol.eu/poacc/billing/3.0/[PEPPOL BIS Billing 3.0] the first step is to make sure you support and comply with http://docs.peppol.eu/poacc/billing/3.0/[PEPPOL BIS Billing 3.0]. +
+In the following chapters you can see which elements and what type of information that is supported in PUF. In some cases you will also get longer snippets
+of code and implementation guidelines in order how to properly provide the data. There is also a section with test files that can be useful when implementing PUF.
 
-WARNING: It is imperative that http://docs.peppol.eu/poacc/billing/3.0/[PEPPOL BIS Billing 3.0] has been implemented before any work extending/building Pagero UF starts!
+If your ERP already can create Invoices and Credit notes in https://docs.oasis-open.org/ubl/UBL-2.1.html[Universal Business Language Version 2.1 (UBL 2.1)] or if your ERP can create a UBL based format or CIUS such as http://docs.peppol.eu/poacc/billing/3.0/[PEPPOL BIS Billing 3.0]
+you can easily use this as stepping stone when moving towards PUF.
+. +
 
-When http://docs.peppol.eu/poacc/billing/3.0/[PEPPOL BIS Billing 3.0] is implemented it is easy and quick to get started with Pagero UF and thus be able to handle information and data that is not supported in the core PEPPOL BIS.
 
-*Moving from http://docs.peppol.eu/poacc/billing/3.0/[PEPPOL BIS Billing 3.0] to Pagero UF*
 
-1. Download Pagero UF <<_xml_schemas>>
+*Moving from http://docs.peppol.eu/poacc/billing/3.0/[PEPPOL BIS Billing 3.0] or other UBL based CIUS/Format to Pagero Universal format*
+
+1. Download Pagero Universal Format <<_xml_schemas>>
 2. Change namespaces (see chapter <<_namespaces>>)
-3. Change the Customization Id and Profile Id (see chapter <<_customization_and_profile_id>>)
-4. If elements from extensions is needed see chapter <<_working_with_extensions>> how this is implemented.
-5. Before implementing additional fields available in Pagero UF, validate the document with the XSD schema downloaded in step 1.
+3. Verify that your interpretation of the UBL elements mentioned in this specification are the same.
+4. Change the Customization Id and Profile Id (see chapter <<_customization_and_profile_id>>)
+5. If elements from extensions is needed see chapter <<_working_with_extensions>> how this is implemented.
+6. Before implementing additional fields available in PUF, validate the document with the XSD schema downloaded in step 1.
 
-NOTE: In the xml schemas provided in chapter <<_xml_schemas>> you will see the structure and the occurrences of every element available in Pagero UF.
+NOTE: In the xml schemas provided in chapter <<_xml_schemas>> you will see the structure and the occurrences of every element available in Pagero Universal Format.
+This specification will not include any cardinality from a schema perspective nor from what is required in a specific legal domain since this might differ depending
+on which specific country, region or business requirements you will have to comply with. In order to know what information is sufficient to provide you should first check what the
+requirements from a legal and business perspective and then refer to this specification on where to provide this information. Also notice that the elements and their sort order provided in specification
+is done with the Invoice document type. When using CreditNote please xsd provided for possible differencies in element names or sort order.
