@@ -3,7 +3,7 @@
 :minor: 1.0
 :revision: 1.0
 :toc: left
-:toclevels: 4
+:toclevels: 3
 :source-highlighter: coderay
 :icons: font
 :source-language: xml
@@ -21,9 +21,9 @@ include::guide/introduction.adoc[]
 
 include::guide/guidelines.adoc[]
 
-== Extended content
+== Content
 
-include::guide/extendedcontent.adoc[]
+include::guide/Content.adoc[]
 
 == Country Specific
 

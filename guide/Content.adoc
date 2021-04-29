@@ -9,20 +9,24 @@ This chapter defines and specifies the available options of *adding information 
 
 The chapter is divided into three parts for easier navigation:
 
-1. <<_parties>> (specifies information related to party structure in UBL)
-2. <<_document_level>> (specifies other information on header level)
-3. <<_line_level>> (specifies information on line level)
+1. <<_invoice>> (specifies segments available on document level)
+2. <<_cacinvoiceline>> (specifies segments available on line level)
+3. <<_extublextensions>> (Available extensions both on document level and line level)
 
 WARNING: Note that most examples are only shown for document type Invoice.
 
-=== Parties
+//=== Parties
 
-include::parties.adoc[]
+//include::parties.adoc[]
 
-=== Document level
+=== Invoice
 
 include::documentlevel.adoc[]
 
-=== Line level
+=== cac:InvoiceLine
 
 include::linelevel.adoc[]
+
+=== ext:UBLExtensions
+
+include::extensions.adoc[]

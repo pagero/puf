@@ -1,45 +1,57 @@
 Examples shown below are based on Invoice, for the use of credit note the corresponding element replacing `Invoice/cac:InvoiceLine` is `CreditNote/cac:CreditNoteLine`
 
-==== Note
+==== cbc:ID
+
+include::LineID.adoc[]
+
+==== cbc:Note
 
 include::linenote.adoc[]
 
-==== Line Excl. Allowance and Charge Amount
+==== cbc:InvoicedQuantity
 
-include::lineexclallowancechargeamount.adoc[]
+include::lineInvoicedQuantity.adoc[]
 
-==== Order Line Reference
+==== cbc:LineExtensionAmount
+
+include::lineExtensionAmount.adoc[]
+
+==== cbc:AccountingCost
+
+include::lineAccountingCost.adoc[]
+
+==== cac:InvoicePeriod
+
+include::lineInvoicePeriod.adoc[]
+
+==== cac:OrderLineReference
 
 include::orderlinereference.adoc[]
 
-==== Despatch Line Reference
+==== cac:DespatchLineReference
 
 include::despatchlinereference.adoc[]
 
-==== Originator Document Reference
+==== cac:DocumentReference
 
-include::lineoriginatordocumentreference.adoc[]
+include::lineDocumentReference.adoc[]
 
-==== Project Reference
-
-include::lineprojectreference.adoc[]
-
-==== Contract Document Reference
-
-include::linecontractdocumentreference.adoc[]
-
-==== Delivery
+==== cac:Delivery
 
 include::linedelivery.adoc[]
 
-==== Tax Total
+==== cac:AllowanceCharge
+
+include::lineAllowanceCharge.adoc[]
+
+==== cac:TaxTotal
 
 include::linetaxtotal.adoc[]
 
-==== Item
+==== cac:Item
 
 include::item.adoc[]
 
-==== Price
+==== cac:Price
 
-include::price.adoc[]
+include::linePrice.adoc[]

@@ -2,60 +2,89 @@ In Pagero UF, a new party has been added called Buyer Customer Party. This party
 
 If Buyer Customer Party is used, the Accounting Customer Party is to be considered the receiver of the document.
 
-Below table lists all additional elements added within `(Invoice|CreditNote)/cac:BuyerCustomerParty`.
-
 .Elements added in cac:BuyerCustomerParty
 |===
 |Applicable XPath |Description
 
 |`cbc:SupplierAssignedAccountID`
-|Customer ID in the suppliers system.
+|**Customer Account ID** +
+Customer ID, assigned by the seller.
 |`cac:Party/cac:PartyIdentification/cbc:ID`
-|Identifier for the buyer.
+|**Buyer Identifier** +
+Identifier of the Buyer.
 |`cac:Party/cac:PartyIdentification/cbc:ID/@schemeID`
-|Party Identifier Scheme MUST be coded using one of the ISO 6523 ICD list.
+|**Buyer Identifier** +
+Scheme identifier of Buyer identifier
 |`cac:Party/cac:PartyName/cbc:Name`
-|The name of the buyer party.
+|**Buyer name** +
+Buyer name
 |`cac:Party/cac:PostalAddress/cbc:Postbox`
-|The buyers post box.
+|**Postal box** +
+Buyer's postal address post box
 |`cac:Party/cac:PostalAddress/cbc:StreetName`
-|The buyers street address.
+|**Street name** +
+Buyer's postal address street name
 |`cac:Party/cac:PostalAddress/cbc:AdditionalStreetName`
-|The buyers additional street address.
+|**Additional Street name** +
+Buyer's postal address additional street name
 |`cac:Party/cac:PostalAddress/cbc:Department`
-|The buyers department.
+|**Department** +
+Buyer's postal address department
 |`cac:Party/cac:PostalAddress/cbc:CityName`
-|City of the buyer.
+|**City name** +
+Buyer's postal address city name
 |`cac:Party/cac:PostalAddress/cbc:PostalZone`
-|The buyers postal zone.
+|**Postal zone** +
+Buyer's postal address post code
 |`cac:Party/cac:PostalAddress/cbc:CountrySubentity`
-|Province of the buyer..
+|**Country subentity** +
+Buyer's postal address province or state
+|`cac:Party/cac:PostalAddress/cac:AddressLine/cbc:Line`
+|**Additional address line** +
+Note that cbc:StreetName and cbc:AdditionalStreetName should be populated prior of using this element.
 |`cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode`
-|Country code of the buyer.
+|**Country code** +
+Buyer's postal address country code
 |`cac:Party/cac:PostalAddress/cac:Country/cbc:Name`
-|The country name of the buyer
+|**Country name** +
+Buyer's postal address country name
 |`cac:Party/cac:PartyTaxScheme/cbc:CompanyID`
-|Company ID of the buyer, type of ID defined by TaxScheme ID.
+|**Company identifier** +
+Buyer's tax registration number
 |`cac:Party/cac:PartyTaxScheme/cac:TaxScheme/cbc:ID`
-|Type of ID e.g. VAT.
+|**Tax scheme identifier** +
+Buyer's tax registration number tax scheme Identifier +
+__Allowed values can be VAT or GST [LINK?]__
 |`cac:Party/cac:PartyLegalEntity/cbc:RegistrationName`
-|Buyers legal name.
+|**Registration name** +
+Buyer's formal name or company name
 |`cac:Party/cac:PartyLegalEntity/cbc:CompanyID`
-|Buyers legal registration ID.
+|**Legal company identifier** +
+Buyer's legal registration identifier
 |`cac:Party/cac:PartyLegalEntity/cbc:CompanyID/@schemeID`
-|Identifier of buyer legal registration ID.
+|**Legal company scheme identifier** +
+Buyer's legal registration identifier scheme identifier
+|`cac:Party/cac:PartyLegalEntity/cbc:CompanyLegalForm`
+|**Company legal form** +
+Relevant legal information regarding the Buyer.
 |`cac:Party/cac:Contact/cbc:Name`
-|Buyer contact name.
+|**Contact name** +
+Name of contact person.
 |`cac:Party/cac:Contact/cbc:Telephone`
-|Buyer contact telephone number.
+|**Contact telephone** +
+Phone number of contact person.
 |`cac:Party/cac:Contact/cbc:ElectronicMail`
-|Buyer contact e-mail.
+|**Contact E-mail** +
+E-mail of contact person..
 |`cac:AccountingContact/cbc:Telephone`
-|The telephone number for the accounting contact of the organization.
+|**Accounting telephone** +
+The telephone number for the accounting contact of the organization.
 |`cac:AccountingContact/cbc:Telefax`
-|The telefax number for the accounting contact of the organization.
+|**Accounting fax number** +
+The telefax number for the accounting contact of the organization.
 |`cac:AccountingContact/cbc:ElectronicMail`
-|The e-mail address for the accounting contact of the organization.
+|**Accounting E-mail** +
+The e-mail address for the accounting contact of the organization.
 |===
 
 *Example* +

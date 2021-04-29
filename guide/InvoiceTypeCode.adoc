@@ -1,0 +1,18 @@
+|===
+|Applicable XPath |Description
+
+|`cbc:InvoiceTypeCode`
+|**Invoice type code** +
+Identifier of the invoice type. +
+__Value to be set '380' on invoice__
+|===
+*Example* +
+_cbc:InvoiceTypeCode populated with correct value_
+[source,xml]
+----
+<Invoice>
+  <!-- Code omitted for clarity -->
+  <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+  <!-- Code omitted for clarity -->
+</Invoice>
+----

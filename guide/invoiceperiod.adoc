@@ -1,22 +1,28 @@
-To be able to specify a free text description of the invoice period, the `(Invoice|CreditNote)/cac:InvoicePeriod`-segment has been extended.
-
-Below table shows the definition of the added element.
-
-.Elements added in cac:InvoicePeriod
+.Elements available in cac:InvoicePeriod
 |===
 |Element |Description
 
+|`cbc:StartDate`
+|**Invoicing period start date** +
+__Format "YYYY-MM-DD"__
+|`cbc:EndDate`
+|**Invoicing period end date** +
+__Format "YYYY-MM-DD"__
 |`cbc:Description`
 |Description of the billing period (free text).
 |===
 
 *Example* +
-_Invoice period with added description_
+_cac:InvoicePeriod with example values_
 [source,xml]
 ----
-<cac:InvoicePeriod>
-    <cbc:StartDate>2019-01-01</cbc:StartDate>
-    <cbc:EndDate>2019-01-31</cbc:EndDate>
-    <cbc:Description>Description of invoice period</cbc:Description>
-</cac:InvoicePeriod>
+<Invoice>
+  <!-- Code omitted for clarity -->
+  <cac:InvoicePeriod>
+      <cbc:StartDate>2021-01-01</cbc:StartDate>
+      <cbc:EndDate>2021-01-31</cbc:EndDate>
+      <cbc:Description>Description of invoice period</cbc:Description>
+  </cac:InvoicePeriod>
+  <!-- Code omitted for clarity -->
+</Invoice>
 ----

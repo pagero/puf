@@ -1,0 +1,24 @@
+|===
+|Applicable XPath |Description
+
+|`cbc:InvoicedQuantity`
+|**Quantity invoiced** +
+The item quantity for this invoice line.
+|`cbc:InvoicedQuantity/@unitCode`
+|**Quantity unit of measure** +
+Unit of measure for the quantity invoiced
+|===
+*Example* +
+_cac:InvoiceLine/cbc:InvoicedQuantity with example value_
+[source,xml]
+----
+<Invoice>
+  <!-- Code omitted for clarity -->
+  <cac:InvoiceLine>
+    <!-- Code omitted for clarity -->
+    <cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
+    <!-- Code omitted for clarity -->
+  </cac:InvoiceLine>
+  <!-- Code omitted for clarity -->
+</Invoice>
+----

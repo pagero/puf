@@ -1,21 +1,26 @@
-To be able to specify the issue date of a referenced despatch document, the `(Invoice|CreditNote)/cac:DespatchDocumentReference`-segment has been extended.
-
-Below table shows the definition of the added element.
-
 .Elements added in cac:DespatchDocumentReference
 |===
 |Element |Description
 
+|`cbc:ID`
+|**Despatch advice reference** +
+ID of issued despatch advice
 |`cbc:IssueDate`
-|Issue date for the referenced despatch document, date should be formatted yyyy-mm-dd.
+|**Issue date** +
+Issue date of despatch advice +
+__Format "YYYY-MM-DD"__
 |===
 
 *Example* +
-_Despatch document reference ID and date_
+_cac:DespatchDocumentReference example values_
 [source,xml]
 ----
-<cac:DespatchDocumentReference>
-    <cbc:ID>Despatch Document ID</cbc:ID>
-    <cbc:IssueDate>2019-01-01</cbc:IssueDate>
-</cac:DespatchDocumentReference>
+<Invoice>
+  <!-- Code omitted for clarity -->
+  <cac:DespatchDocumentReference>
+      <cbc:ID>1151555</cbc:ID>
+      <cbc:IssueDate>2021-01-01</cbc:IssueDate>
+  </cac:DespatchDocumentReference>
+  <!-- Code omitted for clarity -->
+</Invoice>
 ----

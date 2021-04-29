@@ -1,57 +1,137 @@
 Information in the following section (3.2.x) concerns the document in its entirety.
 
-==== Note
+==== cbc:CustomizationID
+
+include::CustomizationID.adoc[]
+
+==== cbc:ProfileID
+
+include::ProfileID.adoc[]
+
+==== cbc:ID
+
+include::ID.adoc[]
+
+==== cbc:IssueDate
+
+include::IssueDate.adoc[]
+
+==== cbc:DueDate
+
+include::DueDate.adoc[]
+
+==== cbc:InvoiceTypeCode
+
+include::InvoiceTypeCode.adoc[]
+
+==== cbc:Note
 
 include::note.adoc[]
 
-==== Order reference
+==== cbc:TaxPointDate
 
-include::orderreference.adoc[]
+include::TaxPointDate.adoc[]
 
-==== Invoice Period
+==== cbc:DocumentCurrencyCode
+
+include::DocumentCurrencyCode.adoc[]
+
+==== cbc:TaxCurrencyCode
+
+include::TaxCurrencyCode.adoc[]
+
+==== cbc:AccountingCost
+
+include::AccountingCost.adoc[]
+
+==== cbc:BuyerReference
+
+include::BuyerReference.adoc[]
+
+==== cac:InvoicePeriod
 
 include::invoiceperiod.adoc[]
 
-==== Despatch document reference
+==== cac:OrderReference
+
+include::orderreference.adoc[]
+
+==== cac:BillingReference
+
+include::BillingReference.adoc[]
+
+==== cac:DespatchDocumentReference
 
 include::despatchdocumentreference.adoc[]
 
-==== Contract Document Reference
+==== cac:ReceiptDocumentReference
 
-include::contractdocumentreference.adoc[]
+include::ReceiptDocumentReference.adoc[]
 
-==== Attachments
-
-include::attachment.adoc[]
-
-==== Originator Document Reference
+==== cac:OriginatorDocumentReference
 
 include::originatordocumentreference.adoc[]
 
-==== Delivery
+==== cac:ContractDocumentReference
+
+include::contractdocumentreference.adoc[]
+
+==== cac:AdditionalDocumentReference
+
+include::attachment.adoc[]
+
+==== cac:ProjectReference
+
+include::ProjectReference.adoc[]
+
+==== 	cac:AccountingSupplierParty
+
+include::accountingsupplierparty.adoc[]
+
+==== cac:AccountingCustomerParty
+
+include::accountingcustomerparty.adoc[]
+
+==== cac:PayeeParty
+
+include::PayeeParty.adoc[]
+
+==== cac:BuyerCustomerParty
+
+include::buyercustomerparty.adoc[]
+
+==== cac:TaxRepresentativeParty
+
+include::TaxRepresentativeParty.adoc[]
+
+==== cac:Delivery
 
 include::delivery.adoc[]
 
-==== Delivery Terms
+==== cac:DeliveryTerms
 
 include::deliveryterms.adoc[]
 
-==== Payment Terms
+==== cac:PaymentMeans
+
+include::PaymentMeans.adoc[]
+
+==== cac:PaymentTerms
 
 include::paymentterms.adoc[]
 
-==== Allowance Charge
+==== cac:AllowanceCharge
 
 include::allowancecharge.adoc[]
 
-==== Tax Exchange Rate
+==== cac:TaxExchangeRate
 
 include::taxexchangerate.adoc[]
 
-==== Tax Total
+==== cac:TaxTotal
 
 include::taxtotal.adoc[]
 
-==== Legal Monetary Total
+==== cac:LegalMonetaryTotal
 
 include::legalmonetarytotal.adoc[]

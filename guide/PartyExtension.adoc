@@ -1,27 +1,3 @@
-Below table lists all additional elements added to extend the `(Invoice|CreditNote)/cac:AccountingSupplierParty` and `(Invoice|CreditNote)/cac:AccountingCustomerParty`.
-
-.Additional elements added within cac:AccountingSupplierParty and cac:AccountingCustomerParty
-|===
-|Applicable XPath |Description
-
-|`cbc:SupplierAssignedAccountID`
-|Customer number in the suppliers system (use only in cac:AccountingCustomerParty).
-|`cbc:CustomerAssignedAccountID`
-|Supplier number in the customers system (use only in cac:AccountingSupplierParty).
-|`cac:Party/cac:PostalAddress/cbc:Postbox`
-|The post box.
-|`cac:Party/cac:PostalAddress/cbc:Department`
-|The department of the addressee.
-|`cac:Party/cac:PostalAddress/cac:Country/cbc:Name`
-|The country name.
-|`cac:AccountingContact/cbc:Telephone`
-|The telephone number for the accounting contact of the organization.
-|`cac:AccountingContact/cbc:Telefax`
-|The telefax number for the accounting contact of the organization.
-|`cac:AccountingContact/cbc:ElectronicMail`
-|The e-mail address for the accounting contact of the organization.
-|===
-
 An extension has been created for providing additional information not supported in UBL 2.1.
 The UBL extension to be used for below elements is `cac:Party/ext:UBLExtensions` and the structure used from `PUF-ExtensionComponent.xsd` is `PageroExtension/PartyExtension`. +
 

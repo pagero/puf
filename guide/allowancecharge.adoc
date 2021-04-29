@@ -1,13 +1,82 @@
-Below table lists the extension-element added within the `(Invoice|CreditNote)/cac:AllowanceCharge`-segment.
-
 .Elements added in cac:AllowanceCharge
 |===
 |Element |Description
 
+|`cbc:ChargeIndicator`
+|**Allowance or Charge indicator** +
+Indicator to express either charge (true) or allowance (false) +
+__Value must be either true or false__
+|`cbc:AllowanceChargeReasonCode`
+|**Allowance or charge reason code** +
+Reason code for allowance or charge. +
+__For allowances a subset of codelist UNCL5189 is to be used, and for charges codelist UNCL7161 applies__
+|`cbc:AllowanceChargeReason`
+|**Allowance or charge reason** +
+Test describing the reason for allowance or charge.
+|`cbc:MultiplierFactorNumeric`
+|**Allowance or charge percentage** +
+Allowance or charge expressed in percent. +
+__E.g. 10% discount should be expressed as "10"__
+|`cbc:Amount`
+|**Allowance or charge amount** +
+Amount of allowance or charge.
+|`cbc:Amount/@currencyID`
+|**Allowance or charge amount currency** +
+Amount of allowance or charge currency.
+|`cbc:BaseAmount`
+|**Allowance or charge base amount** +
+Base amount which the calcuation is based on.
+|`cbc:BaseAmount/@currencyID`
+|**Allowance or charge base amount currency** +
+Base amount currency.
+|`cac:TaxCategory/cbc:ID`
+|**Allowance or charge tax category code** +
+Code to indicate the tax category +
+__E.g. "S"__
+|`cac:TaxCategory/cbc:Percent`
+|**Allowance or Charge tax percent** +
+Allowance or charge tax percent.
 |`cac:TaxCategory/cbc:TaxExemptionReasonCode`
-|Tax exemption reason code.
+|**Tax exemption reason code** +
+Reason code if the allowance or charge is exempt from tax.
 |`cac:TaxCategory/cbc:TaxExemptionReason`
-|Tax exemption reason description.
+|**Tax exemption reason** +
+Reason if the allowance or charge is exempt from tax.
+|`cac:TaxCategory/cac:TaxScheme/cbc:ID`
+|**Allowance or Charge tax scheme identifier** +
+Tax scheme identifier, possible value is VAT or GST.
 |`cac:TaxTotal/cbc:TaxAmount`
-|Total tax amount associated with the allowance or charge.
+|**Allowance or Charge tax Amount** +
+Total tax amount for the allowance or charge.
+|`cac:TaxTotal/cbc:TaxAmount/@currencyID`
+|**Allowance or Charge tax Amount currency** +
+Total tax amount currency for the allowance or charge.
 |===
+
+*Example* +
+_cac:AllowanceCharge populated with example value_
+[source,xml]
+----
+<Invoice>
+  <!-- Code omitted for clarity -->
+  <cac:AllowanceCharge>
+    <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+    <cbc:AllowanceChargeReason>Reason for allowance</cbc:AllowanceChargeReason>
+    <cbc:Amount currencyID="EUR">5.00</cbc:Amount>
+    <cbc:BaseAmount currencyID="EUR">100.00</cbc:BaseAmount>
+    <cac:TaxCategory>
+        <cbc:ID>Z</cbc:ID>
+        <cbc:Percent>0</cbc:Percent>
+        <cbc:TaxExemptionReasonCode>vatex-eu-132-1b</cbc:TaxExemptionReasonCode>
+        <cbc:TaxExemptionReason>Tax exemption reason description</cbc:TaxExemptionReason>
+        <cac:TaxScheme>
+            <cbc:ID>VAT</cbc:ID>
+        </cac:TaxScheme>
+    </cac:TaxCategory>
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="EUR">0.00</cbc:TaxAmount>
+    </cac:TaxTotal>
+  </cac:AllowanceCharge>
+  <!-- Code omitted for clarity -->
+</Invoice>
+----

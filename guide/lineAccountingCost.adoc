@@ -1,21 +1,19 @@
 |===
 |Applicable XPath |Description
 
-|`cbc:Note`
-|**Line note** +
-Free text information
+|`cbc:AccountingCost`
+|**Invoice line accounting reference** +
+Line book keeping reference for buyers financial system.
 |===
 *Example* +
-_cac:InvoiceLine/cbc:Note with example value_
+_cac:InvoiceLine/cbc:AccountingCost with example value_
 [source,xml]
 ----
 <Invoice>
   <!-- Code omitted for clarity -->
   <cac:InvoiceLine>
     <!-- Code omitted for clarity -->
-    <cbc:Note>This</cbc:Note>
-    <cbc:Note>is an</cbc:Note>
-    <cbc:Note>Example</cbc:Note>
+    <cbc:AccountingCost>Accounting cost reference</cbc:AccountingCost>
     <!-- Code omitted for clarity -->
   </cac:InvoiceLine>
   <!-- Code omitted for clarity -->

@@ -17,7 +17,7 @@ include::namespaces.adoc[]
 
 === Customization and Profile ID
 
-include::customizationid.adoc[]
+include::customizationidandProfile.adoc[]
 
 === Working with extensions
 

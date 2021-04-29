@@ -1,20 +1,18 @@
-
-To indicate that Pagero Universal format is an extension of http://docs.peppol.eu/poacc/billing/3.0/[PEPPOL BIS Billing 3.0] there is an added extension id after the
-standard http://docs.peppol.eu/poacc/billing/3.0/[PEPPOL BIS Billing 3.0] CustomizationID.
-
-
 |===
-|Type |Element `cbc:CustomizationID` |Element `cbc:ProfileID`
+|Applicable XPath |Description
 
-|*Invoice and credit note*
-|urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0#conformant#urn:pagero.com:puf:billing:1.0
-|urn:pagero.com:puf:billing:1.0
+|`cbc:CustomizationID`
+|**Specification identifier** +
+Used to identify the correct UBL specification. +
+__Value to be set 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0#conformant#urn:pagero.com:puf:billing:1.0'__
 |===
-
-*Example of CustomizationID and ProfileID:*
+*Example* +
+_CustomizationID populated with correct value_
 [source,xml]
 ----
-<cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0#conformant#urn:pagero.com:puf:billing:1.0</cbc:CustomizationID>
-<cbc:ProfileID>urn:pagero.com:puf:billing:1.0</cbc:ProfileID>
+<Invoice>
+  <!-- Code omitted for clarity -->
+  <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0#conformant#urn:pagero.com:puf:billing:1.0</cbc:CustomizationID>
+  <!-- Code omitted for clarity -->
+</Invoice>
 ----
-NOTE: Note that "conformant" must be specified before Pagero UFs extensionId.
