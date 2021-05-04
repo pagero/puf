@@ -6,11 +6,11 @@ include::lineUBLExtensions.adoc[]
 
 ==== cbc:ID
 
-include::LineID.adoc[]
+include::lineID.adoc[]
 
 ==== cbc:Note
 
-include::linenote.adoc[]
+include::lineNote.adoc[]
 
 ==== cbc:InvoicedQuantity
 
@@ -30,11 +30,11 @@ include::lineInvoicePeriod.adoc[]
 
 ==== cac:OrderLineReference
 
-include::orderlinereference.adoc[]
+include::lineOrderLineReference.adoc[]
 
 ==== cac:DespatchLineReference
 
-include::despatchlinereference.adoc[]
+include::lineDespatchLineReference.adoc[]
 
 ==== cac:DocumentReference
 
@@ -42,7 +42,7 @@ include::lineDocumentReference.adoc[]
 
 ==== cac:Delivery
 
-include::linedelivery.adoc[]
+include::lineDelivery.adoc[]
 
 ==== cac:AllowanceCharge
 
@@ -50,11 +50,11 @@ include::lineAllowanceCharge.adoc[]
 
 ==== cac:TaxTotal
 
-include::linetaxtotal.adoc[]
+include::lineTaxTotal.adoc[]
 
 ==== cac:Item
 
-include::item.adoc[]
+include::lineItem.adoc[]
 
 ==== cac:Price
 

@@ -2,24 +2,24 @@ Below chapters describe the different extensions added on line level.
 
 ==== LineExclAllowanceChargeAmount
 
-include::lineexclallowancechargeamount.adoc[]
+include::extensionLineExclAllowanceChargeAmount.adoc[]
 
 ==== OriginatorDocumentReference
 
-include::lineoriginatordocumentreference.adoc[]
+include::extensionLineOriginatorDocumentReference.adoc[]
 
 ==== ProjectReference
 
-include::lineprojectreference.adoc[]
+include::extensionLineProjectReference.adoc[]
 
 ==== OrderLineReference
 
-include::orderlinereferenceExtension.adoc[]
+include::extensionLineOrderLineReference.adoc[]
 
 ==== ContractDocumentReference
 
-include::linecontractdocumentreference.adoc[]
+include::extensionLineContractDocumentReference.adoc[]
 
 ==== Price
 
-include::linePriceExtension.adoc[]
+include::extensionLinePriceExtension.adoc[]
