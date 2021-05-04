@@ -1,6 +1,6 @@
 .Elements added in cac:AllowanceCharge
 |===
-|Element |Description
+|Path |Description
 
 |`cbc:ChargeIndicator`
 |**Allowance or Charge indicator** +

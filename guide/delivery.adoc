@@ -1,9 +1,12 @@
-Below table show available fields in cac:OrderReference, note that additional elements has also been added to the extension available in cac:Delivery [DeliveryExtension LINK HERE] and cac:Delivery/cac:DeliveryParty [PartyExtension LINK HERE]
+Below table show available fields in `cac:Delivery`, note that additional elements has also been added to the extension available in <<_delivery, cac:Delivery>> and <<_party, cac:Delivery/cac:DeliveryParty>>
 
 .Elements added in cac:Delivery
 |===
-|Element |Description
+|Path |Description
 
+|`ext:UBLExtensions`
+|**Extension Content** +
+Extension is added to provide additional information in the `cac:Delivery` element, the information available can be found <<_delivery, here>>
 |`cbc:ActualDeliveryDate`
 |**Delivery date** +
 Date when goods or service was made or completed +
@@ -46,12 +49,12 @@ Note that cbc:StreetName and cbc:AdditionalStreetName should be populated prior 
 |`cac:DeliveryLocation/cac:Address/cac:Country/cbc:IdentificationCode`
 |**Country code** +
 Delivery location address country code
-|`cac:DeliveryLocation/cac:Address/cac:Country/cbc:IdentificationCode`
-|**Country code** +
-Delivery location address country code
 |`cac:DeliveryLocation/cac:Address/cac:Country/cbc:Name`
 |**Country name** +
 Delivery location address country name
+|`cac:DeliveryParty/ext:UBLExtensions`
+|**Extension Content** +
+Extension is added to provide additional information in the `cac:Party` element, the information available can be found <<_party, here>>
 |`cac:DeliveryParty/cac:PartyName/cbc:Name`
 |**Delivery party name** +
 Name of the party that the goods/services is sent to.
@@ -64,28 +67,28 @@ _cac:Delivery populated with example value_
 <Invoice>
   <!-- Code omitted for clarity -->
   <cac:Delivery>
-        <cbc:ActualDeliveryDate>2019-01-01</cbc:ActualDeliveryDate>
-        <cac:DeliveryLocation>
-            <cbc:ID schemeID="0088">7300010000001</cbc:ID>
-            <cbc:Description>Text describing the delivery location</cbc:Description>
-            <cac:Address>
-                <cbc:Postbox>121212</cbc:Postbox>
-                <cbc:StreetName>Delivery Street</cbc:StreetName>
-                <cbc:Department>Delivery Department</cbc:Department>
-                <cbc:CityName>Delivery City</cbc:CityName>
-                <cbc:PostalZone>55555</cbc:PostalZone>
-                <cbc:CountrySubentity>Delivery Province</cbc:CountrySubentity>
-                <cac:Country>
-                    <cbc:IdentificationCode>SE</cbc:IdentificationCode>
-                    <cbc:Name>Sweden</cbc:Name>
-                </cac:Country>
-            </cac:Address>
-        </cac:DeliveryLocation>
-        <cac:DeliveryParty>
-            <cac:PartyName>
-                <cbc:Name>Delivery Name</cbc:Name>
-            </cac:PartyName>
-        </cac:DeliveryParty>
+      <cbc:ActualDeliveryDate>2019-01-01</cbc:ActualDeliveryDate>
+      <cac:DeliveryLocation>
+          <cbc:ID schemeID="0088">7300010000001</cbc:ID>
+          <cbc:Description>Text describing the delivery location</cbc:Description>
+          <cac:Address>
+              <cbc:Postbox>121212</cbc:Postbox>
+              <cbc:StreetName>Delivery Street</cbc:StreetName>
+              <cbc:Department>Delivery Department</cbc:Department>
+              <cbc:CityName>Delivery City</cbc:CityName>
+              <cbc:PostalZone>55555</cbc:PostalZone>
+              <cbc:CountrySubentity>Delivery Province</cbc:CountrySubentity>
+              <cac:Country>
+                  <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+                  <cbc:Name>Sweden</cbc:Name>
+              </cac:Country>
+          </cac:Address>
+      </cac:DeliveryLocation>
+      <cac:DeliveryParty>
+          <cac:PartyName>
+              <cbc:Name>Delivery Name</cbc:Name>
+          </cac:PartyName>
+      </cac:DeliveryParty>
   </cac:Delivery>
   <!-- Code omitted for clarity -->
 </Invoice>

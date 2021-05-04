@@ -1,6 +1,6 @@
-.Additional elements added within cac:PaymentMeans
+.Elements available in cac:PaymentMeans
 |===
-|Applicable XPath |Description
+|Path |Description
 
 |`cbc:PaymentMeansCode`
 |**Payment means code** +
@@ -41,7 +41,7 @@ Account to be debited in a direct debit payment.
 
 
 *Example* +
-_cbc:OrderReference example_
+_cbc:PaymentMeans example_
 [source,xml]
 ----
 <Invoice>

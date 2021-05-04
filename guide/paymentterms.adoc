@@ -1,9 +1,12 @@
-Below table show available fields in cac:PaymentTerms, note that additional elements has also been added to the extension available in cac:PaymentTerms [LINK HERE]
+Below table show available fields in `cac:PaymentTerms`, note that additional elements has also been added to the extension available in <<_paymentterms>>
 
 .Elements added in cac:PaymentTerms
 |===
-|Element |Description
+|Path |Description
 
+|`ext:UBLExtensions`
+|**Extension Content** +
+Extension is added to provide additional information in the `cac:PaymentTerms` element, the information available can be found <<_paymentterms, here>>
 |`cbc:Note`
 |**Payment terms description** +
 Text describing payment terms.
@@ -12,7 +15,8 @@ Text describing payment terms.
 Penalty interest rate, numberic value only.
 |===
 
-*Example*
+*Example* +
+_cac:PaymentTerms example_
 [source,xml]
 ----
 <Invoice>

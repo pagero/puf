@@ -1,6 +1,6 @@
 .Elements added in cac:Item
 |===
-|Element |Description
+|Path |Description
 
 |`cbc:Description`
 |**Item description** +
@@ -78,40 +78,40 @@ _cac:InvoiceLine/cac:Item example_
   <cac:InvoiceLine>
     <!-- Code omitted for clarity -->
     <cac:Item>
-        <cbc:Description>Item description</cbc:Description>
-        <cbc:Name>Item name</cbc:Name>
-        <cac:BuyersItemIdentification>
-            <cbc:ID>BuyersItemIdentification</cbc:ID>
-        </cac:BuyersItemIdentification>
-        <cac:SellersItemIdentification>
-            <cbc:ID>SellersItemIdentification</cbc:ID>
-        </cac:SellersItemIdentification>
-        <cac:ManufacturersItemIdentification>
-            <cbc:ID>ManufacturersItemIdentification</cbc:ID>
-        </cac:ManufacturersItemIdentification>
-        <cac:StandardItemIdentification>
-            <cbc:ID schemeID="0088">7300010000001</cbc:ID>
-        </cac:StandardItemIdentification>
-        <cac:ClassifiedTaxCategory>
-            <cbc:ID schemeID="UNCL5305">S</cbc:ID>
-            <cbc:Percent>25</cbc:Percent>
-            <cac:TaxScheme>
-                <cbc:ID>VAT</cbc:ID>
-            </cac:TaxScheme>
-        </cac:ClassifiedTaxCategory>
-        <cac:AdditionalItemProperty>
-          <cbc:Name>Size</cbc:Name>
-          <cbc:Value>XXL</cbc:Value>
-        </cac:AdditionalItemProperty>
-        <cac:ItemInstance>
-            <cbc:ManufactureDate>2018-01-01</cbc:ManufactureDate>
-            <cbc:BestBeforeDate>2018-01-01</cbc:BestBeforeDate>
-            <cbc:SerialID>123456789</cbc:SerialID>
-            <cac:LotIdentification>
-                <cbc:LotNumberID>1111111</cbc:LotNumberID>
-            </cac:LotIdentification>
-        </cac:ItemInstance>
-      </cac:Item>
+      <cbc:Description>Item description</cbc:Description>
+      <cbc:Name>Item name</cbc:Name>
+      <cac:BuyersItemIdentification>
+          <cbc:ID>BuyersItemIdentification</cbc:ID>
+      </cac:BuyersItemIdentification>
+      <cac:SellersItemIdentification>
+          <cbc:ID>SellersItemIdentification</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:ManufacturersItemIdentification>
+          <cbc:ID>ManufacturersItemIdentification</cbc:ID>
+      </cac:ManufacturersItemIdentification>
+      <cac:StandardItemIdentification>
+          <cbc:ID schemeID="0088">7300010000001</cbc:ID>
+      </cac:StandardItemIdentification>
+      <cac:ClassifiedTaxCategory>
+          <cbc:ID schemeID="UNCL5305">S</cbc:ID>
+          <cbc:Percent>25</cbc:Percent>
+          <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+          </cac:TaxScheme>
+      </cac:ClassifiedTaxCategory>
+      <cac:AdditionalItemProperty>
+        <cbc:Name>Size</cbc:Name>
+        <cbc:Value>XXL</cbc:Value>
+      </cac:AdditionalItemProperty>
+      <cac:ItemInstance>
+          <cbc:ManufactureDate>2018-01-01</cbc:ManufactureDate>
+          <cbc:BestBeforeDate>2018-01-01</cbc:BestBeforeDate>
+          <cbc:SerialID>123456789</cbc:SerialID>
+          <cac:LotIdentification>
+              <cbc:LotNumberID>1111111</cbc:LotNumberID>
+          </cac:LotIdentification>
+      </cac:ItemInstance>
+    </cac:Item>
       <!-- Code omitted for clarity -->
   </cac:InvoiceLine>
   <!-- Code omitted for clarity -->

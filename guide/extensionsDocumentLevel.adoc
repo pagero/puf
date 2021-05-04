@@ -1,0 +1,29 @@
+Below chapters describe the different extensions added on document level.
+
+==== OrderReference
+
+include::orderreferenceextension.adoc[]
+
+==== ContractDocumentReference
+
+include::ContractDocumentReferenceExtension.adoc[]
+
+==== Party
+
+include::PartyExtension.adoc[]
+
+==== Delivery
+
+include::deliveryExtension.adoc[]
+
+==== PaymentTerms
+
+include::PaymentTermsExtension.adoc[]
+
+==== TaxTotal
+
+include::TaxTotalExtension.adoc[]
+
+==== LegalMonetaryTotal
+
+include::legalmonetarytotalExtension.adoc[]

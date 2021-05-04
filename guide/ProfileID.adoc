@@ -1,10 +1,10 @@
 |===
-|Applicable XPath |Description
+|Path |Description
 
 |`cbc:ProfileID`
 |**Business process type** +
 Identifies the business process. +
-__Value to be set 'urn:pagero.com:puf:billing:1.0'__
+__Must be value  'urn:pagero.com:puf:billing:1.0'__
 |===
 *Example* +
 _cbc:ProfileID populated with correct value_

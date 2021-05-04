@@ -1,6 +1,6 @@
 .Elements added in cac:InvoiceLine/cac:TaxTotal
 |===
-|Element |Description
+|Path |Description
 
 |`cbc:TaxAmount`
 |**Line total tax amount** +

@@ -1,6 +1,6 @@
 .Additional elements added within cac:TaxRepresentativeParty
 |===
-|Applicable XPath |Description
+|Path |Description
 
 |`cac:Party/cac:PartyName/cbc:Name`
 |**Seller's tax representative name** +

@@ -1,0 +1,25 @@
+Below chapters describe the different extensions added on line level.
+
+==== LineExclAllowanceChargeAmount
+
+include::lineexclallowancechargeamount.adoc[]
+
+==== OriginatorDocumentReference
+
+include::lineoriginatordocumentreference.adoc[]
+
+==== ProjectReference
+
+include::lineprojectreference.adoc[]
+
+==== OrderLineReference
+
+include::orderlinereferenceExtension.adoc[]
+
+==== ContractDocumentReference
+
+include::linecontractdocumentreference.adoc[]
+
+==== Price
+
+include::linePriceExtension.adoc[]

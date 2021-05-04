@@ -1,6 +1,8 @@
+Below table show available fields in `cac:TaxTotal/cac:TaxSubtotal`, note that additional elements has also been added to the extension available in <<_taxtotal, cac:TaxTotal/cac:TaxSubtotal>>
+
 .Elements added in cac:TaxTotal
 |===
-|Element |Description
+|Path |Description
 
 |`cbc:TaxAmount`
 |**Document total tax amount** +
@@ -9,6 +11,9 @@ __Summary of all TaxSubTotal/TaxAmount__
 |`cbc:TaxAmount/@currencyID`
 |**Document total tax amount currency** +
 Documents total tax amount currency, must be the same as cbc:DocumentCurrencyCode.
+|`cac:TaxSubtotal/ext:UBLExtensions`
+|**Extension Content** +
+Extension is added to provide additional information in the `cac:TaxTotal/cac:TaxSubtotal` element, the information available can be found <<_taxtotal, here>>
 |`cac:TaxSubtotal/cbc:TaxableAmount`
 |**Total taxable amount for each tax category** +
 Total taxable amount for each tax category or tax rate. +
@@ -70,7 +75,7 @@ _cac:TaxTotal example_
             </cac:TaxScheme>
         </cac:TaxCategory>
     </cac:TaxSubtotal>
-</cac:TaxTotal>
+  </cac:TaxTotal>
   <!-- Code omitted for clarity -->
 </Invoice>
 ----

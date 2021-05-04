@@ -1,6 +1,6 @@
 .Elements available in cac:InvoicePeriod
 |===
-|Element |Description
+|Path |Description
 
 |`cbc:StartDate`
 |**Invoicing period start date** +

@@ -1,12 +1,15 @@
-Below table show available fields in cac:AccountingCustomerParty, note that additional elements has also been added to the extension available in cac:AccountingCustomerParty [LINK HERE]
+Below table show available fields in `cac:AccountingCustomerParty`, note that additional elements has also been added to the extension available in <<_party>>
 
 .Additional elements added within cac:AccountingCustomerParty
 |===
-|Applicable XPath |Description
+|Path |Description
 
 |`cbc:SupplierAssignedAccountID`
 |**Customer Account ID** +
 Customer ID, assigned by the seller.
+|`cac:Party/ext:UBLExtensions`
+|**Extension Content** +
+Extension is added to provide additional information in the `cac:Party` element, the information available can be found <<_party, here>>
 |`cac:Party/cbc:EndpointID`
 |**Electronic Identifier** +
 Buyer's electronic address

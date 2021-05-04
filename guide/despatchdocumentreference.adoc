@@ -1,6 +1,6 @@
 .Elements added in cac:DespatchDocumentReference
 |===
-|Element |Description
+|Path |Description
 
 |`cbc:ID`
 |**Despatch advice reference** +

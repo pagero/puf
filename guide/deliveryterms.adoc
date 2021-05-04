@@ -1,6 +1,6 @@
 .Elements added in cac:DeliveryTerms
 |===
-|Element |Description
+|Path |Description
 
 |`cbc:SpecialTerms`
 |**Delivery Terms** +

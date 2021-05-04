@@ -1,6 +1,6 @@
 .Elements added to cac:DespatchLineReference
 |===
-|Element |Description
+|Path |Description
 
 |`cbc:LineID`
 |**Despatch advice line reference** +

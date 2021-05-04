@@ -1,6 +1,6 @@
 .Elements added in cac:ReceiptDocumentReference
 |===
-|Element |Description
+|Path |Description
 
 |`cbc:ID`
 |**Receiving advice reference** +

@@ -4,7 +4,7 @@ Pagero Universal Format support this handling but also has additional support in
 
 .Elements available in cac:AdditionalDocumentReference
 |===
-|Applicable XPath |Description
+|Path |Description
 
 |`cbc:ID`
 |Identifier for the referenced object/document.

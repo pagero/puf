@@ -1,7 +1,12 @@
+Below table show available fields in `cac:Price`, note that additional elements has also been added to the extension available in <<_price>>
+
 .Elements added in cac:InvoiceLine/cac:Price
 |===
-|Element |Description
+|Path |Description
 
+|`ext:UBLExtensions`
+|**Extension Content** +
+Extension is added to provide additional information in the `cac:Price` element, the information available can be found <<_price, here>>
 |`cbc:PriceAmount`
 |**Item net price** +
 Net price of the item, this value must not be negative.

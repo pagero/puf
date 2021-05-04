@@ -1,8 +1,9 @@
 |===
-|Applicable XPath |Description
+|Path |Description
 
 |`cbc:ID`
-|**Invoice number.**
+|**Invoice number.** +
+A unique identifier of the invoice.
 |===
 *Example* +
 _cbc:ID with example value_

@@ -1,13 +1,16 @@
-Below table show available fields in cac:LegalMonetaryTotal, note that additional elements has also been added to the extension available in cac:LegalMonetaryTotal extension [LINK HERE]
+Below table show available fields in cac:LegalMonetaryTotal, note that additional elements has also been added to the extension available in <<_legalmonetarytotal>>
 
 .Elements added in cac:LegalMonetaryTotal
 |===
-|Element |Description
+|Path |Description
 
+|`ext:UBLExtensions`
+|**Extension Content** +
+Extension is added to provide additional information in the `cac:LegalMonetaryTotal` element, the information available can be found <<_legalmonetarytotal, here>>
 |`cbc:LineExtensionAmount`
 |**Summary of all lines net amount** +
 Summary of all lines net amount. +
-__Summary of all TaxSubTotal/TaxAmount__
+__Summary of all cac:InvoiceLine/cbc:LineExtensionAmount__
 |`cbc:LineExtensionAmount/@currencyID`
 |**Summary of all lines net amount currency** +
 Currency applied for cbc:LineExtensionAmount, must be the same as cbc:DocumentCurrencyCode.
@@ -62,12 +65,12 @@ _cac:LegalMonetaryTotal example_
 <Invoice>
   <!-- Code omitted for clarity -->
   <cac:LegalMonetaryTotal>
-        <cbc:LineExtensionAmount currencyID="EUR">100.00</cbc:LineExtensionAmount>
-        <cbc:TaxExclusiveAmount currencyID="EUR">95.00</cbc:TaxExclusiveAmount>
-        <cbc:TaxInclusiveAmount currencyID="EUR">120.00</cbc:TaxInclusiveAmount>
-        <cbc:AllowanceTotalAmount currencyID="EUR">5.00</cbc:AllowanceTotalAmount>
-        <cbc:ChargeTotalAmount currencyID="EUR">0.00</cbc:ChargeTotalAmount>
-        <cbc:PayableAmount currencyID="EUR">110.00</cbc:PayableAmount>
+      <cbc:LineExtensionAmount currencyID="EUR">100.00</cbc:LineExtensionAmount>
+      <cbc:TaxExclusiveAmount currencyID="EUR">95.00</cbc:TaxExclusiveAmount>
+      <cbc:TaxInclusiveAmount currencyID="EUR">120.00</cbc:TaxInclusiveAmount>
+      <cbc:AllowanceTotalAmount currencyID="EUR">5.00</cbc:AllowanceTotalAmount>
+      <cbc:ChargeTotalAmount currencyID="EUR">0.00</cbc:ChargeTotalAmount>
+      <cbc:PayableAmount currencyID="EUR">110.00</cbc:PayableAmount>
   </cac:LegalMonetaryTotal>
   <!-- Code omitted for clarity -->
 </Invoice>

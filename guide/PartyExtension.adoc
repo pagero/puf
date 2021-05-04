@@ -27,7 +27,7 @@ Below table shows the definition of the new elements added to the extension.
 
 .Elements added in puf:PartyExtension
 |===
-|Applicable XPath |Description
+|Path |Description
 
 |`puf:RegistrationData/cbc:ID`
 |Additional registration data associated with the party.

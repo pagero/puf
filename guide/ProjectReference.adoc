@@ -1,6 +1,6 @@
 .Elements added in cac:ProjectReference
 |===
-|Element |Description
+|Path |Description
 
 |`cbc:ID`
 |**Project reference** +

@@ -1,15 +1,18 @@
-Below table show available fields in cac:ContractDocumentReference, note that additional elements has also been added to the extension available in cac:ContractDocumentReference [LINK HERE]
+Below table show available fields in `cac:ContractDocumentReference`, note that additional elements has also been added to the extension available in <<_contractdocumentreference>>
 
 .Elements added in cac:ContractDocumentReference
 |===
-|Element |Description
+|Path |Description
 
+|`ext:UBLExtensions`
+|**Extension Content** +
+Extension is added to provide additional information in the `cac:ContractDocumentReference` element, the information available can be found <<_contractdocumentreference, here>>
 |`cbc:ID`
 |**Contract reference** +
 Contract reference identifier.
 |`cbc:IssueDate`
 |**Issue date** +
-Issue date of the contract +
+Issue date of the contract. +
 __Format "YYYY-MM-DD"__
 |===
 

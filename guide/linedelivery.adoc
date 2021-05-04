@@ -1,6 +1,6 @@
 .Elements added to cac:Delivery
 |===
-|Element |Description
+|Path |Description
 
 |`cbc:Quantity`
 |**Delivered quantity** +

@@ -1,13 +1,13 @@
 .Elements added in cac:OriginatorDocumentReference
 |===
-|Element |Description
+|Path |Description
 
 |`cbc:ID`
 |**Tender reference identifier** +
-ID of the tender
+Identifier of the tender.
 |`cbc:IssueDate`
 |**Issue date** +
-Issue date of the tender +
+Issue date of the tender. +
 __Format "YYYY-MM-DD"__
 |===
 

@@ -1,9 +1,12 @@
-Below table show available fields in cac:OrderReference, note that additional elements has also been added to the extension available in cac:OrderReference [LINK HERE]
+Below table show available fields in `cac:OrderReference`, note that additional elements has also been added to the extension available in <<_orderreference>>
 
 .Elements added in cac:OrderReference
 |===
-|Element |Description
+|Path |Description
 
+|`ext:UBLExtensions`
+|**Extension Content** +
+Extension is added to provide additional information in the `cac:OrderReference` element, the information available can be found <<_orderreference, here>>
 |`cbc:ID`
 |**Purchase order reference** +
 Purchase order identifier, issued by the buyer.

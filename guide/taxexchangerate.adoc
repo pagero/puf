@@ -1,6 +1,6 @@
 .Elements added in cac:TaxExchangeRate
 |===
-|Element |Description
+|Path |Description
 
 |`cbc:SourceCurrencyCode`
 |**Source currency code** +
@@ -21,7 +21,7 @@ __Format YYYY-MM-DD__
 |===
 
 *Example* +
-_Example with EUR as document currency and USD as tax currency_
+_cac:TaxExchangeRate with EUR as document currency and USD as tax currency_
 [source,xml]
 ----
 <Invoice>

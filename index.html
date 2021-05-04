@@ -582,85 +582,94 @@ table.CodeRay td.code{padding:0 0 0 .75em}
 </li>
 <li><a href="#_cacinvoiceline">3.2. cac:InvoiceLine</a>
 <ul class="sectlevel3">
-<li><a href="#_cbcid_2">3.2.1. cbc:ID</a></li>
-<li><a href="#_cbcnote_2">3.2.2. cbc:Note</a></li>
-<li><a href="#_cbcinvoicedquantity">3.2.3. cbc:InvoicedQuantity</a></li>
-<li><a href="#_cbclineextensionamount">3.2.4. cbc:LineExtensionAmount</a></li>
-<li><a href="#_cbcaccountingcost_2">3.2.5. cbc:AccountingCost</a></li>
-<li><a href="#_cacinvoiceperiod_2">3.2.6. cac:InvoicePeriod</a></li>
-<li><a href="#_cacorderlinereference">3.2.7. cac:OrderLineReference</a></li>
-<li><a href="#_cacdespatchlinereference">3.2.8. cac:DespatchLineReference</a></li>
-<li><a href="#_cacdocumentreference">3.2.9. cac:DocumentReference</a></li>
-<li><a href="#_cacdelivery_2">3.2.10. cac:Delivery</a></li>
-<li><a href="#_cacallowancecharge_2">3.2.11. cac:AllowanceCharge</a></li>
-<li><a href="#_cactaxtotal_2">3.2.12. cac:TaxTotal</a></li>
-<li><a href="#_cacitem">3.2.13. cac:Item</a></li>
-<li><a href="#_cacprice">3.2.14. cac:Price</a></li>
-</ul>
-</li>
-<li><a href="#_extublextensions">3.3. ext:UBLExtensions</a>
-<ul class="sectlevel3">
-<li><a href="#_cacorderreference_extension">3.3.1. cac:OrderReference Extension</a></li>
-<li><a href="#_caccontractdocumentreference_extension">3.3.2. cac:ContractDocumentReference Extension</a></li>
-<li><a href="#_cacparty_extension">3.3.3. cac:Party Extension</a></li>
-<li><a href="#_cacdelivery_extension">3.3.4. cac:Delivery Extension</a></li>
-<li><a href="#_cacpaymentterms_extension">3.3.5. cac:PaymentTerms Extension</a></li>
-<li><a href="#_cactaxtotal_extension">3.3.6. cac:TaxTotal Extension</a></li>
-<li><a href="#_caclegalmonetarytotal_extension">3.3.7. cac:LegalMonetaryTotal Extension</a></li>
-<li><a href="#_line_excl_allowance_and_charge_amount">3.3.8. Line Excl. Allowance and Charge Amount</a></li>
-<li><a href="#_originator_document_reference">3.3.9. Originator Document Reference</a></li>
-<li><a href="#_project_reference">3.3.10. Project Reference</a></li>
-<li><a href="#_cacorderlinereferenceextension_extension">3.3.11. cac:orderlinereferenceExtension Extension</a></li>
-<li><a href="#_contract_document_reference">3.3.12. Contract Document Reference</a></li>
-<li><a href="#_cacprice_extension">3.3.13. cac:Price Extension</a></li>
+<li><a href="#_extublextensions">3.2.1. ext:UBLExtensions</a></li>
+<li><a href="#_cbcid_2">3.2.2. cbc:ID</a></li>
+<li><a href="#_cbcnote_2">3.2.3. cbc:Note</a></li>
+<li><a href="#_cbcinvoicedquantity">3.2.4. cbc:InvoicedQuantity</a></li>
+<li><a href="#_cbclineextensionamount">3.2.5. cbc:LineExtensionAmount</a></li>
+<li><a href="#_cbcaccountingcost_2">3.2.6. cbc:AccountingCost</a></li>
+<li><a href="#_cacinvoiceperiod_2">3.2.7. cac:InvoicePeriod</a></li>
+<li><a href="#_cacorderlinereference">3.2.8. cac:OrderLineReference</a></li>
+<li><a href="#_cacdespatchlinereference">3.2.9. cac:DespatchLineReference</a></li>
+<li><a href="#_cacdocumentreference">3.2.10. cac:DocumentReference</a></li>
+<li><a href="#_cacdelivery_2">3.2.11. cac:Delivery</a></li>
+<li><a href="#_cacallowancecharge_2">3.2.12. cac:AllowanceCharge</a></li>
+<li><a href="#_cactaxtotal_2">3.2.13. cac:TaxTotal</a></li>
+<li><a href="#_cacitem">3.2.14. cac:Item</a></li>
+<li><a href="#_cacprice">3.2.15. cac:Price</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#_country_specific">4. Country Specific</a>
+<li><a href="#_extensions">4. Extensions</a>
 <ul class="sectlevel2">
-<li><a href="#_spain">4.1. Spain</a>
+<li><a href="#_document_level">4.1. Document Level</a>
 <ul class="sectlevel3">
-<li><a href="#_routing_codes_dir3">4.1.1. Routing Codes (DIR3)</a></li>
+<li><a href="#_orderreference">4.1.1. OrderReference</a></li>
+<li><a href="#_contractdocumentreference">4.1.2. ContractDocumentReference</a></li>
+<li><a href="#_party">4.1.3. Party</a></li>
+<li><a href="#_delivery">4.1.4. Delivery</a></li>
+<li><a href="#_paymentterms">4.1.5. PaymentTerms</a></li>
+<li><a href="#_taxtotal">4.1.6. TaxTotal</a></li>
+<li><a href="#_legalmonetarytotal">4.1.7. LegalMonetaryTotal</a></li>
 </ul>
 </li>
-<li><a href="#_france">4.2. France</a>
+<li><a href="#_line_level">4.2. Line Level</a>
 <ul class="sectlevel3">
-<li><a href="#_service_code">4.2.1. Service Code</a></li>
-<li><a href="#_legal_commitments">4.2.2. Legal Commitments</a></li>
-</ul>
-</li>
-<li><a href="#_italy">4.3. Italy</a>
-<ul class="sectlevel3">
-<li><a href="#_routing_code_codice_destinatario">4.3.1. Routing code (Codice Destinatario)</a></li>
-<li><a href="#_duty_stamp_dati_bollo">4.3.2. Duty Stamp (Dati Bollo)</a></li>
-<li><a href="#_tax_chargeability_esigibilita_iva">4.3.3. Tax chargeability (Esigibilita IVA)</a></li>
-<li><a href="#_vat_number_and_fiscal_code">4.3.4. VAT number and Fiscal Code</a></li>
-<li><a href="#_registration_data_2">4.3.5. Registration data</a></li>
-</ul>
-</li>
-<li><a href="#_portugal">4.4. Portugal</a>
-<ul class="sectlevel3">
-<li><a href="#_billing_software_certification">4.4.1. Billing Software Certification</a></li>
-<li><a href="#_qr_code_and_atcud">4.4.2. QR Code and ATCUD</a></li>
+<li><a href="#_lineexclallowancechargeamount">4.2.1. LineExclAllowanceChargeAmount</a></li>
+<li><a href="#_originatordocumentreference">4.2.2. OriginatorDocumentReference</a></li>
+<li><a href="#_projectreference">4.2.3. ProjectReference</a></li>
+<li><a href="#_orderlinereference">4.2.4. OrderLineReference</a></li>
+<li><a href="#_contractdocumentreference_2">4.2.5. ContractDocumentReference</a></li>
+<li><a href="#_price">4.2.6. Price</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#_code_lists">5. Code lists</a>
+<li><a href="#_country_specific">5. Country Specific</a>
 <ul class="sectlevel2">
-<li><a href="#_code_lists_for_coded_elements">5.1. Code lists for coded elements</a>
+<li><a href="#_spain">5.1. Spain</a>
 <ul class="sectlevel3">
-<li><a href="#_puf_001_registrationdata">5.1.1. PUF-001-REGISTRATIONDATA</a></li>
-<li><a href="#_puf_002_adaid">5.1.2. PUF-002-ADAID</a></li>
+<li><a href="#_routing_codes_dir3">5.1.1. Routing Codes (DIR3)</a></li>
+</ul>
+</li>
+<li><a href="#_france">5.2. France</a>
+<ul class="sectlevel3">
+<li><a href="#_service_code">5.2.1. Service Code</a></li>
+<li><a href="#_legal_commitments">5.2.2. Legal Commitments</a></li>
+</ul>
+</li>
+<li><a href="#_italy">5.3. Italy</a>
+<ul class="sectlevel3">
+<li><a href="#_routing_code_codice_destinatario">5.3.1. Routing code (Codice Destinatario)</a></li>
+<li><a href="#_duty_stamp_dati_bollo">5.3.2. Duty Stamp (Dati Bollo)</a></li>
+<li><a href="#_tax_chargeability_esigibilita_iva">5.3.3. Tax chargeability (Esigibilita IVA)</a></li>
+<li><a href="#_vat_number_and_fiscal_code">5.3.4. VAT number and Fiscal Code</a></li>
+<li><a href="#_registration_data_2">5.3.5. Registration data</a></li>
+</ul>
+</li>
+<li><a href="#_portugal">5.4. Portugal</a>
+<ul class="sectlevel3">
+<li><a href="#_billing_software_certification">5.4.1. Billing Software Certification</a></li>
+<li><a href="#_qr_code_and_atcud">5.4.2. QR Code and ATCUD</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#_xml_schemas">6. XML Schemas</a></li>
-<li><a href="#_validation_rules">7. Validation rules</a></li>
-<li><a href="#_examples">8. Examples</a></li>
-<li><a href="#_support">9. Support</a></li>
+<li><a href="#_code_lists">6. Code lists</a>
+<ul class="sectlevel2">
+<li><a href="#_code_lists_for_coded_elements">6.1. Code lists for coded elements</a>
+<ul class="sectlevel3">
+<li><a href="#_puf_001_registrationdata">6.1.1. PUF-001-REGISTRATIONDATA</a></li>
+<li><a href="#_puf_002_adaid">6.1.2. PUF-002-ADAID</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_xml_schemas">7. XML Schemas</a></li>
+<li><a href="#_validation_rules">8. Validation rules</a></li>
+<li><a href="#_examples">9. Examples</a></li>
+<li><a href="#_support">10. Support</a></li>
 </ul>
 </div>
 </div>
@@ -669,16 +678,13 @@ table.CodeRay td.code{padding:0 0 0 .75em}
 <h2 id="_introduction"><a class="anchor" href="#_introduction"></a><a class="link" href="#_introduction">1. Introduction</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Pagero Universal Format, hereafter referred to as "Pagero UF", is developed and maintained by Pagero Group. Pagero UF is based on <a href="https://docs.oasis-open.org/ubl/UBL-2.1.html">Universal Business Language Version 2.1 (UBL 2.1)</a> and the <a href="http://docs.peppol.eu/poacc/billing/3.0/">PEPPOL BIS Billing 3.0</a> format.<br></p>
+<p>Pagero Universal Format, hereafter referred to as "PUF", is developed and maintained by Pagero Group. PUF is based upon <a href="https://docs.oasis-open.org/ubl/UBL-2.1.html">Universal Business Language Version 2.1 (UBL 2.1)</a>.</p>
 </div>
 <div class="paragraph">
-<p>To support the growing <a href="https://peppol.eu/">PEPPOL Network</a>, Pagero UF has been built "on-top" of and fully support <a href="http://docs.peppol.eu/poacc/billing/3.0/">PEPPOL BIS Billing 3.0</a>, see section 3 for more information.<br></p>
+<p>To align with new regulations and the business needs that comes with the growing use of electronic invoices throughout the world, the core idea of PUF is to enable its users to provide enough data to meet the requirements in these markets.<br></p>
 </div>
 <div class="paragraph">
-<p>To align with new regulations and the business needs that comes with the growing use of electronic invoices throughout the world, the core idea of Pagero UF is to present the opportunity to extend the content available in the <a href="http://docs.peppol.eu/poacc/billing/3.0/">PEPPOL BIS Billing 3.0</a> as a means for supporting these market needs.<br></p>
-</div>
-<div class="paragraph">
-<p>To be able to provide the broadest support possible, Pagero UF has been designed with the following core basis in mind:</p>
+<p>To be able to provide the broadest support possible, PUF has been designed with the following core basis in mind:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -702,15 +708,19 @@ table.CodeRay td.code{padding:0 0 0 .75em}
 <p><a href="https://ec.europa.eu/cefdigital/wiki/display/EINVCOMMUNITY/Community-driven+Registry+of+CIUS+(Core+Invoice+Usage+Specifications)+and+Extensions">Extensions</a> based on the regulations of <a href="https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:60602&amp;cs=1B61B766636F9FB34B7DBD72CE9026C72">EN 16931-1:2017</a></p>
 </li>
 <li>
-<p>Country specific information found in domestic formats.</p>
+<p>Country specific information found in domestic formats in various legal domains.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Based on extensive analysis of the above, Pagero UF has been designed to meet these country-, industry-, format- and/or system-specific requirements.<br></p>
+<p>Based on extensive analysis of the above, Pagero Universal Format has been designed to meet these country-, industry-, format- and/or system-specific requirements.<br></p>
 </div>
 <div class="paragraph">
-<p>Another intention of the Pagero UF has been to create a flexible, extendable format which can be updated quickly to be able to meet the requirements of the fast-changing global electronic document landscape.</p>
+<p>Another intention of PUF has been to create a flexible, extendable format which can be updated quickly to be able to meet the requirements of the fast-changing global electronic document landscape.</p>
+</div>
+<div class="paragraph">
+<p>Pagero Universal Format is not to be considered as a CIUS based on EN16931 or any other CIUS or format. PUF will however to a large extent try to follow the work done in EN16931, Peppol and other UBL based
+invoicing Specifications. If one can create a correct EN16931 based UBL-format the threshold for implementing PUF should be as small as possible.</p>
 </div>
 <hr>
 <div class="sect2">
@@ -744,47 +754,39 @@ table.CodeRay td.code{padding:0 0 0 .75em}
 <h2 id="_guidelines"><a class="anchor" href="#_guidelines"></a><a class="link" href="#_guidelines">2. Guidelines</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Pagero UF builds on and fully support the <a href="http://docs.peppol.eu/poacc/billing/3.0/">PEPPOL BIS Billing 3.0</a>. Reference to guidelines and specification can be found <a href="http://docs.PEPPOL.eu/poacc/billing/3.0/bis/">here</a>.<br></p>
+<p>Pagero Universal Format was originally built to support information and content as described in <a href="http://docs.peppol.eu/poacc/billing/3.0/">PEPPOL BIS Billing 3.0</a> but also adding support for elements that where not present in Peppol BIS specification.
+While PUF aim to fully support Peppol BIS it will not necessarily be restricted to the rules as stated in the Peppol BIS specification nor in the EN16931.<br></p>
 </div>
 <div class="paragraph">
-<p>In areas where support for certain information is available in the existing UBL 2.1 structure, Pagero UF implements these elements.
-In other areas where there are no suitable elements in the existing UBL 2.1 schema, Pagero UF implements <code>UBLExtensions</code>.
-Since <code>UBLExtensions</code> are only available on document level the UBL had to be altered, adding the <code>UBLExtension</code> in every aggregate thus replacing the <code>UBL-CommonAggregateComponents-2.1.xsd</code> with Pagero UF altered <code>PUF-CommonAggregateComponents-2.1.xsd</code>.
+<p>In areas where support for certain information is available in the existing UBL 2.1 structure, PUF implements these elements.
+In other areas where there are no suitable elements in the existing UBL 2.1 schema, PUF implements <code>UBLExtensions</code>.
+Since <code>UBLExtensions</code> are only available on document level the UBL had to be altered, adding the <code>UBLExtension</code> in every aggregate thus replacing the <code>UBL-CommonAggregateComponents-2.1.xsd</code> with PUF altered <code>PUF-CommonAggregateComponents-2.1.xsd</code>.
 The reason for this is that there would be too many semantic rules to tie each <code>UBLExtension</code> on document level to their corresponding existing element on other levels.</p>
-</div>
-<div class="paragraph">
-<p>In the following chapters, you will find descriptions of each element that&#8217;s been added in Pagero UF that is not present in the <a href="http://docs.peppol.eu/poacc/billing/3.0/">PEPPOL BIS Billing 3.0</a>.</p>
 </div>
 <div class="sect2">
 <h3 id="_how_to_get_started_with_pagero_universal_format"><a class="anchor" href="#_how_to_get_started_with_pagero_universal_format"></a><a class="link" href="#_how_to_get_started_with_pagero_universal_format">2.1. How to get started with Pagero Universal Format</a></h3>
 <div class="paragraph">
-<p>Since Pagero UF is an extension of the <a href="http://docs.peppol.eu/poacc/billing/3.0/">PEPPOL BIS Billing 3.0</a> the first step is to make sure you support and comply with <a href="http://docs.peppol.eu/poacc/billing/3.0/">PEPPOL BIS Billing 3.0</a>.<br></p>
-</div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-It is imperative that <a href="http://docs.peppol.eu/poacc/billing/3.0/">PEPPOL BIS Billing 3.0</a> has been implemented before any work extending/building Pagero UF starts!
-</td>
-</tr>
-</table>
+<p>In the following chapters you can see which elements and what type of information that is supported in PUF. In some cases you will also get longer snippets
+of code and implementation guidelines in order how to properly provide the data. There is also a section with test files that can be useful when implementing PUF.</p>
 </div>
 <div class="paragraph">
-<p>When <a href="http://docs.peppol.eu/poacc/billing/3.0/">PEPPOL BIS Billing 3.0</a> is implemented it is easy and quick to get started with Pagero UF and thus be able to handle information and data that is not supported in the core PEPPOL BIS.</p>
+<p>If your ERP already can create Invoices and Credit notes in <a href="https://docs.oasis-open.org/ubl/UBL-2.1.html">Universal Business Language Version 2.1 (UBL 2.1)</a> or if your ERP can create a UBL based format or CIUS such as <a href="http://docs.peppol.eu/poacc/billing/3.0/">PEPPOL BIS Billing 3.0</a>
+you can easily use this as stepping stone when moving towards PUF.
+.<br></p>
 </div>
 <div class="paragraph">
-<p><strong>Moving from <a href="http://docs.peppol.eu/poacc/billing/3.0/">PEPPOL BIS Billing 3.0</a> to Pagero UF</strong></p>
+<p><strong>Moving from <a href="http://docs.peppol.eu/poacc/billing/3.0/">PEPPOL BIS Billing 3.0</a> or other UBL based CIUS/Format to Pagero Universal format</strong></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Download Pagero UF <a href="#_xml_schemas">XML Schemas</a></p>
+<p>Download Pagero Universal Format <a href="#_xml_schemas">XML Schemas</a></p>
 </li>
 <li>
 <p>Change namespaces (see chapter <a href="#_namespaces">Namespaces</a>)</p>
+</li>
+<li>
+<p>Verify that your interpretation of the UBL elements mentioned in this specification are the same.</p>
 </li>
 <li>
 <p>Change the Customization Id and Profile Id (see chapter <a href="#_customization_and_profile_id">Customization and Profile ID</a>)</p>
@@ -793,7 +795,7 @@ It is imperative that <a href="http://docs.peppol.eu/poacc/billing/3.0/">PEPPOL 
 <p>If elements from extensions is needed see chapter <a href="#_working_with_extensions">Working with extensions</a> how this is implemented.</p>
 </li>
 <li>
-<p>Before implementing additional fields available in Pagero UF, validate the document with the XSD schema downloaded in step 1.</p>
+<p>Before implementing additional fields available in PUF, validate the document with the XSD schema downloaded in step 1.</p>
 </li>
 </ol>
 </div>
@@ -804,7 +806,11 @@ It is imperative that <a href="http://docs.peppol.eu/poacc/billing/3.0/">PEPPOL 
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-In the xml schemas provided in chapter <a href="#_xml_schemas">XML Schemas</a> you will see the structure and the occurrences of every element available in Pagero UF.
+In the xml schemas provided in chapter <a href="#_xml_schemas">XML Schemas</a> you will see the structure and the occurrences of every element available in Pagero Universal Format.
+This specification will not include any cardinality from a schema perspective nor from what is required in a specific legal domain since this might differ depending
+on which specific country, region or business requirements you will have to comply with. In order to know what information is sufficient to provide you should first check what the
+requirements from a legal and business perspective and then refer to this specification on where to provide this information. Also notice that the elements and their sort order provided in specification
+is done with the Invoice document type. When using CreditNote please xsd provided for possible differencies in element names or sort order.
 </td>
 </tr>
 </table>
@@ -911,7 +917,7 @@ Note that "conformant" must be specified before Pagero UFs extensionId.
 <div class="sect2">
 <h3 id="_working_with_extensions"><a class="anchor" href="#_working_with_extensions"></a><a class="link" href="#_working_with_extensions">2.4. Working with extensions</a></h3>
 <div class="paragraph">
-<p>In order to facilitate the use of Pagero UF specific extensions, a schema for the extensions is provided.
+<p>In order to facilitate the use of PUF specific extensions, a schema for the extensions is provided.
 The <code>PUF-ExtensionComponent.xsd</code> can be found together with the other schemas in chapter <a href="#_xml_schemas">XML Schemas</a>. This chapter provides an overview on how to use
 extensions.</p>
 </div>
@@ -964,7 +970,7 @@ To identify which context the <code>UBLExtensions</code> is in the element Exten
 <div class="sect2">
 <h3 id="_continuous_development_and_release_management"><a class="anchor" href="#_continuous_development_and_release_management"></a><a class="link" href="#_continuous_development_and_release_management">2.5. Continuous development and release management</a></h3>
 <div class="paragraph">
-<p>Pagero UF will continuously be updated to meet new market demands. In order to support backward compatibility, the XSD schema is built with the use of "other" elements. The "other" elements in the XSD
+<p>Pagero Universal Format will continuously be updated to meet new market demands. In order to support backward compatibility, the XSD schema is built with the use of "other" elements. The "other" elements in the XSD
 will prevent validation error for customers who do not frequently keep the XSD schema up-to-date.</p>
 </div>
 <div class="sect3">
@@ -979,7 +985,7 @@ will prevent validation error for customers who do not frequently keep the XSD s
 <p>A major release may include changes that are not backward compatible. Such a release will be notified at least three months prior to date of implementation, to users who registered an account on Pagero validex or on <a href="https://github.com/pagero/puf">GitHub</a>.</p>
 </div>
 <div class="paragraph">
-<p>To register for Pagero UF major release notification you can create an account on <a href="https://pagero.validex.net" class="bare">https://pagero.validex.net</a>. But we urge all interested parties to follow the project on <a href="https://github.com/pagero/puf">GitHub</a> where all releases will be notified.</p>
+<p>To register for Pagero Universal format major release notification you can create an account on <a href="https://pagero.validex.net" class="bare">https://pagero.validex.net</a>. But we urge all interested parties to follow the project on <a href="https://github.com/pagero/puf">GitHub</a> where all releases will be notified.</p>
 </div>
 </div>
 </div>
@@ -989,7 +995,7 @@ will prevent validation error for customers who do not frequently keep the XSD s
 <h2 id="_content"><a class="anchor" href="#_content"></a><a class="link" href="#_content">3. Content</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Pagero UF principally extends <a href="http://docs.peppol.eu/poacc/billing/3.0/">PEPPOL BIS Billing 3.0</a> in two ways:</p>
+<p>PUF principally extends <a href="http://docs.peppol.eu/poacc/billing/3.0/">PEPPOL BIS Billing 3.0</a> in two ways:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1002,13 +1008,13 @@ will prevent validation error for customers who do not frequently keep the XSD s
 </ol>
 </div>
 <div class="paragraph">
-<p>Pagero UF is to be considered as an extension, thus existing EN and Peppol rules may be overriden due to support extended content.</p>
+<p>PUF is to be considered as an extension, thus existing EN and Peppol rules may be overriden due to support extended content.</p>
 </div>
 <div class="paragraph">
 <p>This chapter defines and specifies the available options of <strong>adding information that is not available in the core PEPPOL BIS.</strong><br></p>
 </div>
 <div class="paragraph">
-<p>The chapter is divided into three parts for easier navigation:</p>
+<p>The chapter is divided into two parts for easier navigation:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1017,9 +1023,6 @@ will prevent validation error for customers who do not frequently keep the XSD s
 </li>
 <li>
 <p><a href="#_cacinvoiceline">cac:InvoiceLine</a> (specifies segments available on line level)</p>
-</li>
-<li>
-<p><a href="#_extublextensions">ext:UBLExtensions</a> (Available extensions both on document level and line level)</p>
 </li>
 </ol>
 </div>
@@ -1042,6 +1045,9 @@ Note that most examples are only shown for document type Invoice.
 </div>
 <div class="sect3">
 <h4 id="_cbccustomizationid"><a class="anchor" href="#_cbccustomizationid"></a><a class="link" href="#_cbccustomizationid">3.1.1. cbc:CustomizationID</a></h4>
+<div class="paragraph">
+<p>To indicate which specification and which rules apply the CustomizationID and ProfileID must be provided.</p>
+</div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -1049,28 +1055,27 @@ Note that most examples are only shown for document type Invoice.
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:CustomizationID</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Specification identifier</strong><br>
-Used to identify the correct UBL specification.<br>
-<em>Value to be set 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0#conformant#urn:pagero.com:puf:billing:1.0'</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Document specification identifier</strong><br>
+<em>Must be value urn:pagero.com:puf:billing:1.0</em></p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
 <p><strong>Example</strong><br>
-<em>CustomizationID populated with correct value</em></p>
+<em>cbc:CustomizationID populated with correct value</em></p>
 </div>
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;Invoice&gt;</span>
   <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
-  <span class="tag">&lt;cbc:CustomizationID&gt;</span>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0#conformant#urn:pagero.com:puf:billing:1.0<span class="tag">&lt;/cbc:CustomizationID&gt;</span>
+  <span class="tag">&lt;cbc:CustomizationID&gt;</span>urn:pagero.com:puf:billing:1.0<span class="tag">&lt;/cbc:CustomizationID&gt;</span>
   <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
 <span class="tag">&lt;/Invoice&gt;</span></code></pre>
 </div>
@@ -1085,7 +1090,7 @@ Used to identify the correct UBL specification.<br>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -1094,7 +1099,7 @@ Used to identify the correct UBL specification.<br>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:ProfileID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Business process type</strong><br>
 Identifies the business process.<br>
-<em>Value to be set 'urn:pagero.com:puf:billing:1.0'</em></p></td>
+<em>Must be value  'urn:pagero.com:puf:billing:1.0'</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -1121,14 +1126,15 @@ Identifies the business process.<br>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:ID</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Invoice number.</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Invoice number.</strong><br>
+A unique identifier of the invoice.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1155,7 +1161,7 @@ Identifies the business process.<br>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -1190,7 +1196,7 @@ Identifies the business process.<br>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -1225,7 +1231,7 @@ Identifies the business process.<br>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -1261,7 +1267,7 @@ Identifier of the invoice type.<br>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -1298,7 +1304,7 @@ Free text, the element can be iterated multiple times .</p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -1334,7 +1340,7 @@ This element should be filled in if the date when VAT become liable for seller a
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -1370,7 +1376,7 @@ The currency code in which the amounts is specified through out the invoice.<br>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -1406,7 +1412,7 @@ The accounting currency, this must be filled in if the elements used tax amounts
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -1441,7 +1447,7 @@ Book keeping reference for buyers financial system</p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -1477,7 +1483,7 @@ Reference assigned by the buyer for internal routing.</p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -1519,7 +1525,7 @@ Reference assigned by the buyer for internal routing.</p></td>
 <div class="sect3">
 <h4 id="_cacorderreference"><a class="anchor" href="#_cacorderreference"></a><a class="link" href="#_cacorderreference">3.1.14. cac:OrderReference</a></h4>
 <div class="paragraph">
-<p>Below table show available fields in cac:OrderReference, note that additional elements has also been added to the extension available in cac:OrderReference [LINK HERE]</p>
+<p>Below table show available fields in <code>cac:OrderReference</code>, note that additional elements has also been added to the extension available in <a href="#_orderreference">OrderReference</a></p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 3. Elements added in cac:OrderReference</caption>
@@ -1529,11 +1535,16 @@ Reference assigned by the buyer for internal routing.</p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ext:UBLExtensions</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Extension Content</strong><br>
+Extension is added to provide additional information in the <code>cac:OrderReference</code> element, the information available can be found <a href="#_orderreference">here</a></p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:ID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Purchase order reference</strong><br>
@@ -1580,7 +1591,7 @@ Date of issue of the referenced purchase order<br>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -1627,7 +1638,7 @@ Issue date of previous issued invoice<br>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -1672,7 +1683,7 @@ Issue date of despatch advice<br>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -1710,7 +1721,7 @@ An identifier of a referenced receiving advice.</p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -1718,12 +1729,12 @@ An identifier of a referenced receiving advice.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:ID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Tender reference identifier</strong><br>
-ID of the tender</p></td>
+Identifier of the tender.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:IssueDate</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Issue date</strong><br>
-Issue date of the tender<br>
+Issue date of the tender.<br>
 <em>Format "YYYY-MM-DD"</em></p></td>
 </tr>
 </tbody>
@@ -1748,7 +1759,7 @@ Issue date of the tender<br>
 <div class="sect3">
 <h4 id="_caccontractdocumentreference"><a class="anchor" href="#_caccontractdocumentreference"></a><a class="link" href="#_caccontractdocumentreference">3.1.19. cac:ContractDocumentReference</a></h4>
 <div class="paragraph">
-<p>Below table show available fields in cac:ContractDocumentReference, note that additional elements has also been added to the extension available in cac:ContractDocumentReference [LINK HERE]</p>
+<p>Below table show available fields in <code>cac:ContractDocumentReference</code>, note that additional elements has also been added to the extension available in <a href="#_contractdocumentreference">ContractDocumentReference</a></p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 8. Elements added in cac:ContractDocumentReference</caption>
@@ -1758,11 +1769,16 @@ Issue date of the tender<br>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ext:UBLExtensions</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Extension Content</strong><br>
+Extension is added to provide additional information in the <code>cac:ContractDocumentReference</code> element, the information available can be found <a href="#_contractdocumentreference">here</a></p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:ID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Contract reference</strong><br>
@@ -1771,7 +1787,7 @@ Contract reference identifier.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:IssueDate</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Issue date</strong><br>
-Issue date of the contract<br>
+Issue date of the contract.<br>
 <em>Format "YYYY-MM-DD"</em></p></td>
 </tr>
 </tbody>
@@ -1796,18 +1812,64 @@ Issue date of the contract<br>
 <div class="sect3">
 <h4 id="_cacadditionaldocumentreference"><a class="anchor" href="#_cacadditionaldocumentreference"></a><a class="link" href="#_cacadditionaldocumentreference">3.1.20. cac:AdditionalDocumentReference</a></h4>
 <div class="paragraph">
-<p>In Peppol BIS Billing 3.0 there is no support for providing a presentation (PDF-image) of the invoice or credit note. To support presentation in Pagero UF it&#8217;s possible to set the below
-text depending on credit note or invoice in order for the attachment to be intepreted as a presentation. For other kind of attachments, use Peppol BIS Billing 3.0 specification as reference.</p>
+<p>Aggregate AdditionalDocumentReference is in EN16931 based specifications used to reference reference a supporting document. These can be either be provided as a
+base64 embedded document within the Invoice or CreditNote but it can also reference an invoiced object by a document number or referencing an external document via a URL.
+Pagero Universal Format support this handling but also has additional support in order to provide invoice or credit notes image/presentation.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Credit notes:</strong> Credit Note<br></p>
-</li>
-<li>
-<p><strong>Invoices:</strong> Commercial Invoice</p>
-</li>
-</ul>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 9. Elements available in cac:AdditionalDocumentReference</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Path</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:ID</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier for the referenced object/document.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:ID/@schemeID</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scheme identifier of the referenced object/document.<br>
+<em>If used it should be according to the list PUF-005-INVOICEDOBJECTIDENTIFER [TODO - LINK]</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:DocumentTypeCode</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Document type code. Should be 130 if referencing an invoiced object. Not used for other additional document references.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:DocumentDescription</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A description of the referenced or attached document.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Attachment/cbc:EmbeddedDocumentBinaryObject</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The attached document base64 encoded.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Attachment/cbc:EmbeddedDocumentBinaryObject/@mimeCode</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The mimecode of the attached document.<br>
+<em>Supported mimeCodes can be viewed in the list PUF-006-MIMECODES [TODO - LINK]</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Attachment/cbc:EmbeddedDocumentBinaryObject/@filename</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Filename of the attached document.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Attachment/cac:ExternalReference/cbc:URI</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A URL to where the referenced document can be found.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect4">
+<h5 id="_invoice_imagepresentation_and_credit_note_imagepresentation"><a class="anchor" href="#_invoice_imagepresentation_and_credit_note_imagepresentation"></a><a class="link" href="#_invoice_imagepresentation_and_credit_note_imagepresentation">Invoice image/presentation and  Credit Note image/presentation</a></h5>
+<div class="paragraph">
+<p>Providing an invoice presentation/image or credit note image/presentation is sometimes useful. This can be done in PUF as shown in the below examples.
+If cbc:DocumentDescription is "Commercial Invoice" or "Credit Note" the attachment will be interpreted as a presentation otherwise the attachment will be interpreted as a miscellaneous or other type of document.<br></p>
 </div>
 <div class="paragraph">
 <p><strong>Example</strong><br>
@@ -1832,7 +1894,7 @@ text depending on credit note or invoice in order for the attachment to be intep
 <table>
 <tr>
 <td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>If "Commercial Invoice" is stated in the invoice the attachment will be intepreted as a presentation.</td>
+<td>If "Commercial Invoice" is stated in the cbc:DocumentDescription the attachment will be interpreted as a presentation.</td>
 </tr>
 </table>
 </div>
@@ -1859,22 +1921,58 @@ text depending on credit note or invoice in order for the attachment to be intep
 <table>
 <tr>
 <td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>If "Credit Note" is stated in the credit note the attachment will be intepreted as a presentation.</td>
+<td>If "Credit Note" is stated in the Credit Note the attachment will be interpreted as a presentation.</td>
 </tr>
 </table>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_invoiced_object_reference"><a class="anchor" href="#_invoiced_object_reference"></a><a class="link" href="#_invoiced_object_reference">Invoiced object reference</a></h5>
+<div class="paragraph">
+<p>If there is a need to reference a document/object number without providing a link to the location and without embedding it in the Invoice/CreditNote this can be done
+in PUF within the cac:AdditionalDocumentReference as shown in below example. Note that it is possible to provide more than one invoiced object reference.</p>
+</div>
+<div class="paragraph">
+<p><strong>Example</strong><br>
+<em>Invoice with reference to an invoiced object with a document number</em></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;Invoice&gt;</span>
+<span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;cac:AdditionalDocumentReference&gt;</span>
+      <span class="tag">&lt;cbc:ID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">AIT</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>123456<span class="tag">&lt;/cbc:ID&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
+      <span class="tag">&lt;cbc:DocumentTypeCode&gt;</span>130<span class="tag">&lt;/cbc:DocumentTypeCode&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
+  <span class="tag">&lt;/cac:AdditionalDocumentReference&gt;</span>
+<span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+<span class="tag">&lt;/Invoice&gt;</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>The schemeID must be according to list PUF-005-INVOICEDOBJECTIDENTIFER [TODO - LINK] .</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Document type code should be 130 to indicate invoiced object.</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_cacprojectreference"><a class="anchor" href="#_cacprojectreference"></a><a class="link" href="#_cacprojectreference">3.1.21. cac:ProjectReference</a></h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 9. Elements added in cac:ProjectReference</caption>
+<caption class="title">Table 10. Elements added in cac:ProjectReference</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -1905,17 +2003,17 @@ An identifier of the project.</p></td>
 <div class="sect3">
 <h4 id="_cacaccountingsupplierparty"><a class="anchor" href="#_cacaccountingsupplierparty"></a><a class="link" href="#_cacaccountingsupplierparty">3.1.22. cac:AccountingSupplierParty</a></h4>
 <div class="paragraph">
-<p>Below table show available fields in cac:AccountingSupplierParty, note that additional elements has also been added to the extension available in cac:AccountingSupplierParty [LINK HERE]</p>
+<p>Below table show available fields in <code>cac:AccountingSupplierParty</code>, note that additional elements has also been added to the extension available in <a href="#_party">Party</a></p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 10. Additional elements added within cac:AccountingSupplierParty</caption>
+<caption class="title">Table 11. Additional elements added within cac:AccountingSupplierParty</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -1924,6 +2022,11 @@ An identifier of the project.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:CustomerAssignedAccountID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Customer Account ID</strong><br>
 Supplier ID, assigned by the buyer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Party/ext:UBLExtensions</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Extension Content</strong><br>
+Extension is added to provide additional information in the <code>cac:Party</code> element, the information available can be found <a href="#_party">here</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Party/cbc:EndpointID</code></p></td>
@@ -2129,17 +2232,17 @@ The e-mail address for the accounting contact of the organization.</p></td>
 <div class="sect3">
 <h4 id="_cacaccountingcustomerparty"><a class="anchor" href="#_cacaccountingcustomerparty"></a><a class="link" href="#_cacaccountingcustomerparty">3.1.23. cac:AccountingCustomerParty</a></h4>
 <div class="paragraph">
-<p>Below table show available fields in cac:AccountingCustomerParty, note that additional elements has also been added to the extension available in cac:AccountingCustomerParty [LINK HERE]</p>
+<p>Below table show available fields in <code>cac:AccountingCustomerParty</code>, note that additional elements has also been added to the extension available in <a href="#_party">Party</a></p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 11. Additional elements added within cac:AccountingCustomerParty</caption>
+<caption class="title">Table 12. Additional elements added within cac:AccountingCustomerParty</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -2148,6 +2251,11 @@ The e-mail address for the accounting contact of the organization.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:SupplierAssignedAccountID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Customer Account ID</strong><br>
 Customer ID, assigned by the seller.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Party/ext:UBLExtensions</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Extension Content</strong><br>
+Extension is added to provide additional information in the <code>cac:Party</code> element, the information available can be found <a href="#_party">here</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Party/cbc:EndpointID</code></p></td>
@@ -2347,14 +2455,14 @@ The e-mail address for the accounting contact of the organization.</p></td>
 <div class="sect3">
 <h4 id="_cacpayeeparty"><a class="anchor" href="#_cacpayeeparty"></a><a class="link" href="#_cacpayeeparty">3.1.24. cac:PayeeParty</a></h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 12. Additional elements added within cac:PayeeParty</caption>
+<caption class="title">Table 13. Additional elements added within cac:PayeeParty</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -2413,20 +2521,23 @@ Payee&#8217;s legal registration identifier scheme identifier.</p></td>
 <div class="sect3">
 <h4 id="_cacbuyercustomerparty"><a class="anchor" href="#_cacbuyercustomerparty"></a><a class="link" href="#_cacbuyercustomerparty">3.1.25. cac:BuyerCustomerParty</a></h4>
 <div class="paragraph">
-<p>In Pagero UF, a new party has been added called Buyer Customer Party. This party should contain information regarding the buyer of the goods or service and should only be used if the buyer party differs from accounting customer party.</p>
+<p>In PUF, a new party has been added called Buyer Customer Party. This party should contain information regarding the buyer of the goods or service and should only be used if the buyer party differs from accounting customer party.</p>
 </div>
 <div class="paragraph">
-<p>If Buyer Customer Party is used, the Accounting Customer Party is to be considered the receiver of the document.</p>
+<p>If <code>cac:BuyerCustomerParty</code> is used, the <code>cac:AccountingCustomerParty</code> is to be considered the receiver of the document.</p>
+</div>
+<div class="paragraph">
+<p>Below table show available fields in <code>cac:BuyerCustomerParty</code>, note that additional elements has also been added to the extension available in <a href="#_party">Party</a></p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 13. Elements added in cac:BuyerCustomerParty</caption>
+<caption class="title">Table 14. Elements added in cac:BuyerCustomerParty</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -2435,6 +2546,21 @@ Payee&#8217;s legal registration identifier scheme identifier.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:SupplierAssignedAccountID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Customer Account ID</strong><br>
 Customer ID, assigned by the seller.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Party/ext:UBLExtensions</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Extension Content</strong><br>
+Extension is added to provide additional information in the <code>cac:Party</code> element, the information available can be found <a href="#_party">here</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Party/cbc:EndpointID</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Electronic Identifier</strong><br>
+Buyer&#8217;s electronic address</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Party/cbc:EndpointID/@schemeID</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Electronic Identifier scheme ID</strong><br>
+Scheme identifier of electronic address</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Party/cac:PartyIdentification/cbc:ID</code></p></td>
@@ -2570,75 +2696,80 @@ The e-mail address for the accounting contact of the organization.</p></td>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cac:AccountingCustomerParty&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
-    <span class="tag">&lt;cac:Party&gt;</span>
-        <span class="tag">&lt;cbc:EndpointID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0088</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>1234567890123<span class="tag">&lt;/cbc:EndpointID&gt;</span>
-        <span class="tag">&lt;cac:PartyIdentification&gt;</span>
-            <span class="tag">&lt;cbc:ID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0007</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>1234561234<span class="tag">&lt;/cbc:ID&gt;</span>
-        <span class="tag">&lt;/cac:PartyIdentification&gt;</span>
-        <span class="tag">&lt;cac:PartyName&gt;</span>
-            <span class="tag">&lt;cbc:Name&gt;</span>Receiver Trading Name AB<span class="tag">&lt;/cbc:Name&gt;</span>
-        <span class="tag">&lt;/cac:PartyName&gt;</span>
-        <span class="tag">&lt;cac:PostalAddress&gt;</span>
-            <span class="tag">&lt;cbc:StreetName&gt;</span>Street 32<span class="tag">&lt;/cbc:StreetName&gt;</span>
-            <span class="tag">&lt;cbc:AdditionalStreetName&gt;</span>Po box 878<span class="tag">&lt;/cbc:AdditionalStreetName&gt;</span>
-            <span class="tag">&lt;cbc:CityName&gt;</span>Stockholm<span class="tag">&lt;/cbc:CityName&gt;</span>
-            <span class="tag">&lt;cbc:PostalZone&gt;</span>123 12<span class="tag">&lt;/cbc:PostalZone&gt;</span>
-            <span class="tag">&lt;cac:Country&gt;</span>
-                <span class="tag">&lt;cbc:IdentificationCode&gt;</span>SE<span class="tag">&lt;/cbc:IdentificationCode&gt;</span>
-            <span class="tag">&lt;/cac:Country&gt;</span>
-        <span class="tag">&lt;/cac:PostalAddress&gt;</span>
-        <span class="tag">&lt;cac:PartyTaxScheme&gt;</span>
-            <span class="tag">&lt;cbc:CompanyID&gt;</span>SE123456789001<span class="tag">&lt;/cbc:CompanyID&gt;</span>
-            <span class="tag">&lt;cac:TaxScheme&gt;</span>
-                <span class="tag">&lt;cbc:ID&gt;</span>VAT<span class="tag">&lt;/cbc:ID&gt;</span>
-            <span class="tag">&lt;/cac:TaxScheme&gt;</span>
-        <span class="tag">&lt;/cac:PartyTaxScheme&gt;</span>
-        <span class="tag">&lt;cac:PartyLegalEntity&gt;</span>
-            <span class="tag">&lt;cbc:RegistrationName&gt;</span>Receiver legal Name<span class="tag">&lt;/cbc:RegistrationName&gt;</span>
-            <span class="tag">&lt;cbc:CompanyID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0007</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>1234561234<span class="tag">&lt;/cbc:CompanyID&gt;</span>
-        <span class="tag">&lt;/cac:PartyLegalEntity&gt;</span>
-        <span class="tag">&lt;cac:Contact&gt;</span>
-            <span class="tag">&lt;cbc:Name&gt;</span>Anders Andersson<span class="tag">&lt;/cbc:Name&gt;</span>
-            <span class="tag">&lt;cbc:Telephone&gt;</span>555444666<span class="tag">&lt;/cbc:Telephone&gt;</span>
-            <span class="tag">&lt;cbc:ElectronicMail&gt;</span>contact@receiver.com<span class="tag">&lt;/cbc:ElectronicMail&gt;</span>
-        <span class="tag">&lt;/cac:Contact&gt;</span>
-    <span class="tag">&lt;/cac:Party&gt;</span>
-<span class="tag">&lt;/cac:AccountingCustomerParty&gt;</span>
-<span class="tag">&lt;cac:BuyerCustomerParty&gt;</span> <i class="conum" data-value="2"></i><b>(2)</b>
-    <span class="tag">&lt;cac:Party&gt;</span>
-        <span class="tag">&lt;cac:PartyIdentification&gt;</span>
-            <span class="tag">&lt;cbc:ID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0007</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>1111112222<span class="tag">&lt;/cbc:ID&gt;</span>
-        <span class="tag">&lt;/cac:PartyIdentification&gt;</span>
-        <span class="tag">&lt;cac:PartyName&gt;</span>
-            <span class="tag">&lt;cbc:Name&gt;</span>Buyer Trading Name AB<span class="tag">&lt;/cbc:Name&gt;</span>
-        <span class="tag">&lt;/cac:PartyName&gt;</span>
-        <span class="tag">&lt;cac:PostalAddress&gt;</span>
-            <span class="tag">&lt;cbc:StreetName&gt;</span>Street 32<span class="tag">&lt;/cbc:StreetName&gt;</span>
-            <span class="tag">&lt;cbc:AdditionalStreetName&gt;</span>Po box 878<span class="tag">&lt;/cbc:AdditionalStreetName&gt;</span>
-            <span class="tag">&lt;cbc:CityName&gt;</span>Stockholm<span class="tag">&lt;/cbc:CityName&gt;</span>
-            <span class="tag">&lt;cbc:PostalZone&gt;</span>123 12<span class="tag">&lt;/cbc:PostalZone&gt;</span>
-            <span class="tag">&lt;cac:Country&gt;</span>
-                <span class="tag">&lt;cbc:IdentificationCode&gt;</span>SE<span class="tag">&lt;/cbc:IdentificationCode&gt;</span>
-            <span class="tag">&lt;/cac:Country&gt;</span>
-        <span class="tag">&lt;/cac:PostalAddress&gt;</span>
-        <span class="tag">&lt;cac:PartyTaxScheme&gt;</span>
-            <span class="tag">&lt;cbc:CompanyID&gt;</span>SE111111222201<span class="tag">&lt;/cbc:CompanyID&gt;</span>
-            <span class="tag">&lt;cac:TaxScheme&gt;</span>
-                <span class="tag">&lt;cbc:ID&gt;</span>VAT<span class="tag">&lt;/cbc:ID&gt;</span>
-            <span class="tag">&lt;/cac:TaxScheme&gt;</span>
-        <span class="tag">&lt;/cac:PartyTaxScheme&gt;</span>
-        <span class="tag">&lt;cac:PartyLegalEntity&gt;</span>
-            <span class="tag">&lt;cbc:RegistrationName&gt;</span>Buyer legal Name<span class="tag">&lt;/cbc:RegistrationName&gt;</span>
-            <span class="tag">&lt;cbc:CompanyID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0007</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>1111112222<span class="tag">&lt;/cbc:CompanyID&gt;</span>
-        <span class="tag">&lt;/cac:PartyLegalEntity&gt;</span>
-        <span class="tag">&lt;cac:Contact&gt;</span>
-            <span class="tag">&lt;cbc:Name&gt;</span>Daniel Danielsson<span class="tag">&lt;/cbc:Name&gt;</span>
-            <span class="tag">&lt;cbc:Telephone&gt;</span>33322221111<span class="tag">&lt;/cbc:Telephone&gt;</span>
-            <span class="tag">&lt;cbc:ElectronicMail&gt;</span>contact@buyer.com<span class="tag">&lt;/cbc:ElectronicMail&gt;</span>
-        <span class="tag">&lt;/cac:Contact&gt;</span>
-    <span class="tag">&lt;/cac:Party&gt;</span>
-<span class="tag">&lt;/cac:BuyerCustomerParty&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;Invoice&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;cac:AccountingCustomerParty&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
+      <span class="tag">&lt;cac:Party&gt;</span>
+          <span class="tag">&lt;cbc:EndpointID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0088</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>1234567890123<span class="tag">&lt;/cbc:EndpointID&gt;</span>
+          <span class="tag">&lt;cac:PartyIdentification&gt;</span>
+              <span class="tag">&lt;cbc:ID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0007</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>1234561234<span class="tag">&lt;/cbc:ID&gt;</span>
+          <span class="tag">&lt;/cac:PartyIdentification&gt;</span>
+          <span class="tag">&lt;cac:PartyName&gt;</span>
+              <span class="tag">&lt;cbc:Name&gt;</span>Receiver Trading Name AB<span class="tag">&lt;/cbc:Name&gt;</span>
+          <span class="tag">&lt;/cac:PartyName&gt;</span>
+          <span class="tag">&lt;cac:PostalAddress&gt;</span>
+              <span class="tag">&lt;cbc:StreetName&gt;</span>Street 32<span class="tag">&lt;/cbc:StreetName&gt;</span>
+              <span class="tag">&lt;cbc:AdditionalStreetName&gt;</span>Po box 878<span class="tag">&lt;/cbc:AdditionalStreetName&gt;</span>
+              <span class="tag">&lt;cbc:CityName&gt;</span>Stockholm<span class="tag">&lt;/cbc:CityName&gt;</span>
+              <span class="tag">&lt;cbc:PostalZone&gt;</span>123 12<span class="tag">&lt;/cbc:PostalZone&gt;</span>
+              <span class="tag">&lt;cac:Country&gt;</span>
+                  <span class="tag">&lt;cbc:IdentificationCode&gt;</span>SE<span class="tag">&lt;/cbc:IdentificationCode&gt;</span>
+              <span class="tag">&lt;/cac:Country&gt;</span>
+          <span class="tag">&lt;/cac:PostalAddress&gt;</span>
+          <span class="tag">&lt;cac:PartyTaxScheme&gt;</span>
+              <span class="tag">&lt;cbc:CompanyID&gt;</span>SE123456789001<span class="tag">&lt;/cbc:CompanyID&gt;</span>
+              <span class="tag">&lt;cac:TaxScheme&gt;</span>
+                  <span class="tag">&lt;cbc:ID&gt;</span>VAT<span class="tag">&lt;/cbc:ID&gt;</span>
+              <span class="tag">&lt;/cac:TaxScheme&gt;</span>
+          <span class="tag">&lt;/cac:PartyTaxScheme&gt;</span>
+          <span class="tag">&lt;cac:PartyLegalEntity&gt;</span>
+              <span class="tag">&lt;cbc:RegistrationName&gt;</span>Receiver legal Name<span class="tag">&lt;/cbc:RegistrationName&gt;</span>
+              <span class="tag">&lt;cbc:CompanyID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0007</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>1234561234<span class="tag">&lt;/cbc:CompanyID&gt;</span>
+          <span class="tag">&lt;/cac:PartyLegalEntity&gt;</span>
+          <span class="tag">&lt;cac:Contact&gt;</span>
+              <span class="tag">&lt;cbc:Name&gt;</span>Anders Andersson<span class="tag">&lt;/cbc:Name&gt;</span>
+              <span class="tag">&lt;cbc:Telephone&gt;</span>555444666<span class="tag">&lt;/cbc:Telephone&gt;</span>
+              <span class="tag">&lt;cbc:ElectronicMail&gt;</span>contact@receiver.com<span class="tag">&lt;/cbc:ElectronicMail&gt;</span>
+          <span class="tag">&lt;/cac:Contact&gt;</span>
+      <span class="tag">&lt;/cac:Party&gt;</span>
+  <span class="tag">&lt;/cac:AccountingCustomerParty&gt;</span>
+  <span class="tag">&lt;cac:BuyerCustomerParty&gt;</span> <i class="conum" data-value="2"></i><b>(2)</b>
+      <span class="tag">&lt;cac:Party&gt;</span>
+          <span class="tag">&lt;cbc:EndpointID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0088</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>7322010000001<span class="tag">&lt;/cbc:EndpointID&gt;</span>
+          <span class="tag">&lt;cac:PartyIdentification&gt;</span>
+              <span class="tag">&lt;cbc:ID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0007</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>1111112222<span class="tag">&lt;/cbc:ID&gt;</span>
+          <span class="tag">&lt;/cac:PartyIdentification&gt;</span>
+          <span class="tag">&lt;cac:PartyName&gt;</span>
+              <span class="tag">&lt;cbc:Name&gt;</span>Buyer Trading Name AB<span class="tag">&lt;/cbc:Name&gt;</span>
+          <span class="tag">&lt;/cac:PartyName&gt;</span>
+          <span class="tag">&lt;cac:PostalAddress&gt;</span>
+              <span class="tag">&lt;cbc:StreetName&gt;</span>Street 32<span class="tag">&lt;/cbc:StreetName&gt;</span>
+              <span class="tag">&lt;cbc:AdditionalStreetName&gt;</span>Po box 878<span class="tag">&lt;/cbc:AdditionalStreetName&gt;</span>
+              <span class="tag">&lt;cbc:CityName&gt;</span>Stockholm<span class="tag">&lt;/cbc:CityName&gt;</span>
+              <span class="tag">&lt;cbc:PostalZone&gt;</span>123 12<span class="tag">&lt;/cbc:PostalZone&gt;</span>
+              <span class="tag">&lt;cac:Country&gt;</span>
+                  <span class="tag">&lt;cbc:IdentificationCode&gt;</span>SE<span class="tag">&lt;/cbc:IdentificationCode&gt;</span>
+              <span class="tag">&lt;/cac:Country&gt;</span>
+          <span class="tag">&lt;/cac:PostalAddress&gt;</span>
+          <span class="tag">&lt;cac:PartyTaxScheme&gt;</span>
+              <span class="tag">&lt;cbc:CompanyID&gt;</span>SE111111222201<span class="tag">&lt;/cbc:CompanyID&gt;</span>
+              <span class="tag">&lt;cac:TaxScheme&gt;</span>
+                  <span class="tag">&lt;cbc:ID&gt;</span>VAT<span class="tag">&lt;/cbc:ID&gt;</span>
+              <span class="tag">&lt;/cac:TaxScheme&gt;</span>
+          <span class="tag">&lt;/cac:PartyTaxScheme&gt;</span>
+          <span class="tag">&lt;cac:PartyLegalEntity&gt;</span>
+              <span class="tag">&lt;cbc:RegistrationName&gt;</span>Buyer legal Name<span class="tag">&lt;/cbc:RegistrationName&gt;</span>
+              <span class="tag">&lt;cbc:CompanyID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0007</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>1111112222<span class="tag">&lt;/cbc:CompanyID&gt;</span>
+          <span class="tag">&lt;/cac:PartyLegalEntity&gt;</span>
+          <span class="tag">&lt;cac:Contact&gt;</span>
+              <span class="tag">&lt;cbc:Name&gt;</span>Daniel Danielsson<span class="tag">&lt;/cbc:Name&gt;</span>
+              <span class="tag">&lt;cbc:Telephone&gt;</span>33322221111<span class="tag">&lt;/cbc:Telephone&gt;</span>
+              <span class="tag">&lt;cbc:ElectronicMail&gt;</span>contact@buyer.com<span class="tag">&lt;/cbc:ElectronicMail&gt;</span>
+          <span class="tag">&lt;/cac:Contact&gt;</span>
+      <span class="tag">&lt;/cac:Party&gt;</span>
+  <span class="tag">&lt;/cac:BuyerCustomerParty&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+<span class="tag">&lt;/Invoice&gt;</span></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -2669,14 +2800,14 @@ Please note that all e-invoice formats do not support both invoice recipient and
 <div class="sect3">
 <h4 id="_cactaxrepresentativeparty"><a class="anchor" href="#_cactaxrepresentativeparty"></a><a class="link" href="#_cactaxrepresentativeparty">3.1.26. cac:TaxRepresentativeParty</a></h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 14. Additional elements added within cac:TaxRepresentativeParty</caption>
+<caption class="title">Table 15. Additional elements added within cac:TaxRepresentativeParty</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -2788,21 +2919,26 @@ Seller&#8217;s tax representative&#8217;s tax registration number tax scheme Ide
 <div class="sect3">
 <h4 id="_cacdelivery"><a class="anchor" href="#_cacdelivery"></a><a class="link" href="#_cacdelivery">3.1.27. cac:Delivery</a></h4>
 <div class="paragraph">
-<p>Below table show available fields in cac:OrderReference, note that additional elements has also been added to the extension available in cac:Delivery [DeliveryExtension LINK HERE] and cac:Delivery/cac:DeliveryParty [PartyExtension LINK HERE]</p>
+<p>Below table show available fields in <code>cac:Delivery</code>, note that additional elements has also been added to the extension available in <a href="#_delivery">cac:Delivery</a> and <a href="#_party">cac:Delivery/cac:DeliveryParty</a></p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 15. Elements added in cac:Delivery</caption>
+<caption class="title">Table 16. Elements added in cac:Delivery</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ext:UBLExtensions</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Extension Content</strong><br>
+Extension is added to provide additional information in the <code>cac:Delivery</code> element, the information available can be found <a href="#_delivery">here</a></p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:ActualDeliveryDate</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Delivery date</strong><br>
@@ -2872,14 +3008,14 @@ Note that cbc:StreetName and cbc:AdditionalStreetName should be populated prior 
 Delivery location address country code</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:DeliveryLocation/cac:Address/cac:Country/cbc:IdentificationCode</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Country code</strong><br>
-Delivery location address country code</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:DeliveryLocation/cac:Address/cac:Country/cbc:Name</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Country name</strong><br>
 Delivery location address country name</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:DeliveryParty/ext:UBLExtensions</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Extension Content</strong><br>
+Extension is added to provide additional information in the <code>cac:Party</code> element, the information available can be found <a href="#_party">here</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:DeliveryParty/cac:PartyName/cbc:Name</code></p></td>
@@ -2897,28 +3033,28 @@ Name of the party that the goods/services is sent to.</p></td>
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;Invoice&gt;</span>
   <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
   <span class="tag">&lt;cac:Delivery&gt;</span>
-        <span class="tag">&lt;cbc:ActualDeliveryDate&gt;</span>2019-01-01<span class="tag">&lt;/cbc:ActualDeliveryDate&gt;</span>
-        <span class="tag">&lt;cac:DeliveryLocation&gt;</span>
-            <span class="tag">&lt;cbc:ID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0088</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>7300010000001<span class="tag">&lt;/cbc:ID&gt;</span>
-            <span class="tag">&lt;cbc:Description&gt;</span>Text describing the delivery location<span class="tag">&lt;/cbc:Description&gt;</span>
-            <span class="tag">&lt;cac:Address&gt;</span>
-                <span class="tag">&lt;cbc:Postbox&gt;</span>121212<span class="tag">&lt;/cbc:Postbox&gt;</span>
-                <span class="tag">&lt;cbc:StreetName&gt;</span>Delivery Street<span class="tag">&lt;/cbc:StreetName&gt;</span>
-                <span class="tag">&lt;cbc:Department&gt;</span>Delivery Department<span class="tag">&lt;/cbc:Department&gt;</span>
-                <span class="tag">&lt;cbc:CityName&gt;</span>Delivery City<span class="tag">&lt;/cbc:CityName&gt;</span>
-                <span class="tag">&lt;cbc:PostalZone&gt;</span>55555<span class="tag">&lt;/cbc:PostalZone&gt;</span>
-                <span class="tag">&lt;cbc:CountrySubentity&gt;</span>Delivery Province<span class="tag">&lt;/cbc:CountrySubentity&gt;</span>
-                <span class="tag">&lt;cac:Country&gt;</span>
-                    <span class="tag">&lt;cbc:IdentificationCode&gt;</span>SE<span class="tag">&lt;/cbc:IdentificationCode&gt;</span>
-                    <span class="tag">&lt;cbc:Name&gt;</span>Sweden<span class="tag">&lt;/cbc:Name&gt;</span>
-                <span class="tag">&lt;/cac:Country&gt;</span>
-            <span class="tag">&lt;/cac:Address&gt;</span>
-        <span class="tag">&lt;/cac:DeliveryLocation&gt;</span>
-        <span class="tag">&lt;cac:DeliveryParty&gt;</span>
-            <span class="tag">&lt;cac:PartyName&gt;</span>
-                <span class="tag">&lt;cbc:Name&gt;</span>Delivery Name<span class="tag">&lt;/cbc:Name&gt;</span>
-            <span class="tag">&lt;/cac:PartyName&gt;</span>
-        <span class="tag">&lt;/cac:DeliveryParty&gt;</span>
+      <span class="tag">&lt;cbc:ActualDeliveryDate&gt;</span>2019-01-01<span class="tag">&lt;/cbc:ActualDeliveryDate&gt;</span>
+      <span class="tag">&lt;cac:DeliveryLocation&gt;</span>
+          <span class="tag">&lt;cbc:ID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0088</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>7300010000001<span class="tag">&lt;/cbc:ID&gt;</span>
+          <span class="tag">&lt;cbc:Description&gt;</span>Text describing the delivery location<span class="tag">&lt;/cbc:Description&gt;</span>
+          <span class="tag">&lt;cac:Address&gt;</span>
+              <span class="tag">&lt;cbc:Postbox&gt;</span>121212<span class="tag">&lt;/cbc:Postbox&gt;</span>
+              <span class="tag">&lt;cbc:StreetName&gt;</span>Delivery Street<span class="tag">&lt;/cbc:StreetName&gt;</span>
+              <span class="tag">&lt;cbc:Department&gt;</span>Delivery Department<span class="tag">&lt;/cbc:Department&gt;</span>
+              <span class="tag">&lt;cbc:CityName&gt;</span>Delivery City<span class="tag">&lt;/cbc:CityName&gt;</span>
+              <span class="tag">&lt;cbc:PostalZone&gt;</span>55555<span class="tag">&lt;/cbc:PostalZone&gt;</span>
+              <span class="tag">&lt;cbc:CountrySubentity&gt;</span>Delivery Province<span class="tag">&lt;/cbc:CountrySubentity&gt;</span>
+              <span class="tag">&lt;cac:Country&gt;</span>
+                  <span class="tag">&lt;cbc:IdentificationCode&gt;</span>SE<span class="tag">&lt;/cbc:IdentificationCode&gt;</span>
+                  <span class="tag">&lt;cbc:Name&gt;</span>Sweden<span class="tag">&lt;/cbc:Name&gt;</span>
+              <span class="tag">&lt;/cac:Country&gt;</span>
+          <span class="tag">&lt;/cac:Address&gt;</span>
+      <span class="tag">&lt;/cac:DeliveryLocation&gt;</span>
+      <span class="tag">&lt;cac:DeliveryParty&gt;</span>
+          <span class="tag">&lt;cac:PartyName&gt;</span>
+              <span class="tag">&lt;cbc:Name&gt;</span>Delivery Name<span class="tag">&lt;/cbc:Name&gt;</span>
+          <span class="tag">&lt;/cac:PartyName&gt;</span>
+      <span class="tag">&lt;/cac:DeliveryParty&gt;</span>
   <span class="tag">&lt;/cac:Delivery&gt;</span>
   <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
 <span class="tag">&lt;/Invoice&gt;</span></code></pre>
@@ -2928,14 +3064,14 @@ Name of the party that the goods/services is sent to.</p></td>
 <div class="sect3">
 <h4 id="_cacdeliveryterms"><a class="anchor" href="#_cacdeliveryterms"></a><a class="link" href="#_cacdeliveryterms">3.1.28. cac:DeliveryTerms</a></h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 16. Elements added in cac:DeliveryTerms</caption>
+<caption class="title">Table 17. Elements added in cac:DeliveryTerms</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -2978,14 +3114,14 @@ A description of the responsibility for the loss risk.</p></td>
 <div class="sect3">
 <h4 id="_cacpaymentmeans"><a class="anchor" href="#_cacpaymentmeans"></a><a class="link" href="#_cacpaymentmeans">3.1.29. cac:PaymentMeans</a></h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 17. Additional elements added within cac:PaymentMeans</caption>
+<caption class="title">Table 18. Elements available in cac:PaymentMeans</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -3051,7 +3187,7 @@ Account to be debited in a direct debit payment.</p></td>
 </table>
 <div class="paragraph">
 <p><strong>Example</strong><br>
-<em>cbc:OrderReference example</em></p>
+<em>cbc:PaymentMeans example</em></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -3076,21 +3212,26 @@ Account to be debited in a direct debit payment.</p></td>
 <div class="sect3">
 <h4 id="_cacpaymentterms"><a class="anchor" href="#_cacpaymentterms"></a><a class="link" href="#_cacpaymentterms">3.1.30. cac:PaymentTerms</a></h4>
 <div class="paragraph">
-<p>Below table show available fields in cac:PaymentTerms, note that additional elements has also been added to the extension available in cac:PaymentTerms [LINK HERE]</p>
+<p>Below table show available fields in <code>cac:PaymentTerms</code>, note that additional elements has also been added to the extension available in <a href="#_paymentterms">PaymentTerms</a></p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 18. Elements added in cac:PaymentTerms</caption>
+<caption class="title">Table 19. Elements added in cac:PaymentTerms</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ext:UBLExtensions</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Extension Content</strong><br>
+Extension is added to provide additional information in the <code>cac:PaymentTerms</code> element, the information available can be found <a href="#_paymentterms">here</a></p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:Note</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Payment terms description</strong><br>
@@ -3104,7 +3245,8 @@ Penalty interest rate, numberic value only.</p></td>
 </tbody>
 </table>
 <div class="paragraph">
-<p><strong>Example</strong></p>
+<p><strong>Example</strong><br>
+<em>cac:PaymentTerms example</em></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -3122,14 +3264,14 @@ Penalty interest rate, numberic value only.</p></td>
 <div class="sect3">
 <h4 id="_cacallowancecharge"><a class="anchor" href="#_cacallowancecharge"></a><a class="link" href="#_cacallowancecharge">3.1.31. cac:AllowanceCharge</a></h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 19. Elements added in cac:AllowanceCharge</caption>
+<caption class="title">Table 20. Elements added in cac:AllowanceCharge</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -3249,14 +3391,14 @@ Total tax amount currency for the allowance or charge.</p></td>
 <div class="sect3">
 <h4 id="_cactaxexchangerate"><a class="anchor" href="#_cactaxexchangerate"></a><a class="link" href="#_cactaxexchangerate">3.1.32. cac:TaxExchangeRate</a></h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 20. Elements added in cac:TaxExchangeRate</caption>
+<caption class="title">Table 21. Elements added in cac:TaxExchangeRate</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -3291,7 +3433,7 @@ Date when the exchange rate was fetched.<br>
 </table>
 <div class="paragraph">
 <p><strong>Example</strong><br>
-<em>Example with EUR as document currency and USD as tax currency</em></p>
+<em>cac:TaxExchangeRate with EUR as document currency and USD as tax currency</em></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -3314,15 +3456,18 @@ Date when the exchange rate was fetched.<br>
 </div>
 <div class="sect3">
 <h4 id="_cactaxtotal"><a class="anchor" href="#_cactaxtotal"></a><a class="link" href="#_cactaxtotal">3.1.33. cac:TaxTotal</a></h4>
+<div class="paragraph">
+<p>Below table show available fields in <code>cac:TaxTotal/cac:TaxSubtotal</code>, note that additional elements has also been added to the extension available in <a href="#_taxtotal">cac:TaxTotal/cac:TaxSubtotal</a></p>
+</div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 21. Elements added in cac:TaxTotal</caption>
+<caption class="title">Table 22. Elements added in cac:TaxTotal</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -3337,6 +3482,11 @@ Documents total tax amount in document currency.<br>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:TaxAmount/@currencyID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Document total tax amount currency</strong><br>
 Documents total tax amount currency, must be the same as cbc:DocumentCurrencyCode.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:TaxSubtotal/ext:UBLExtensions</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Extension Content</strong><br>
+Extension is added to provide additional information in the <code>cac:TaxTotal/cac:TaxSubtotal</code> element, the information available can be found <a href="#_taxtotal">here</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:TaxSubtotal/cbc:TaxableAmount</code></p></td>
@@ -3419,7 +3569,7 @@ Tax scheme for the tax category, can be either VAT or GST.</p></td>
             <span class="tag">&lt;/cac:TaxScheme&gt;</span>
         <span class="tag">&lt;/cac:TaxCategory&gt;</span>
     <span class="tag">&lt;/cac:TaxSubtotal&gt;</span>
-<span class="tag">&lt;/cac:TaxTotal&gt;</span>
+  <span class="tag">&lt;/cac:TaxTotal&gt;</span>
   <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
 <span class="tag">&lt;/Invoice&gt;</span></code></pre>
 </div>
@@ -3428,26 +3578,31 @@ Tax scheme for the tax category, can be either VAT or GST.</p></td>
 <div class="sect3">
 <h4 id="_caclegalmonetarytotal"><a class="anchor" href="#_caclegalmonetarytotal"></a><a class="link" href="#_caclegalmonetarytotal">3.1.34. cac:LegalMonetaryTotal</a></h4>
 <div class="paragraph">
-<p>Below table show available fields in cac:LegalMonetaryTotal, note that additional elements has also been added to the extension available in cac:LegalMonetaryTotal extension [LINK HERE]</p>
+<p>Below table show available fields in cac:LegalMonetaryTotal, note that additional elements has also been added to the extension available in <a href="#_legalmonetarytotal">LegalMonetaryTotal</a></p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 22. Elements added in cac:LegalMonetaryTotal</caption>
+<caption class="title">Table 23. Elements added in cac:LegalMonetaryTotal</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ext:UBLExtensions</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Extension Content</strong><br>
+Extension is added to provide additional information in the <code>cac:LegalMonetaryTotal</code> element, the information available can be found <a href="#_legalmonetarytotal">here</a></p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:LineExtensionAmount</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Summary of all lines net amount</strong><br>
 Summary of all lines net amount.<br>
-<em>Summary of all TaxSubTotal/TaxAmount</em></p></td>
+<em>Summary of all cac:InvoiceLine/cbc:LineExtensionAmount</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:LineExtensionAmount/@currencyID</code></p></td>
@@ -3535,12 +3690,12 @@ Currency applied for cbc:PayableAmount, must be the same as cbc:DocumentCurrency
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;Invoice&gt;</span>
   <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
   <span class="tag">&lt;cac:LegalMonetaryTotal&gt;</span>
-        <span class="tag">&lt;cbc:LineExtensionAmount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>100.00<span class="tag">&lt;/cbc:LineExtensionAmount&gt;</span>
-        <span class="tag">&lt;cbc:TaxExclusiveAmount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>95.00<span class="tag">&lt;/cbc:TaxExclusiveAmount&gt;</span>
-        <span class="tag">&lt;cbc:TaxInclusiveAmount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>120.00<span class="tag">&lt;/cbc:TaxInclusiveAmount&gt;</span>
-        <span class="tag">&lt;cbc:AllowanceTotalAmount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>5.00<span class="tag">&lt;/cbc:AllowanceTotalAmount&gt;</span>
-        <span class="tag">&lt;cbc:ChargeTotalAmount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>0.00<span class="tag">&lt;/cbc:ChargeTotalAmount&gt;</span>
-        <span class="tag">&lt;cbc:PayableAmount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>110.00<span class="tag">&lt;/cbc:PayableAmount&gt;</span>
+      <span class="tag">&lt;cbc:LineExtensionAmount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>100.00<span class="tag">&lt;/cbc:LineExtensionAmount&gt;</span>
+      <span class="tag">&lt;cbc:TaxExclusiveAmount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>95.00<span class="tag">&lt;/cbc:TaxExclusiveAmount&gt;</span>
+      <span class="tag">&lt;cbc:TaxInclusiveAmount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>120.00<span class="tag">&lt;/cbc:TaxInclusiveAmount&gt;</span>
+      <span class="tag">&lt;cbc:AllowanceTotalAmount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>5.00<span class="tag">&lt;/cbc:AllowanceTotalAmount&gt;</span>
+      <span class="tag">&lt;cbc:ChargeTotalAmount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>0.00<span class="tag">&lt;/cbc:ChargeTotalAmount&gt;</span>
+      <span class="tag">&lt;cbc:PayableAmount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>110.00<span class="tag">&lt;/cbc:PayableAmount&gt;</span>
   <span class="tag">&lt;/cac:LegalMonetaryTotal&gt;</span>
   <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
 <span class="tag">&lt;/Invoice&gt;</span></code></pre>
@@ -3554,7 +3709,7 @@ Currency applied for cbc:PayableAmount, must be the same as cbc:DocumentCurrency
 <p>Examples shown below are based on Invoice, for the use of credit note the corresponding element replacing <code>Invoice/cac:InvoiceLine</code> is <code>CreditNote/cac:CreditNoteLine</code></p>
 </div>
 <div class="sect3">
-<h4 id="_cbcid_2"><a class="anchor" href="#_cbcid_2"></a><a class="link" href="#_cbcid_2">3.2.1. cbc:ID</a></h4>
+<h4 id="_extublextensions"><a class="anchor" href="#_extublextensions"></a><a class="link" href="#_extublextensions">3.2.1. ext:UBLExtensions</a></h4>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -3562,7 +3717,33 @@ Currency applied for cbc:PayableAmount, must be the same as cbc:DocumentCurrency
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ext:UBLExtensions</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Extension Content</strong><br>
+Extension is added to provide additional information in the <code>cac:InvoiceLine</code> element, added elements in regards to <code>ext:UBLExtensions</code> for <code>cac:InvoiceLine</code> can be found below:<br></p>
+<p class="tableblock"><a href="#_lineexclallowancechargeamount">LineExclAllowanceChargeAmount</a><br>
+<a href="#_originatordocumentreference">OriginatorDocumentReference</a><br>
+<a href="#_projectreference">ProjectReference</a><br>
+<a href="#_contractdocumentreference">ContractDocumentReference</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_cbcid_2"><a class="anchor" href="#_cbcid_2"></a><a class="link" href="#_cbcid_2">3.2.2. cbc:ID</a></h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -3592,7 +3773,7 @@ Unique line identifier</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_cbcnote_2"><a class="anchor" href="#_cbcnote_2"></a><a class="link" href="#_cbcnote_2">3.2.2. cbc:Note</a></h4>
+<h4 id="_cbcnote_2"><a class="anchor" href="#_cbcnote_2"></a><a class="link" href="#_cbcnote_2">3.2.3. cbc:Note</a></h4>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -3600,7 +3781,7 @@ Unique line identifier</p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -3633,7 +3814,7 @@ Free text information</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_cbcinvoicedquantity"><a class="anchor" href="#_cbcinvoicedquantity"></a><a class="link" href="#_cbcinvoicedquantity">3.2.3. cbc:InvoicedQuantity</a></h4>
+<h4 id="_cbcinvoicedquantity"><a class="anchor" href="#_cbcinvoicedquantity"></a><a class="link" href="#_cbcinvoicedquantity">3.2.4. cbc:InvoicedQuantity</a></h4>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -3641,7 +3822,7 @@ Free text information</p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -3677,7 +3858,7 @@ Unit of measure for the quantity invoiced</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_cbclineextensionamount"><a class="anchor" href="#_cbclineextensionamount"></a><a class="link" href="#_cbclineextensionamount">3.2.4. cbc:LineExtensionAmount</a></h4>
+<h4 id="_cbclineextensionamount"><a class="anchor" href="#_cbclineextensionamount"></a><a class="link" href="#_cbclineextensionamount">3.2.5. cbc:LineExtensionAmount</a></h4>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -3685,7 +3866,7 @@ Unit of measure for the quantity invoiced</p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -3721,7 +3902,7 @@ Currency applied for cbc:LineExtensionAmount, must be the same as cbc:DocumentCu
 </div>
 </div>
 <div class="sect3">
-<h4 id="_cbcaccountingcost_2"><a class="anchor" href="#_cbcaccountingcost_2"></a><a class="link" href="#_cbcaccountingcost_2">3.2.5. cbc:AccountingCost</a></h4>
+<h4 id="_cbcaccountingcost_2"><a class="anchor" href="#_cbcaccountingcost_2"></a><a class="link" href="#_cbcaccountingcost_2">3.2.6. cbc:AccountingCost</a></h4>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -3729,7 +3910,7 @@ Currency applied for cbc:LineExtensionAmount, must be the same as cbc:DocumentCu
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -3760,16 +3941,16 @@ Line book keeping reference for buyers financial system.</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_cacinvoiceperiod_2"><a class="anchor" href="#_cacinvoiceperiod_2"></a><a class="link" href="#_cacinvoiceperiod_2">3.2.6. cac:InvoicePeriod</a></h4>
+<h4 id="_cacinvoiceperiod_2"><a class="anchor" href="#_cacinvoiceperiod_2"></a><a class="link" href="#_cacinvoiceperiod_2">3.2.7. cac:InvoicePeriod</a></h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 23. Elements available in cac:InvoicePeriod</caption>
+<caption class="title">Table 24. Elements available in cac:InvoicePeriod</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -3810,27 +3991,37 @@ End date of the line invoice period.<br>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_cacorderlinereference"><a class="anchor" href="#_cacorderlinereference"></a><a class="link" href="#_cacorderlinereference">3.2.7. cac:OrderLineReference</a></h4>
+<h4 id="_cacorderlinereference"><a class="anchor" href="#_cacorderlinereference"></a><a class="link" href="#_cacorderlinereference">3.2.8. cac:OrderLineReference</a></h4>
 <div class="paragraph">
-<p>Below table show available fields in <code>cac:OrderLineReference</code>, note that additional elements has also been added to the extension available in <code>cac:OrderLineReference</code> [LINK HERE]</p>
+<p>Below table show available fields in <code>cac:OrderLineReference</code>, note that additional elements has also been added to the extension available in <a href="#_orderlinereference">OrderLineReference</a></p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 24. Elements added to cac:OrderLineReference</caption>
+<caption class="title">Table 25. Elements added to cac:OrderLineReference</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ext:UBLExtensions</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Extension Content</strong><br>
+Extension is added to provide additional information in the <code>cac:OrderLineReference</code> element, the information available can be found <a href="#_orderlinereference">here</a></p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:LineID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Order line reference</strong><br>
 Reference to the order line.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:SalesOrderLineID</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong> Sales Order line reference</strong><br>
+Reference to the sales order line.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:OrderReference/cbc:ID</code></p></td>
@@ -3862,6 +4053,7 @@ Date of issue of the referenced order<br>
     <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
     <span class="tag">&lt;cac:OrderLineReference&gt;</span>
       <span class="tag">&lt;cbc:LineID&gt;</span>1<span class="tag">&lt;/cbc:LineID&gt;</span>
+      <span class="tag">&lt;cbc:SalesOrderLineID&gt;</span>5<span class="tag">&lt;/cbc:SalesOrderLineID&gt;</span>
       <span class="tag">&lt;cac:OrderReference&gt;</span>
           <span class="tag">&lt;cbc:ID&gt;</span>Purchase Order ID<span class="tag">&lt;/cbc:ID&gt;</span>
           <span class="tag">&lt;cbc:SalesOrderID&gt;</span>Sales Order ID<span class="tag">&lt;/cbc:SalesOrderID&gt;</span>
@@ -3876,16 +4068,16 @@ Date of issue of the referenced order<br>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_cacdespatchlinereference"><a class="anchor" href="#_cacdespatchlinereference"></a><a class="link" href="#_cacdespatchlinereference">3.2.8. cac:DespatchLineReference</a></h4>
+<h4 id="_cacdespatchlinereference"><a class="anchor" href="#_cacdespatchlinereference"></a><a class="link" href="#_cacdespatchlinereference">3.2.9. cac:DespatchLineReference</a></h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 25. Elements added to cac:DespatchLineReference</caption>
+<caption class="title">Table 26. Elements added to cac:DespatchLineReference</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -3933,16 +4125,16 @@ Date of issue of the referenced despatch advice<br>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_cacdocumentreference"><a class="anchor" href="#_cacdocumentreference"></a><a class="link" href="#_cacdocumentreference">3.2.9. cac:DocumentReference</a></h4>
+<h4 id="_cacdocumentreference"><a class="anchor" href="#_cacdocumentreference"></a><a class="link" href="#_cacdocumentreference">3.2.10. cac:DocumentReference</a></h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 26. Elements available in cac:DocumentReference</caption>
+<caption class="title">Table 27. Elements available in cac:DocumentReference</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -3987,16 +4179,16 @@ Document type code should be 130 if referencing an invoiced object.</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_cacdelivery_2"><a class="anchor" href="#_cacdelivery_2"></a><a class="link" href="#_cacdelivery_2">3.2.10. cac:Delivery</a></h4>
+<h4 id="_cacdelivery_2"><a class="anchor" href="#_cacdelivery_2"></a><a class="link" href="#_cacdelivery_2">3.2.11. cac:Delivery</a></h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 27. Elements added to cac:Delivery</caption>
+<caption class="title">Table 28. Elements added to cac:Delivery</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -4099,16 +4291,16 @@ The country name of the delivery location.</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_cacallowancecharge_2"><a class="anchor" href="#_cacallowancecharge_2"></a><a class="link" href="#_cacallowancecharge_2">3.2.11. cac:AllowanceCharge</a></h4>
+<h4 id="_cacallowancecharge_2"><a class="anchor" href="#_cacallowancecharge_2"></a><a class="link" href="#_cacallowancecharge_2">3.2.12. cac:AllowanceCharge</a></h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 28. Elements added in cac:AllowanceCharge</caption>
+<caption class="title">Table 29. Elements added in cac:AllowanceCharge</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -4183,16 +4375,16 @@ Base amount currency.</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_cactaxtotal_2"><a class="anchor" href="#_cactaxtotal_2"></a><a class="link" href="#_cactaxtotal_2">3.2.12. cac:TaxTotal</a></h4>
+<h4 id="_cactaxtotal_2"><a class="anchor" href="#_cactaxtotal_2"></a><a class="link" href="#_cactaxtotal_2">3.2.13. cac:TaxTotal</a></h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 29. Elements added in cac:InvoiceLine/cac:TaxTotal</caption>
+<caption class="title">Table 30. Elements added in cac:InvoiceLine/cac:TaxTotal</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -4300,16 +4492,16 @@ Tax scheme for the tax category, can be either VAT or GST.</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_cacitem"><a class="anchor" href="#_cacitem"></a><a class="link" href="#_cacitem">3.2.13. cac:Item</a></h4>
+<h4 id="_cacitem"><a class="anchor" href="#_cacitem"></a><a class="link" href="#_cacitem">3.2.14. cac:Item</a></h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 30. Elements added in cac:Item</caption>
+<caption class="title">Table 31. Elements added in cac:Item</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -4432,40 +4624,40 @@ Lot number identifier of the item.</p></td>
   <span class="tag">&lt;cac:InvoiceLine&gt;</span>
     <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
     <span class="tag">&lt;cac:Item&gt;</span>
-        <span class="tag">&lt;cbc:Description&gt;</span>Item description<span class="tag">&lt;/cbc:Description&gt;</span>
-        <span class="tag">&lt;cbc:Name&gt;</span>Item name<span class="tag">&lt;/cbc:Name&gt;</span>
-        <span class="tag">&lt;cac:BuyersItemIdentification&gt;</span>
-            <span class="tag">&lt;cbc:ID&gt;</span>BuyersItemIdentification<span class="tag">&lt;/cbc:ID&gt;</span>
-        <span class="tag">&lt;/cac:BuyersItemIdentification&gt;</span>
-        <span class="tag">&lt;cac:SellersItemIdentification&gt;</span>
-            <span class="tag">&lt;cbc:ID&gt;</span>SellersItemIdentification<span class="tag">&lt;/cbc:ID&gt;</span>
-        <span class="tag">&lt;/cac:SellersItemIdentification&gt;</span>
-        <span class="tag">&lt;cac:ManufacturersItemIdentification&gt;</span>
-            <span class="tag">&lt;cbc:ID&gt;</span>ManufacturersItemIdentification<span class="tag">&lt;/cbc:ID&gt;</span>
-        <span class="tag">&lt;/cac:ManufacturersItemIdentification&gt;</span>
-        <span class="tag">&lt;cac:StandardItemIdentification&gt;</span>
-            <span class="tag">&lt;cbc:ID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0088</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>7300010000001<span class="tag">&lt;/cbc:ID&gt;</span>
-        <span class="tag">&lt;/cac:StandardItemIdentification&gt;</span>
-        <span class="tag">&lt;cac:ClassifiedTaxCategory&gt;</span>
-            <span class="tag">&lt;cbc:ID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">UNCL5305</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>S<span class="tag">&lt;/cbc:ID&gt;</span>
-            <span class="tag">&lt;cbc:Percent&gt;</span>25<span class="tag">&lt;/cbc:Percent&gt;</span>
-            <span class="tag">&lt;cac:TaxScheme&gt;</span>
-                <span class="tag">&lt;cbc:ID&gt;</span>VAT<span class="tag">&lt;/cbc:ID&gt;</span>
-            <span class="tag">&lt;/cac:TaxScheme&gt;</span>
-        <span class="tag">&lt;/cac:ClassifiedTaxCategory&gt;</span>
-        <span class="tag">&lt;cac:AdditionalItemProperty&gt;</span>
-          <span class="tag">&lt;cbc:Name&gt;</span>Size<span class="tag">&lt;/cbc:Name&gt;</span>
-          <span class="tag">&lt;cbc:Value&gt;</span>XXL<span class="tag">&lt;/cbc:Value&gt;</span>
-        <span class="tag">&lt;/cac:AdditionalItemProperty&gt;</span>
-        <span class="tag">&lt;cac:ItemInstance&gt;</span>
-            <span class="tag">&lt;cbc:ManufactureDate&gt;</span>2018-01-01<span class="tag">&lt;/cbc:ManufactureDate&gt;</span>
-            <span class="tag">&lt;cbc:BestBeforeDate&gt;</span>2018-01-01<span class="tag">&lt;/cbc:BestBeforeDate&gt;</span>
-            <span class="tag">&lt;cbc:SerialID&gt;</span>123456789<span class="tag">&lt;/cbc:SerialID&gt;</span>
-            <span class="tag">&lt;cac:LotIdentification&gt;</span>
-                <span class="tag">&lt;cbc:LotNumberID&gt;</span>1111111<span class="tag">&lt;/cbc:LotNumberID&gt;</span>
-            <span class="tag">&lt;/cac:LotIdentification&gt;</span>
-        <span class="tag">&lt;/cac:ItemInstance&gt;</span>
-      <span class="tag">&lt;/cac:Item&gt;</span>
+      <span class="tag">&lt;cbc:Description&gt;</span>Item description<span class="tag">&lt;/cbc:Description&gt;</span>
+      <span class="tag">&lt;cbc:Name&gt;</span>Item name<span class="tag">&lt;/cbc:Name&gt;</span>
+      <span class="tag">&lt;cac:BuyersItemIdentification&gt;</span>
+          <span class="tag">&lt;cbc:ID&gt;</span>BuyersItemIdentification<span class="tag">&lt;/cbc:ID&gt;</span>
+      <span class="tag">&lt;/cac:BuyersItemIdentification&gt;</span>
+      <span class="tag">&lt;cac:SellersItemIdentification&gt;</span>
+          <span class="tag">&lt;cbc:ID&gt;</span>SellersItemIdentification<span class="tag">&lt;/cbc:ID&gt;</span>
+      <span class="tag">&lt;/cac:SellersItemIdentification&gt;</span>
+      <span class="tag">&lt;cac:ManufacturersItemIdentification&gt;</span>
+          <span class="tag">&lt;cbc:ID&gt;</span>ManufacturersItemIdentification<span class="tag">&lt;/cbc:ID&gt;</span>
+      <span class="tag">&lt;/cac:ManufacturersItemIdentification&gt;</span>
+      <span class="tag">&lt;cac:StandardItemIdentification&gt;</span>
+          <span class="tag">&lt;cbc:ID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0088</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>7300010000001<span class="tag">&lt;/cbc:ID&gt;</span>
+      <span class="tag">&lt;/cac:StandardItemIdentification&gt;</span>
+      <span class="tag">&lt;cac:ClassifiedTaxCategory&gt;</span>
+          <span class="tag">&lt;cbc:ID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">UNCL5305</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>S<span class="tag">&lt;/cbc:ID&gt;</span>
+          <span class="tag">&lt;cbc:Percent&gt;</span>25<span class="tag">&lt;/cbc:Percent&gt;</span>
+          <span class="tag">&lt;cac:TaxScheme&gt;</span>
+              <span class="tag">&lt;cbc:ID&gt;</span>VAT<span class="tag">&lt;/cbc:ID&gt;</span>
+          <span class="tag">&lt;/cac:TaxScheme&gt;</span>
+      <span class="tag">&lt;/cac:ClassifiedTaxCategory&gt;</span>
+      <span class="tag">&lt;cac:AdditionalItemProperty&gt;</span>
+        <span class="tag">&lt;cbc:Name&gt;</span>Size<span class="tag">&lt;/cbc:Name&gt;</span>
+        <span class="tag">&lt;cbc:Value&gt;</span>XXL<span class="tag">&lt;/cbc:Value&gt;</span>
+      <span class="tag">&lt;/cac:AdditionalItemProperty&gt;</span>
+      <span class="tag">&lt;cac:ItemInstance&gt;</span>
+          <span class="tag">&lt;cbc:ManufactureDate&gt;</span>2018-01-01<span class="tag">&lt;/cbc:ManufactureDate&gt;</span>
+          <span class="tag">&lt;cbc:BestBeforeDate&gt;</span>2018-01-01<span class="tag">&lt;/cbc:BestBeforeDate&gt;</span>
+          <span class="tag">&lt;cbc:SerialID&gt;</span>123456789<span class="tag">&lt;/cbc:SerialID&gt;</span>
+          <span class="tag">&lt;cac:LotIdentification&gt;</span>
+              <span class="tag">&lt;cbc:LotNumberID&gt;</span>1111111<span class="tag">&lt;/cbc:LotNumberID&gt;</span>
+          <span class="tag">&lt;/cac:LotIdentification&gt;</span>
+      <span class="tag">&lt;/cac:ItemInstance&gt;</span>
+    <span class="tag">&lt;/cac:Item&gt;</span>
       <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
   <span class="tag">&lt;/cac:InvoiceLine&gt;</span>
   <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
@@ -4474,20 +4666,28 @@ Lot number identifier of the item.</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_cacprice"><a class="anchor" href="#_cacprice"></a><a class="link" href="#_cacprice">3.2.14. cac:Price</a></h4>
+<h4 id="_cacprice"><a class="anchor" href="#_cacprice"></a><a class="link" href="#_cacprice">3.2.15. cac:Price</a></h4>
+<div class="paragraph">
+<p>Below table show available fields in <code>cac:Price</code>, note that additional elements has also been added to the extension available in <a href="#_price">Price</a></p>
+</div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 31. Elements added in cac:InvoiceLine/cac:Price</caption>
+<caption class="title">Table 32. Elements added in cac:InvoiceLine/cac:Price</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ext:UBLExtensions</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Extension Content</strong><br>
+Extension is added to provide additional information in the <code>cac:Price</code> element, the information available can be found <a href="#_price">here</a></p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:PriceAmount</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Item net price</strong><br>
@@ -4562,13 +4762,18 @@ Currency applied for cbc:BaseAmount, must be the same as cbc:DocumentCurrencyCod
 </div>
 </div>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_extensions"><a class="anchor" href="#_extensions"></a><a class="link" href="#_extensions">4. Extensions</a></h2>
+<div class="sectionbody">
 <div class="sect2">
-<h3 id="_extublextensions"><a class="anchor" href="#_extublextensions"></a><a class="link" href="#_extublextensions">3.3. ext:UBLExtensions</a></h3>
+<h3 id="_document_level"><a class="anchor" href="#_document_level"></a><a class="link" href="#_document_level">4.1. Document Level</a></h3>
 <div class="paragraph">
-<p>Below segments has been added in the extensions available.</p>
+<p>Below chapters describe the different extensions added on document level.</p>
 </div>
 <div class="sect3">
-<h4 id="_cacorderreference_extension"><a class="anchor" href="#_cacorderreference_extension"></a><a class="link" href="#_cacorderreference_extension">3.3.1. cac:OrderReference Extension</a></h4>
+<h4 id="_orderreference"><a class="anchor" href="#_orderreference"></a><a class="link" href="#_orderreference">4.1.1. OrderReference</a></h4>
 <div class="paragraph">
 <p>The UBL extension to be used for below elements is <code>(Invoice|CreditNote)/cac:OrderReference/ext:UBLExtensions</code> and the structure used from <code>PUF-ExtensionComponent.xsd</code> is <code>PageroExtension/OrderReferenceExtension</code>.<br></p>
 </div>
@@ -4611,7 +4816,7 @@ Currency applied for cbc:BaseAmount, must be the same as cbc:DocumentCurrencyCod
 <p>Below table show the definition of the new element added to the extension.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 32. Elements added in puf:OrderReferenceExtension</caption>
+<caption class="title">Table 33. Elements added in puf:OrderReferenceExtension</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4656,7 +4861,7 @@ Currency applied for cbc:BaseAmount, must be the same as cbc:DocumentCurrencyCod
 </div>
 </div>
 <div class="sect3">
-<h4 id="_caccontractdocumentreference_extension"><a class="anchor" href="#_caccontractdocumentreference_extension"></a><a class="link" href="#_caccontractdocumentreference_extension">3.3.2. cac:ContractDocumentReference Extension</a></h4>
+<h4 id="_contractdocumentreference"><a class="anchor" href="#_contractdocumentreference"></a><a class="link" href="#_contractdocumentreference">4.1.2. ContractDocumentReference</a></h4>
 <div class="paragraph">
 <p>The UBL extension to be used for below elements is (Invoice|CreditNote)/cac:ContractDocumentReference/ext:UBLExtensions and the structure used from PUF-ExtensionComponent.xsd is PageroExtension/ContractDocumentReferenceExtension.</p>
 </div>
@@ -4693,7 +4898,7 @@ Currency applied for cbc:BaseAmount, must be the same as cbc:DocumentCurrencyCod
 </table>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 33. Elements added in puf:ContractDocumentReferenceExtension</caption>
+<caption class="title">Table 34. Elements added in puf:ContractDocumentReferenceExtension</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4742,7 +4947,7 @@ Currency applied for cbc:BaseAmount, must be the same as cbc:DocumentCurrencyCod
 </div>
 </div>
 <div class="sect3">
-<h4 id="_cacparty_extension"><a class="anchor" href="#_cacparty_extension"></a><a class="link" href="#_cacparty_extension">3.3.3. cac:Party Extension</a></h4>
+<h4 id="_party"><a class="anchor" href="#_party"></a><a class="link" href="#_party">4.1.3. Party</a></h4>
 <div class="paragraph">
 <p>An extension has been created for providing additional information not supported in UBL 2.1.
 The UBL extension to be used for below elements is <code>cac:Party/ext:UBLExtensions</code> and the structure used from <code>PUF-ExtensionComponent.xsd</code> is <code>PageroExtension/PartyExtension</code>.<br></p>
@@ -4786,14 +4991,14 @@ The UBL extension to be used for below elements is <code>cac:Party/ext:UBLExtens
 <p>Below table shows the definition of the new elements added to the extension.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 34. Elements added in puf:PartyExtension</caption>
+<caption class="title">Table 35. Elements added in puf:PartyExtension</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Applicable XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -4899,7 +5104,7 @@ This is mostly used to public entities (e.g. government recipients). To identify
 </div>
 </div>
 <div class="sect3">
-<h4 id="_cacdelivery_extension"><a class="anchor" href="#_cacdelivery_extension"></a><a class="link" href="#_cacdelivery_extension">3.3.4. cac:Delivery Extension</a></h4>
+<h4 id="_delivery"><a class="anchor" href="#_delivery"></a><a class="link" href="#_delivery">4.1.4. Delivery</a></h4>
 <div class="paragraph">
 <p>In addition, an extension has been created for providing additional information not supported in UBL 2.1.<br></p>
 </div>
@@ -4945,7 +5150,7 @@ This is mostly used to public entities (e.g. government recipients). To identify
 <p>Below table show the definition of the additional elements added to the delivery extension.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 35. Elements added in puf:DeliveryExtension</caption>
+<caption class="title">Table 36. Elements added in puf:DeliveryExtension</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4995,7 +5200,7 @@ This is mostly used to public entities (e.g. government recipients). To identify
 </div>
 </div>
 <div class="sect3">
-<h4 id="_cacpaymentterms_extension"><a class="anchor" href="#_cacpaymentterms_extension"></a><a class="link" href="#_cacpaymentterms_extension">3.3.5. cac:PaymentTerms Extension</a></h4>
+<h4 id="_paymentterms"><a class="anchor" href="#_paymentterms"></a><a class="link" href="#_paymentterms">4.1.5. PaymentTerms</a></h4>
 <div class="paragraph">
 <p>Also, an extension has been created for providing additional information not supported in UBL 2.1 in order to provide further information regarding payment terms.<br></p>
 </div>
@@ -5041,7 +5246,7 @@ This is mostly used to public entities (e.g. government recipients). To identify
 <p>Below table shows the definition of the extended element.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 36. Elements added in puf:PaymentTermsExtension</caption>
+<caption class="title">Table 37. Elements added in puf:PaymentTermsExtension</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5086,7 +5291,7 @@ This is mostly used to public entities (e.g. government recipients). To identify
 </div>
 </div>
 <div class="sect3">
-<h4 id="_cactaxtotal_extension"><a class="anchor" href="#_cactaxtotal_extension"></a><a class="link" href="#_cactaxtotal_extension">3.3.6. cac:TaxTotal Extension</a></h4>
+<h4 id="_taxtotal"><a class="anchor" href="#_taxtotal"></a><a class="link" href="#_taxtotal">4.1.6. TaxTotal</a></h4>
 <div class="paragraph">
 <p>An extension has been created for providing additional information not supported in UBL 2.1.<br></p>
 </div>
@@ -5134,7 +5339,7 @@ This is mostly used to public entities (e.g. government recipients). To identify
 <p>Below table lists all additional elements added to the extension.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 37. Elements added in puf:TaxSubtotalExtension</caption>
+<caption class="title">Table 38. Elements added in puf:TaxSubtotalExtension</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5264,7 +5469,7 @@ This is mostly used to public entities (e.g. government recipients). To identify
 </div>
 </div>
 <div class="sect3">
-<h4 id="_caclegalmonetarytotal_extension"><a class="anchor" href="#_caclegalmonetarytotal_extension"></a><a class="link" href="#_caclegalmonetarytotal_extension">3.3.7. cac:LegalMonetaryTotal Extension</a></h4>
+<h4 id="_legalmonetarytotal"><a class="anchor" href="#_legalmonetarytotal"></a><a class="link" href="#_legalmonetarytotal">4.1.7. LegalMonetaryTotal</a></h4>
 <div class="paragraph">
 <p>The LegalMonetaryTotal-UBLExtension provides the means to add more information about the total amount of the invoice.<br></p>
 </div>
@@ -5310,7 +5515,7 @@ This is mostly used to public entities (e.g. government recipients). To identify
 <p>Below table shows the definition of the new elements added to the extension.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 38. Elements added in puf:LegalMonetaryTotalExtension</caption>
+<caption class="title">Table 39. Elements added in puf:LegalMonetaryTotalExtension</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5499,8 +5704,14 @@ The elements available in Pagero UF allow the possibility to provide the corresp
 </div>
 </div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_line_level"><a class="anchor" href="#_line_level"></a><a class="link" href="#_line_level">4.2. Line Level</a></h3>
+<div class="paragraph">
+<p>Below chapters describe the different extensions added on line level.</p>
+</div>
 <div class="sect3">
-<h4 id="_line_excl_allowance_and_charge_amount"><a class="anchor" href="#_line_excl_allowance_and_charge_amount"></a><a class="link" href="#_line_excl_allowance_and_charge_amount">3.3.8. Line Excl. Allowance and Charge Amount</a></h4>
+<h4 id="_lineexclallowancechargeamount"><a class="anchor" href="#_lineexclallowancechargeamount"></a><a class="link" href="#_lineexclallowancechargeamount">4.2.1. LineExclAllowanceChargeAmount</a></h4>
 <div class="paragraph">
 <p>In addition to the LineExtensionAmount a new element has been added to specify the line amount excluding any allowances and charges on the line.<br></p>
 </div>
@@ -5544,7 +5755,7 @@ See example below as well as the URI to be used for this extension.</p>
 <p>Below table shows the definition of the new elements added to the extension.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 39. Elements added to puf:LineExtension</caption>
+<caption class="title">Table 40. Elements added to puf:LineExtension</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5608,7 +5819,7 @@ See example below as well as the URI to be used for this extension.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_originator_document_reference"><a class="anchor" href="#_originator_document_reference"></a><a class="link" href="#_originator_document_reference">3.3.9. Originator Document Reference</a></h4>
+<h4 id="_originatordocumentreference"><a class="anchor" href="#_originatordocumentreference"></a><a class="link" href="#_originatordocumentreference">4.2.2. OriginatorDocumentReference</a></h4>
 <div class="paragraph">
 <p>In order to specify the tender reference on line level, Originator document reference has been added to line extension.<br></p>
 </div>
@@ -5656,7 +5867,7 @@ See example below as well as the URI to be used for this extension.</p>
 <p>Below table shows the definition of the new elements added to the extension.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 40. Elements added to puf:LineExtension/puf:OriginatorDocumentReference</caption>
+<caption class="title">Table 41. Elements added to puf:LineExtension/puf:OriginatorDocumentReference</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5706,100 +5917,7 @@ See example below as well as the URI to be used for this extension.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_project_reference"><a class="anchor" href="#_project_reference"></a><a class="link" href="#_project_reference">3.3.10. Project Reference</a></h4>
-<div class="paragraph">
-<p>In order to specify the project reference on line level, project reference has been added to line extension.<br></p>
-</div>
-<div class="paragraph">
-<p>The UBL extension to be used for below elements is <code>Invoice/cac:InvoiceLine/ext:UBLExtensions</code> and the structure used from <code>PUF-ExtensionComponent.xsd</code> is <code>PageroExtension/LineExtension</code>.<br></p>
-</div>
-<div class="paragraph">
-<p>See example below as well as the URI to be used for this extension.</p>
-</div>
-<div class="paragraph">
-<p><strong>Example</strong></p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cac:InvoiceLine&gt;</span>
-    <span class="tag">&lt;ext:UBLExtensions&gt;</span>
-        <span class="tag">&lt;ext:UBLExtension&gt;</span>
-            <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:LineExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
-            <span class="tag">&lt;ext:ExtensionContent&gt;</span>
-                <span class="tag">&lt;puf:PageroExtension&gt;</span>
-                    <span class="tag">&lt;puf:LineExtension&gt;</span>
-                        <span class="tag">&lt;puf:ProjectReference</span><span class="tag">/&gt;</span> <i class="conum" data-value="2"></i><b>(2)</b>
-                    <span class="tag">&lt;/puf:LineExtension&gt;</span>
-                <span class="tag">&lt;/puf:PageroExtension&gt;</span>
-            <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
-        <span class="tag">&lt;/ext:UBLExtension&gt;</span>
-    <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
-    <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
-<span class="tag">&lt;/cac:InvoiceLine&gt;</span></code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>URI to be used if this extension is added.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>Structure to be used if information from this extension will be used.</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>Below table shows the definition of the new elements added to the extension.</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 41. Elements added to puf:LineExtension/puf:ProjectReference</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Element</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:ID</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Identification of the project reference.</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p><strong>Example</strong><br>
-<em>Project reference ID</em></p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cac:InvoiceLine&gt;</span>
-    <span class="tag">&lt;ext:UBLExtensions&gt;</span>
-        <span class="tag">&lt;ext:UBLExtension&gt;</span>
-            <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:LineExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span>
-            <span class="tag">&lt;ext:ExtensionContent&gt;</span>
-                <span class="tag">&lt;puf:PageroExtension&gt;</span>
-                    <span class="tag">&lt;puf:LineExtension&gt;</span>
-                        <span class="tag">&lt;puf:ProjectReference&gt;</span>
-                            <span class="tag">&lt;cbc:ID&gt;</span>123456<span class="tag">&lt;/cbc:ID&gt;</span>
-                        <span class="tag">&lt;/puf:ProjectReference&gt;</span>
-                    <span class="tag">&lt;/puf:LineExtension&gt;</span>
-                <span class="tag">&lt;/puf:PageroExtension&gt;</span>
-            <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
-        <span class="tag">&lt;/ext:UBLExtension&gt;</span>
-    <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
-    <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
-<span class="tag">&lt;/cac:InvoiceLine&gt;</span></code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_cacorderlinereferenceextension_extension"><a class="anchor" href="#_cacorderlinereferenceextension_extension"></a><a class="link" href="#_cacorderlinereferenceextension_extension">3.3.11. cac:orderlinereferenceExtension Extension</a></h4>
+<h4 id="_projectreference"><a class="anchor" href="#_projectreference"></a><a class="link" href="#_projectreference">4.2.3. ProjectReference</a></h4>
 <div class="paragraph">
 <p>In order to specify the project reference on line level, project reference has been added to line extension.<br></p>
 </div>
@@ -5892,7 +6010,114 @@ See example below as well as the URI to be used for this extension.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_contract_document_reference"><a class="anchor" href="#_contract_document_reference"></a><a class="link" href="#_contract_document_reference">3.3.12. Contract Document Reference</a></h4>
+<h4 id="_orderlinereference"><a class="anchor" href="#_orderlinereference"></a><a class="link" href="#_orderlinereference">4.2.4. OrderLineReference</a></h4>
+<div class="paragraph">
+<p>In addition, an extension has been created for providing additional information not supported in UBL 2.1.<br></p>
+</div>
+<div class="paragraph">
+<p>The UBL extension to be used for below elements is <code>Invoice/cac:InvoiceLine/cac:OrderLineReference/cac:OrderReference/ext:UBLExtensions</code> and the structure used from <code>PUF-ExtensionComponent.xsd</code> is
+<code>PageroExtension/LineExtension</code>.<br></p>
+</div>
+<div class="paragraph">
+<p>See example below as well as the URI to be used for this extension.</p>
+</div>
+<div class="paragraph">
+<p><strong>Example</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cac:InvoiceLine&gt;</span>
+    <span class="tag">&lt;cac:OrderLineReference&gt;</span>
+        <span class="tag">&lt;cac:OrderReference&gt;</span>
+            <span class="tag">&lt;ext:UBLExtensions&gt;</span>
+                <span class="tag">&lt;ext:UBLExtension&gt;</span>
+                    <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:LineExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
+                    <span class="tag">&lt;ext:ExtensionContent&gt;</span>
+                        <span class="tag">&lt;puf:PageroExtension&gt;</span>
+                            <span class="tag">&lt;puf:LineExtension&gt;</span>
+                                <span class="tag">&lt;puf:OrderLineReference</span><span class="tag">/&gt;</span> <i class="conum" data-value="2"></i><b>(2)</b>
+                            <span class="tag">&lt;/puf:LineExtension&gt;</span>
+                        <span class="tag">&lt;/puf:PageroExtension&gt;</span>
+                    <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
+                <span class="tag">&lt;/ext:UBLExtension&gt;</span>
+            <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
+            <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+        <span class="tag">&lt;/cac:OrderLineReference&gt;</span>
+    <span class="tag">&lt;/cac:OrderReference&gt;</span>
+<span class="tag">&lt;/cac:InvoiceLine&gt;</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>URI to be used if this extension is added.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Structure to be used if information from this extension will be used.</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Below table show the definition of the new element added to the extension.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 43. Elements added in puf:OrderLineReference</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>puf:SalesOrderIssueDate</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date of the sales order, date should be formatted yyyy-mm-dd.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Example</strong><br>
+<em>Order line reference containing all available elements</em></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cac:InvoiceLine&gt;</span>
+    <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+    <span class="tag">&lt;cac:OrderLineReference&gt;</span>
+        <span class="tag">&lt;cbc:LineID&gt;</span>1<span class="tag">&lt;/cbc:LineID&gt;</span>
+        <span class="tag">&lt;cac:OrderReference&gt;</span>
+            <span class="tag">&lt;ext:UBLExtensions&gt;</span>
+                <span class="tag">&lt;ext:UBLExtension&gt;</span>
+                    <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:LineExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span>
+                    <span class="tag">&lt;ext:ExtensionContent&gt;</span>
+                        <span class="tag">&lt;puf:PageroExtension&gt;</span>
+                            <span class="tag">&lt;puf:LineExtension&gt;</span>
+                                <span class="tag">&lt;puf:OrderLineReference&gt;</span>
+                                    <span class="tag">&lt;puf:SalesOrderIssueDate&gt;</span>2019-01-01<span class="tag">&lt;/puf:SalesOrderIssueDate&gt;</span>
+                                <span class="tag">&lt;/puf:OrderLineReference&gt;</span>
+                            <span class="tag">&lt;/puf:LineExtension&gt;</span>
+                        <span class="tag">&lt;/puf:PageroExtension&gt;</span>
+                    <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
+                <span class="tag">&lt;/ext:UBLExtension&gt;</span>
+            <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
+            <span class="tag">&lt;cbc:ID&gt;</span>Purchase Order ID<span class="tag">&lt;/cbc:ID&gt;</span>
+            <span class="tag">&lt;cbc:SalesOrderID&gt;</span>Sales Order ID<span class="tag">&lt;/cbc:SalesOrderID&gt;</span>
+            <span class="tag">&lt;cbc:IssueDate&gt;</span>2019-01-01<span class="tag">&lt;/cbc:IssueDate&gt;</span>
+        <span class="tag">&lt;/cac:OrderReference&gt;</span>
+    <span class="tag">&lt;/cac:OrderLineReference&gt;</span>
+    <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+<span class="tag">&lt;/cac:InvoiceLine&gt;</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_contractdocumentreference_2"><a class="anchor" href="#_contractdocumentreference_2"></a><a class="link" href="#_contractdocumentreference_2">4.2.5. ContractDocumentReference</a></h4>
 <div class="paragraph">
 <p>In order to specify the contract document on line level, ContractDocumentReference has been added to Line extension.<br></p>
 </div>
@@ -5940,7 +6165,7 @@ See example below as well as the URI to be used for this extension.</p>
 <p>Below table shows the definition of the new elements added to the extension.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 43. Elements added to puf:LineExtension/puf:ContractDocumentReference</caption>
+<caption class="title">Table 44. Elements added to puf:LineExtension/puf:ContractDocumentReference</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6000,10 +6225,10 @@ See example below as well as the URI to be used for this extension.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_cacprice_extension"><a class="anchor" href="#_cacprice_extension"></a><a class="link" href="#_cacprice_extension">3.3.13. cac:Price Extension</a></h4>
+<h4 id="_price"><a class="anchor" href="#_price"></a><a class="link" href="#_price">4.2.6. Price</a></h4>
 <div class="paragraph">
 <p>In addition to Price a new element has been added to specify the unit price including allowances and charges.
-Note that the new element PriceInclAllowanceChargeAmount should include the allowanceCharge applied on line level, as shown in the example <em>Line with 100 EUR discount</em>.<br></p>
+Note that the new element PriceInclAllowanceChargeAmount should include the <code>cac:AllowanceCharge</code> applied on line level (not to be confused with <code>cac:Price/cac:AllowanceCharge</code>), as shown in the example <em>Line with 100 EUR discount</em>.<br></p>
 </div>
 <div class="paragraph">
 <p>The UBL extension to be used for below elements is <code>Invoice/cac:InvoiceLine/cac:Price/ext:UBLExtensions</code> and the structure used from <code>PUF-ExtensionComponent.xsd</code> is <code>PageroExtension/PriceExtension</code>.<br></p>
@@ -6050,7 +6275,7 @@ Note that the new element PriceInclAllowanceChargeAmount should include the allo
 <p>Below table show the definition of the new element added to the extension.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 44. Elements added to puf:PriceExtension</caption>
+<caption class="title">Table 45. Elements added to puf:PriceExtension</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6121,18 +6346,18 @@ Note that the new element PriceInclAllowanceChargeAmount should include the allo
 </div>
 </div>
 <div class="sect1">
-<h2 id="_country_specific"><a class="anchor" href="#_country_specific"></a><a class="link" href="#_country_specific">4. Country Specific</a></h2>
+<h2 id="_country_specific"><a class="anchor" href="#_country_specific"></a><a class="link" href="#_country_specific">5. Country Specific</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>This section will provide information regarding on how to include common country specific data in Pagero UF.</p>
 </div>
 <div class="sect2">
-<h3 id="_spain"><a class="anchor" href="#_spain"></a><a class="link" href="#_spain">4.1. Spain</a></h3>
+<h3 id="_spain"><a class="anchor" href="#_spain"></a><a class="link" href="#_spain">5.1. Spain</a></h3>
 <div class="paragraph">
 <p>This section contains information about requirements and other info concerning invoicing in Spain.</p>
 </div>
 <div class="sect3">
-<h4 id="_routing_codes_dir3"><a class="anchor" href="#_routing_codes_dir3"></a><a class="link" href="#_routing_codes_dir3">4.1.1. Routing Codes (DIR3)</a></h4>
+<h4 id="_routing_codes_dir3"><a class="anchor" href="#_routing_codes_dir3"></a><a class="link" href="#_routing_codes_dir3">5.1.1. Routing Codes (DIR3)</a></h4>
 <div class="paragraph">
 <p>To send documents to the Spanish government you are required to provide DIR3 codes. These are used as routing codes, definition of the codes can be found below.</p>
 </div>
@@ -6198,12 +6423,12 @@ More information how to use ADAID can be found <a href="#_additional_destination
 </div>
 </div>
 <div class="sect2">
-<h3 id="_france"><a class="anchor" href="#_france"></a><a class="link" href="#_france">4.2. France</a></h3>
+<h3 id="_france"><a class="anchor" href="#_france"></a><a class="link" href="#_france">5.2. France</a></h3>
 <div class="paragraph">
 <p>This section contains information about requirements and other info concerning invoicing in France.</p>
 </div>
 <div class="sect3">
-<h4 id="_service_code"><a class="anchor" href="#_service_code"></a><a class="link" href="#_service_code">4.2.1. Service Code</a></h4>
+<h4 id="_service_code"><a class="anchor" href="#_service_code"></a><a class="link" href="#_service_code">5.2.1. Service Code</a></h4>
 <div class="paragraph">
 <p>Service code is a routing code required by some customers to identify the correct recipient in French Government Portal.
 It&#8217;s used as an addition to the SIRET number, which is the main identifier for all government recipients.</p>
@@ -6244,7 +6469,7 @@ It&#8217;s used as an addition to the SIRET number, which is the main identifier
 </div>
 </div>
 <div class="sect3">
-<h4 id="_legal_commitments"><a class="anchor" href="#_legal_commitments"></a><a class="link" href="#_legal_commitments">4.2.2. Legal Commitments</a></h4>
+<h4 id="_legal_commitments"><a class="anchor" href="#_legal_commitments"></a><a class="link" href="#_legal_commitments">5.2.2. Legal Commitments</a></h4>
 <div class="paragraph">
 <p>Entities behind French Government portal can set up validation of certain elements called legal commitments. Therefore it&#8217;s recommended
 to support the below values in order to fulfill the requirements of this validation.</p>
@@ -6336,12 +6561,12 @@ to support the below values in order to fulfill the requirements of this validat
 </div>
 </div>
 <div class="sect2">
-<h3 id="_italy"><a class="anchor" href="#_italy"></a><a class="link" href="#_italy">4.3. Italy</a></h3>
+<h3 id="_italy"><a class="anchor" href="#_italy"></a><a class="link" href="#_italy">5.3. Italy</a></h3>
 <div class="paragraph">
 <p>This section contains information about requirements and other info concerning invoicing in Italy.</p>
 </div>
 <div class="sect3">
-<h4 id="_routing_code_codice_destinatario"><a class="anchor" href="#_routing_code_codice_destinatario"></a><a class="link" href="#_routing_code_codice_destinatario">4.3.1. Routing code (Codice Destinatario)</a></h4>
+<h4 id="_routing_code_codice_destinatario"><a class="anchor" href="#_routing_code_codice_destinatario"></a><a class="link" href="#_routing_code_codice_destinatario">5.3.1. Routing code (Codice Destinatario)</a></h4>
 <div class="paragraph">
 <p>In order to send invoices in Italy a destination code must be provided called "Codice Destinatario".</p>
 </div>
@@ -6363,7 +6588,7 @@ to support the below values in order to fulfill the requirements of this validat
 </div>
 </div>
 <div class="sect3">
-<h4 id="_duty_stamp_dati_bollo"><a class="anchor" href="#_duty_stamp_dati_bollo"></a><a class="link" href="#_duty_stamp_dati_bollo">4.3.2. Duty Stamp (Dati Bollo)</a></h4>
+<h4 id="_duty_stamp_dati_bollo"><a class="anchor" href="#_duty_stamp_dati_bollo"></a><a class="link" href="#_duty_stamp_dati_bollo">5.3.2. Duty Stamp (Dati Bollo)</a></h4>
 <div class="paragraph">
 <p>The duty stamp amount should be provided in the extension block under Invoice, in the structure <code>(Invoice|CreditNote)/PageroExtension/DutyStamp</code>, see example below.</p>
 </div>
@@ -6393,7 +6618,7 @@ to support the below values in order to fulfill the requirements of this validat
 </div>
 </div>
 <div class="sect3">
-<h4 id="_tax_chargeability_esigibilita_iva"><a class="anchor" href="#_tax_chargeability_esigibilita_iva"></a><a class="link" href="#_tax_chargeability_esigibilita_iva">4.3.3. Tax chargeability (Esigibilita IVA)</a></h4>
+<h4 id="_tax_chargeability_esigibilita_iva"><a class="anchor" href="#_tax_chargeability_esigibilita_iva"></a><a class="link" href="#_tax_chargeability_esigibilita_iva">5.3.3. Tax chargeability (Esigibilita IVA)</a></h4>
 <div class="paragraph">
 <p>To provide tax chargeability, the extension element <code>(Invoice|CreditNote)/cac:TaxTotal/cac:TaxSubtotal/ext:UBLExtensions</code> can be used. The structure used from <code>PUF-ExtensionComponent.xsd</code> is <code>PageroExtension/TaxSubtotalExtension</code>. See example below:</p>
 </div>
@@ -6441,7 +6666,7 @@ to support the below values in order to fulfill the requirements of this validat
 </div>
 </div>
 <div class="sect3">
-<h4 id="_vat_number_and_fiscal_code"><a class="anchor" href="#_vat_number_and_fiscal_code"></a><a class="link" href="#_vat_number_and_fiscal_code">4.3.4. VAT number and Fiscal Code</a></h4>
+<h4 id="_vat_number_and_fiscal_code"><a class="anchor" href="#_vat_number_and_fiscal_code"></a><a class="link" href="#_vat_number_and_fiscal_code">5.3.4. VAT number and Fiscal Code</a></h4>
 <div class="paragraph">
 <p>It is possible to send a VAT number and/or a Fiscal code (Codice Fiscale) in Pagero UF, below is a description and example how to provide this.</p>
 </div>
@@ -6511,7 +6736,7 @@ to support the below values in order to fulfill the requirements of this validat
 </div>
 </div>
 <div class="sect3">
-<h4 id="_registration_data_2"><a class="anchor" href="#_registration_data_2"></a><a class="link" href="#_registration_data_2">4.3.5. Registration data</a></h4>
+<h4 id="_registration_data_2"><a class="anchor" href="#_registration_data_2"></a><a class="link" href="#_registration_data_2">5.3.5. Registration data</a></h4>
 <div class="paragraph">
 <p>To provide the registration data (Ufficio, NumeroREA, Capitale Sociale, Socio Unico and Stato Liquidazione) in the XML file please check
 the extension for AccountingSupplierParty structure <a href="#_registration_data">here</a>.</p>
@@ -6519,12 +6744,12 @@ the extension for AccountingSupplierParty structure <a href="#_registration_data
 </div>
 </div>
 <div class="sect2">
-<h3 id="_portugal"><a class="anchor" href="#_portugal"></a><a class="link" href="#_portugal">4.4. Portugal</a></h3>
+<h3 id="_portugal"><a class="anchor" href="#_portugal"></a><a class="link" href="#_portugal">5.4. Portugal</a></h3>
 <div class="paragraph">
 <p>This section contains information about special requirements concerning invoicing in Portugal.</p>
 </div>
 <div class="sect3">
-<h4 id="_billing_software_certification"><a class="anchor" href="#_billing_software_certification"></a><a class="link" href="#_billing_software_certification">4.4.1. Billing Software Certification</a></h4>
+<h4 id="_billing_software_certification"><a class="anchor" href="#_billing_software_certification"></a><a class="link" href="#_billing_software_certification">5.4.1. Billing Software Certification</a></h4>
 <div class="paragraph">
 <p>Invoices in Portugal must be issued via a certified software and in the extension <code>puf:BillingSoftware</code> it&#8217;s possible to provide the mandatory values.</p>
 </div>
@@ -6571,7 +6796,7 @@ the extension for AccountingSupplierParty structure <a href="#_registration_data
 </div>
 </div>
 <div class="sect3">
-<h4 id="_qr_code_and_atcud"><a class="anchor" href="#_qr_code_and_atcud"></a><a class="link" href="#_qr_code_and_atcud">4.4.2. QR Code and ATCUD</a></h4>
+<h4 id="_qr_code_and_atcud"><a class="anchor" href="#_qr_code_and_atcud"></a><a class="link" href="#_qr_code_and_atcud">5.4.2. QR Code and ATCUD</a></h4>
 <div class="paragraph">
 <p>In Portugal it can be required to provide a QR code and ATCUD. The portugese government has specified that this can be provided in elements that exist in
 Peppol BIS 3 and therefore also exist in Pagero Universal Format. Below you will find a guide on how to provide it to comply with the portugese specification.</p>
@@ -6600,15 +6825,15 @@ Peppol BIS 3 and therefore also exist in Pagero Universal Format. Below you will
 </div>
 </div>
 <div class="sect1">
-<h2 id="_code_lists"><a class="anchor" href="#_code_lists"></a><a class="link" href="#_code_lists">5. Code lists</a></h2>
+<h2 id="_code_lists"><a class="anchor" href="#_code_lists"></a><a class="link" href="#_code_lists">6. Code lists</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Certain elements require the use of Pagero UF specific Code list. Below you will find the lists and where the lists are applicable.</p>
 </div>
 <div class="sect2">
-<h3 id="_code_lists_for_coded_elements"><a class="anchor" href="#_code_lists_for_coded_elements"></a><a class="link" href="#_code_lists_for_coded_elements">5.1. Code lists for coded elements</a></h3>
+<h3 id="_code_lists_for_coded_elements"><a class="anchor" href="#_code_lists_for_coded_elements"></a><a class="link" href="#_code_lists_for_coded_elements">6.1. Code lists for coded elements</a></h3>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 45. Table of the code lists used</caption>
+<caption class="title">Table 46. Table of the code lists used</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -6617,7 +6842,7 @@ Peppol BIS 3 and therefore also exist in Pagero Universal Format. Below you will
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Business Term</th>
-<th class="tableblock halign-left valign-top">XPath</th>
+<th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">listID</th>
 </tr>
 </thead>
@@ -6635,7 +6860,7 @@ Peppol BIS 3 and therefore also exist in Pagero Universal Format. Below you will
 </tbody>
 </table>
 <div class="sect3">
-<h4 id="_puf_001_registrationdata"><a class="anchor" href="#_puf_001_registrationdata"></a><a class="link" href="#_puf_001_registrationdata">5.1.1. PUF-001-REGISTRATIONDATA</a></h4>
+<h4 id="_puf_001_registrationdata"><a class="anchor" href="#_puf_001_registrationdata"></a><a class="link" href="#_puf_001_registrationdata">6.1.1. PUF-001-REGISTRATIONDATA</a></h4>
 <div class="paragraph">
 <p>The value consist of "country code:type of value". Country code states which country the value is applicable for.</p>
 </div>
@@ -6729,7 +6954,7 @@ LN : Not in liquidation</p></td>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_puf_002_adaid"><a class="anchor" href="#_puf_002_adaid"></a><a class="link" href="#_puf_002_adaid">5.1.2. PUF-002-ADAID</a></h4>
+<h4 id="_puf_002_adaid"><a class="anchor" href="#_puf_002_adaid"></a><a class="link" href="#_puf_002_adaid">6.1.2. PUF-002-ADAID</a></h4>
 <div class="paragraph">
 <p>The value consist of "country code:type of value". Country code states which country the value is applicable for.</p>
 </div>
@@ -6776,7 +7001,7 @@ LN : Not in liquidation</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_xml_schemas"><a class="anchor" href="#_xml_schemas"></a><a class="link" href="#_xml_schemas">6. XML Schemas</a></h2>
+<h2 id="_xml_schemas"><a class="anchor" href="#_xml_schemas"></a><a class="link" href="#_xml_schemas">7. XML Schemas</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a href="xsd/puf-xsd-schemas.zip">Invoice and Credit Note XSD schemas including Pagero/PUF Extension</a>.</p>
@@ -6784,7 +7009,7 @@ LN : Not in liquidation</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_validation_rules"><a class="anchor" href="#_validation_rules"></a><a class="link" href="#_validation_rules">7. Validation rules</a></h2>
+<h2 id="_validation_rules"><a class="anchor" href="#_validation_rules"></a><a class="link" href="#_validation_rules">8. Validation rules</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>New validation rules has been created for Pagero UF, some EN16931 rules are in conflict with elements added in Pagero UF and has therefore been re-written to be compatible. This is indicated
@@ -6794,7 +7019,7 @@ in the rule name, where the original name of the rule is stated followed by the 
 <p>To validate the files please create an account on <a href="https://pagero.validex.net" class="bare">https://pagero.validex.net</a>, the validation will take into into consideration both EN16931 rules, Peppol rules as well as added Pagero UF rules.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 46. Schematron rules added in Pagero UF</caption>
+<caption class="title">Table 47. Schematron rules added in Pagero UF</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -7008,7 +7233,7 @@ in the rule name, where the original name of the rule is stated followed by the 
 </div>
 </div>
 <div class="sect1">
-<h2 id="_examples"><a class="anchor" href="#_examples"></a><a class="link" href="#_examples">8. Examples</a></h2>
+<h2 id="_examples"><a class="anchor" href="#_examples"></a><a class="link" href="#_examples">9. Examples</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Invoice example can be downloaded <a href="examples/invoice_with_extension.xml">here</a>.<br>
@@ -7017,7 +7242,7 @@ Credit note example can be downloaded <a href="examples/credit_note_with_extensi
 </div>
 </div>
 <div class="sect1">
-<h2 id="_support"><a class="anchor" href="#_support"></a><a class="link" href="#_support">9. Support</a></h2>
+<h2 id="_support"><a class="anchor" href="#_support"></a><a class="link" href="#_support">10. Support</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Any questions related to Pagero UF can be directed to <a href="mailto:puf@pagero.com">puf@pagero.com</a>.</p>

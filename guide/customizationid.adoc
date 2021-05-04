@@ -1,18 +1,20 @@
 To indicate which specification and which rules apply the CustomizationID and ProfileID must be provided.
 
 |===
-|Applicable XPath |Description
+|Path |Description
 
-|Type |Element `cbc:CustomizationID` |Element `cbc:ProfileID`
-
-|*Invoice and credit note*
-|urn:pagero.com:puf:billing:1.0
-|urn:pagero.com:puf:billing:1.0
+|`cbc:CustomizationID`
+|**Document specification identifier** +
+__Must be value urn:pagero.com:puf:billing:1.0__
 |===
 
-*Example of CustomizationID and ProfileID:*
+*Example* +
+_cbc:CustomizationID populated with correct value_
 [source,xml]
 ----
-<cbc:CustomizationID>urn:pagero.com:puf:billing:1.0</cbc:CustomizationID>
-<cbc:ProfileID>urn:pagero.com:puf:billing:1.0</cbc:ProfileID>
+<Invoice>
+  <!-- Code omitted for clarity -->
+  <cbc:CustomizationID>urn:pagero.com:puf:billing:1.0</cbc:CustomizationID>
+  <!-- Code omitted for clarity -->
+</Invoice>
 ----

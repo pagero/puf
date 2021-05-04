@@ -1,5 +1,5 @@
 |===
-|Applicable XPath |Description
+|Path |Description
 
 |`cbc:LineExtensionAmount`
 |**Net amount** +

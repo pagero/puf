@@ -25,6 +25,10 @@ include::guide/guidelines.adoc[]
 
 include::guide/Content.adoc[]
 
+== Extensions
+
+include::guide/extensionsContent.adoc[]
+
 == Country Specific
 
 include::guide/countryspecific.adoc[]

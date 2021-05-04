@@ -1,6 +1,6 @@
 .Elements available in cac:DocumentReference
 |===
-|Applicable XPath |Description
+|Path |Description
 
 |`cbc:ID`
 |**Line referenced object identifier** +

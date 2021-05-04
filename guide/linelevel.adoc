@@ -1,5 +1,9 @@
 Examples shown below are based on Invoice, for the use of credit note the corresponding element replacing `Invoice/cac:InvoiceLine` is `CreditNote/cac:CreditNoteLine`
 
+==== ext:UBLExtensions
+
+include::lineUBLExtensions.adoc[]
+
 ==== cbc:ID
 
 include::LineID.adoc[]

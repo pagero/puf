@@ -1,6 +1,6 @@
 .Elements added in cac:BillingReference/cac:InvoiceDocumentReference
 |===
-|Element |Description
+|Path |Description
 
 |`cbc:ID`
 |**Preceding invoice number** +

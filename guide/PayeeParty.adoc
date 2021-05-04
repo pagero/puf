@@ -1,6 +1,6 @@
 .Additional elements added within cac:PayeeParty
 |===
-|Applicable XPath |Description
+|Path |Description
 
 |`cac:PartyIdentification/cbc:ID`
 |**Payee Identifier** +
