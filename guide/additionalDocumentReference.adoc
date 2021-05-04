@@ -4,13 +4,14 @@ Pagero Universal Format support this handling but also has additional support in
 
 .Elements available in cac:AdditionalDocumentReference
 |===
-|Path |Description
+|Applicable XPath |Description
 
 |`cbc:ID`
 |Identifier for the referenced object/document.
 |`cbc:ID/@schemeID`
 |Scheme identifier of the referenced object/document. +
-__If used it should be according to the list PUF-005-INVOICEDOBJECTIDENTIFER [TODO - LINK]__
+When used it should be according to the list +
+<<_puf_005_invoicedobjectidentifier>>
 |`cbc:DocumentTypeCode`
 |Document type code. Should be 130 if referencing an invoiced object. Not used for other additional document references.
 |`cbc:DocumentDescription`
@@ -19,7 +20,8 @@ __If used it should be according to the list PUF-005-INVOICEDOBJECTIDENTIFER [TO
 |The attached document base64 encoded.
 |`cac:Attachment/cbc:EmbeddedDocumentBinaryObject/@mimeCode`
 |The mimecode of the attached document. +
-__Supported mimeCodes can be viewed in the list PUF-006-MIMECODES [TODO - LINK]__
+Supported mime codes can be found in the code list +
+<<_puf_006_mimecodes>>
 |`cac:Attachment/cbc:EmbeddedDocumentBinaryObject/@filename`
 |Filename of the attached document.
 |`cac:Attachment/cac:ExternalReference/cbc:URI`
@@ -86,5 +88,5 @@ _Invoice with reference to an invoiced object with a document number_
 <!-- Code omitted for clarity -->
 </Invoice>
 ----
-<1> The schemeID must be according to list PUF-005-INVOICEDOBJECTIDENTIFER [TODO - LINK] .
-<2> Document type code should be 130 to indicate invoiced object.
+<1> The schemeID must be according to list <<_puf_005_invoicedobjectidentifier>>.
+<2> Document type code should be '130' to indicate invoiced object.
