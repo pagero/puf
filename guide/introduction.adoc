@@ -23,8 +23,6 @@ Another intention of PUF has been to create a flexible, extendable format which 
 Pagero Universal Format is not to be considered as a CIUS based on EN16931 or any other CIUS or format. PUF will however to a large extent try to follow the work done in EN16931, Peppol and other UBL based
 invoicing Specifications. If one can create a correct EN16931 based UBL-format the threshold for implementing PUF should be as small as possible.
 
-'''
-
 === Version and Changelog
 
 .Version
