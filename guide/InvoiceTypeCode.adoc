@@ -6,6 +6,7 @@
 Identifier of the invoice type. +
 __Example value to be set: '380' on Invoice__ +
 __Example value to be set: '381' on CreditNote__ +
+Note that corresponding element in UBL message/document type CreditNote is named `cbc:CreditNoteTypeCode` +
 For valid values see code list <<_puf_003_invoicetypecode>>
 
 |===
