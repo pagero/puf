@@ -4,7 +4,10 @@
 |`cbc:InvoiceTypeCode`
 |**Invoice type code** +
 Identifier of the invoice type. +
-__Value to be set '380' on invoice__
+__Example value to be set: '380' on Invoice__ +
+__Example value to be set: '381' on CreditNote__ +
+For valid values see code list <<_puf_003_invoicetypecode>>
+
 |===
 *Example* +
 _cbc:InvoiceTypeCode populated with correct value_

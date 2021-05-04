@@ -4,7 +4,8 @@
 |`cbc:TaxCurrencyCode`
 |**Tax currency code** +
 The accounting currency, this must be filled in if the elements used tax amounts in accounting currency is populated. Should only be filled in if the currency is different from the document currency. +
-__Value must be according to ISO 4217 Currency codes [TODO - LINK]__
+__Value must be according to ISO 4217 Currency codes__ +
+For valid values see code list <<_puf_004_currencycode>>
 |===
 *Example* +
 _cbc:TaxCurrencyCode populated with example value_

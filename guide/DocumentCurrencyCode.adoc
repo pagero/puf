@@ -4,7 +4,8 @@
 |`cbc:DocumentCurrencyCode`
 |**Document currency code** +
 The currency code in which the amounts is specified through out the invoice. +
-__Value must be according to ISO 4217 Currency codes [TODO - LINK]__
+__Value must be according to ISO 4217 Currency codes__ +
+For valid values see code list <<_puf_004_currencycode>>
 |===
 *Example* +
 _cbc:DocumentCurrencyCode populated with example value_
