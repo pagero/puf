@@ -8,36 +8,42 @@ The total tax amount, the sum of the tax subtotals.. +
 __Summary of all TaxSubTotal/TaxAmount__
 |`cbc:TaxAmount/@currencyID`
 |**Line total tax amount currency** +
-Line total tax amount currency, must be the same as cbc:DocumentCurrencyCode.
+Line total tax amount currency, must be the same as cbc:DocumentCurrencyCode. +
+For valid values see code list <<_puf_004_currencycode>>
 |`cac:TaxSubtotal/cbc:TaxableAmount`
 |**Total taxable amount for each tax category** +
 Line total taxable amount for each tax category or tax rate. +
 __E.g. Summary of all taxable amounts for invoice lines with a certain tax percent.__
 |`cac:TaxSubtotal/cbc:TaxableAmount/@currencyID`
 |*Total taxable amount for each tax category currency** +
-Total taxable amount currency, must be the same as cbc:DocumentCurrencyCode..
+Total taxable amount currency, must be the same as cbc:DocumentCurrencyCode. +
+For valid values see code list <<_puf_004_currencycode>>
 |`cac:TaxSubtotal/cbc:TaxAmount`
 |**Total tax amount for each tax category** +
 Total tax amount for a certain tax category or tax rate.
 |`cac:TaxSubtotal/cbc:TaxAmount/@currencyID`
 |**Total tax amount currency for each tax category** +
-Total tax amount currency, must be the same as cbc:DocumentCurrencyCode.
+Total tax amount currency, must be the same as cbc:DocumentCurrencyCode. +
+For valid values see code list <<_puf_004_currencycode>>
 |`cac:TaxSubtotal/cac:TaxCategory/cbc:ID`
 |**Line tax category code** +
 Code for identifying the tax category. +
-__E.g. tax category "S"__
+__E.g. tax category "S"__ +
+For valid values see code list <<_puf_012_taxcategorycode>>
 |`cac:TaxSubtotal/cac:TaxCategory/cbc:Percent`
 |**Tax category percent** +
 Percentage rate for the tax category.
 |`cac:TaxSubtotal/cac:TaxCategory/cbc:TaxExemptionReasonCode`
 |**Tax exemption reason code** +
-Exemption reason code for the tax category, only applicable if the goods or service is exempt from tax.
+Exemption reason code for the tax category, only applicable if the goods or service is exempt from tax. +
+See code list <<_puf_013_exemptcode>> for recommendations
 |`cac:TaxSubtotal/cac:TaxCategory/cbc:TaxExemptionReason`
 |**Tax exemption reason** +
 Exemption reason for the tax category, only applicable if the goods or service is exempt from tax.
 |`cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/cbc:ID`
 |**Tax scheme identfier** +
-Tax scheme for the tax category, can be either VAT or GST.
+Tax scheme for the tax category. +
+For valid values see code list <<_puf_009_taxtypescheme>>
 |===
 
 *Example* +
