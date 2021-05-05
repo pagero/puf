@@ -17,7 +17,7 @@ _Example from Invoice_
 Depending on in which context the `UBLExtensions` are used there are different options of what types of values you are able to provide.
 To identify which context the `UBLExtensions` is in the element ExtensionURI is used. When using these Pagero extensions, the URI has the same base: 
 
-- `urn:pagero:ExtensionComponent:1.0:PageroExtension`. 
+- `urn:pagero:ExtensionComponent:1.0:PageroExtension`
 
 After the URI, the specific resource name is added.
 

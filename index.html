@@ -595,7 +595,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#_xml_schemas">7. XML Schemas</a></li>
-<li><a href="#_validation_rules">8. Validation rules</a></li>
+<li><a href="#_validation">8. Validation</a></li>
 <li><a href="#_examples">9. Examples</a></li>
 <li><a href="#_support">10. Support</a></li>
 </ul>
@@ -737,8 +737,7 @@ of code and implementation guidelines in order how to properly provide the data.
 <td class="content">
 In the XML schemas provided in chapter <a href="#_xml_schemas">XML Schemas</a> you will see the structure and the occurrences of every element available in Pagero Universal Format.
 This specification will not include any cardinality from a schema perspective nor from what is required in a specific legal domain since this might differ depending
-on which specific country, region or business requirements you will have to comply with. In order to know what information is sufficient to provide you should first check what the
-requirements from a legal and business perspective and then refer to this specification on where to provide this information. Also note that the elements and their sequence order provided in specification is done with the <code>Invoice</code> document type. When using <code>CreditNote</code> please take note to use the separate XML schema provided for possible differencies in element names or sequence order.
+on which specific country, region or business requirements you will have to comply with. In order to know what information is sufficient to provide you should first check what the requirements from a legal and business perspective and then refer to this specification on where to provide this information. Also note that the elements and their sequence order provided in specification is done with the <code>Invoice</code> document type. When using <code>CreditNote</code> please take note to use the separate XML schema provided for possible differencies in element names or sequence order.
 </td>
 </tr>
 </table>
@@ -891,7 +890,7 @@ To identify which context the <code>UBLExtensions</code> is in the element Exten
 <div class="ulist">
 <ul>
 <li>
-<p><code>urn:pagero:ExtensionComponent:1.0:PageroExtension</code>.</p>
+<p><code>urn:pagero:ExtensionComponent:1.0:PageroExtension</code></p>
 </li>
 </ul>
 </div>
@@ -997,7 +996,7 @@ Note that most examples are only shown for document type Invoice.
 <div class="sect3">
 <h4 id="_cbccustomizationid"><a class="anchor" href="#_cbccustomizationid"></a><a class="link" href="#_cbccustomizationid">3.1.1. cbc:CustomizationID</a></h4>
 <div class="paragraph">
-<p>To indicate which specification and which ruleset that should be applied to the document instan the CustomizationID and ProfileID must be provided.</p>
+<p>To indicate which specification and which ruleset that should be applied to the document instance, the CustomizationID and ProfileID must be provided.</p>
 </div>
 <table class="tableblock frame-all grid-all fit-content stretch">
 <colgroup>
@@ -5802,19 +5801,23 @@ See example below as well as the URI to be used for this extension.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cac:InvoiceLine&gt;</span>
-    <span class="tag">&lt;ext:UBLExtensions&gt;</span>
-        <span class="tag">&lt;ext:UBLExtension&gt;</span>
-            <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:LineExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
-            <span class="tag">&lt;ext:ExtensionContent&gt;</span>
-                <span class="tag">&lt;puf:PageroExtension&gt;</span>
-                    <span class="tag">&lt;puf:LineExtension</span><span class="tag">/&gt;</span> <i class="conum" data-value="2"></i><b>(2)</b>
-                <span class="tag">&lt;/puf:PageroExtension&gt;</span>
-            <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
-        <span class="tag">&lt;/ext:UBLExtension&gt;</span>
-    <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
-    <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
-<span class="tag">&lt;/cac:InvoiceLine&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;Invoice&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;cac:InvoiceLine&gt;</span>
+      <span class="tag">&lt;ext:UBLExtensions&gt;</span>
+          <span class="tag">&lt;ext:UBLExtension&gt;</span>
+              <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:LineExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
+              <span class="tag">&lt;ext:ExtensionContent&gt;</span>
+                  <span class="tag">&lt;puf:PageroExtension&gt;</span>
+                      <span class="tag">&lt;puf:LineExtension</span><span class="tag">/&gt;</span> <i class="conum" data-value="2"></i><b>(2)</b>
+                  <span class="tag">&lt;/puf:PageroExtension&gt;</span>
+              <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
+          <span class="tag">&lt;/ext:UBLExtension&gt;</span>
+      <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
+      <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;/cac:InvoiceLine&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+<span class="tag">&lt;/Invoice&gt;</span></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -5862,26 +5865,30 @@ For valid values see code list <a href="#_puf_004_currencycode">PUF-004-CURRENCY
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cac:InvoiceLine&gt;</span>
-    <span class="tag">&lt;ext:UBLExtensions&gt;</span>
-        <span class="tag">&lt;ext:UBLExtension&gt;</span>
-            <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:LineExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span>
-            <span class="tag">&lt;ext:ExtensionContent&gt;</span>
-                <span class="tag">&lt;puf:PageroExtension&gt;</span>
-                    <span class="tag">&lt;puf:LineExtension&gt;</span>
-                        <span class="tag">&lt;puf:LineExclAllowanceChargeAmount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>1000<span class="tag">&lt;/puf:LineExclAllowanceChargeAmount&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
-                    <span class="tag">&lt;/puf:LineExtension&gt;</span>
-                <span class="tag">&lt;/puf:PageroExtension&gt;</span>
-            <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
-        <span class="tag">&lt;/ext:UBLExtension&gt;</span>
-    <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
-    <span class="tag">&lt;cbc:LineExtensionAmount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>900<span class="tag">&lt;/cbc:LineExtensionAmount&gt;</span> <i class="conum" data-value="2"></i><b>(2)</b>
-    <span class="tag">&lt;cac:AllowanceCharge&gt;</span>
-        <span class="tag">&lt;cbc:ChargeIndicator&gt;</span>false<span class="tag">&lt;/cbc:ChargeIndicator&gt;</span>
-        <span class="tag">&lt;cbc:Amount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>100<span class="tag">&lt;/cbc:Amount&gt;</span>
-    <span class="tag">&lt;/cac:AllowanceCharge&gt;</span>
-    <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
-<span class="tag">&lt;/cac:InvoiceLine&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;Invoice&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;cac:InvoiceLine&gt;</span>
+      <span class="tag">&lt;ext:UBLExtensions&gt;</span>
+          <span class="tag">&lt;ext:UBLExtension&gt;</span>
+              <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:LineExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span>
+              <span class="tag">&lt;ext:ExtensionContent&gt;</span>
+                  <span class="tag">&lt;puf:PageroExtension&gt;</span>
+                      <span class="tag">&lt;puf:LineExtension&gt;</span>
+                          <span class="tag">&lt;puf:LineExclAllowanceChargeAmount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>1000<span class="tag">&lt;/puf:LineExclAllowanceChargeAmount&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
+                      <span class="tag">&lt;/puf:LineExtension&gt;</span>
+                  <span class="tag">&lt;/puf:PageroExtension&gt;</span>
+              <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
+          <span class="tag">&lt;/ext:UBLExtension&gt;</span>
+      <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
+      <span class="tag">&lt;cbc:LineExtensionAmount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>900<span class="tag">&lt;/cbc:LineExtensionAmount&gt;</span> <i class="conum" data-value="2"></i><b>(2)</b>
+      <span class="tag">&lt;cac:AllowanceCharge&gt;</span>
+          <span class="tag">&lt;cbc:ChargeIndicator&gt;</span>false<span class="tag">&lt;/cbc:ChargeIndicator&gt;</span>
+          <span class="tag">&lt;cbc:Amount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>100<span class="tag">&lt;/cbc:Amount&gt;</span>
+      <span class="tag">&lt;/cac:AllowanceCharge&gt;</span>
+      <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;/cac:InvoiceLine&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+<span class="tag">&lt;/Invoice&gt;</span></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -5913,21 +5920,25 @@ For valid values see code list <a href="#_puf_004_currencycode">PUF-004-CURRENCY
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cac:InvoiceLine&gt;</span>
-    <span class="tag">&lt;ext:UBLExtensions&gt;</span>
-        <span class="tag">&lt;ext:UBLExtension&gt;</span>
-            <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:LineExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
-            <span class="tag">&lt;ext:ExtensionContent&gt;</span>
-                <span class="tag">&lt;puf:PageroExtension&gt;</span>
-                    <span class="tag">&lt;puf:LineExtension&gt;</span>
-                        <span class="tag">&lt;puf:OriginatorDocumentReference</span><span class="tag">/&gt;</span> <i class="conum" data-value="2"></i><b>(2)</b>
-                    <span class="tag">&lt;/puf:LineExtension&gt;</span>
-                <span class="tag">&lt;/puf:PageroExtension&gt;</span>
-            <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
-        <span class="tag">&lt;/ext:UBLExtension&gt;</span>
-    <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
-    <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
-<span class="tag">&lt;/cac:InvoiceLine&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;Invoice&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;cac:InvoiceLine&gt;</span>
+      <span class="tag">&lt;ext:UBLExtensions&gt;</span>
+          <span class="tag">&lt;ext:UBLExtension&gt;</span>
+              <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:LineExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
+              <span class="tag">&lt;ext:ExtensionContent&gt;</span>
+                  <span class="tag">&lt;puf:PageroExtension&gt;</span>
+                      <span class="tag">&lt;puf:LineExtension&gt;</span>
+                          <span class="tag">&lt;puf:OriginatorDocumentReference</span><span class="tag">/&gt;</span> <i class="conum" data-value="2"></i><b>(2)</b>
+                      <span class="tag">&lt;/puf:LineExtension&gt;</span>
+                  <span class="tag">&lt;/puf:PageroExtension&gt;</span>
+              <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
+          <span class="tag">&lt;/ext:UBLExtension&gt;</span>
+      <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
+      <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;/cac:InvoiceLine&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+<span class="tag">&lt;/Invoice&gt;</span></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -5974,24 +5985,28 @@ For valid values see code list <a href="#_puf_004_currencycode">PUF-004-CURRENCY
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cac:InvoiceLine&gt;</span>
-    <span class="tag">&lt;ext:UBLExtensions&gt;</span>
-        <span class="tag">&lt;ext:UBLExtension&gt;</span>
-            <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:LineExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span>
-            <span class="tag">&lt;ext:ExtensionContent&gt;</span>
-                <span class="tag">&lt;puf:PageroExtension&gt;</span>
-                    <span class="tag">&lt;puf:LineExtension&gt;</span>
-                        <span class="tag">&lt;puf:OriginatorDocumentReference&gt;</span>
-                            <span class="tag">&lt;cbc:ID&gt;</span>123456<span class="tag">&lt;/cbc:ID&gt;</span>
-                            <span class="tag">&lt;cbc:IssueDate&gt;</span>2018-01-01<span class="tag">&lt;/cbc:IssueDate&gt;</span>
-                        <span class="tag">&lt;/puf:OriginatorDocumentReference&gt;</span>
-                    <span class="tag">&lt;/puf:LineExtension&gt;</span>
-                <span class="tag">&lt;/puf:PageroExtension&gt;</span>
-            <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
-        <span class="tag">&lt;/ext:UBLExtension&gt;</span>
-    <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
-    <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
-<span class="tag">&lt;/cac:InvoiceLine&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;Invoice&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;cac:InvoiceLine&gt;</span>
+      <span class="tag">&lt;ext:UBLExtensions&gt;</span>
+          <span class="tag">&lt;ext:UBLExtension&gt;</span>
+              <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:LineExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span>
+              <span class="tag">&lt;ext:ExtensionContent&gt;</span>
+                  <span class="tag">&lt;puf:PageroExtension&gt;</span>
+                      <span class="tag">&lt;puf:LineExtension&gt;</span>
+                          <span class="tag">&lt;puf:OriginatorDocumentReference&gt;</span>
+                              <span class="tag">&lt;cbc:ID&gt;</span>123456<span class="tag">&lt;/cbc:ID&gt;</span>
+                              <span class="tag">&lt;cbc:IssueDate&gt;</span>2018-01-01<span class="tag">&lt;/cbc:IssueDate&gt;</span>
+                          <span class="tag">&lt;/puf:OriginatorDocumentReference&gt;</span>
+                      <span class="tag">&lt;/puf:LineExtension&gt;</span>
+                  <span class="tag">&lt;/puf:PageroExtension&gt;</span>
+              <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
+          <span class="tag">&lt;/ext:UBLExtension&gt;</span>
+      <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
+      <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;/cac:InvoiceLine&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+<span class="tag">&lt;/Invoice&gt;</span></code></pre>
 </div>
 </div>
 </div>
@@ -6011,21 +6026,25 @@ For valid values see code list <a href="#_puf_004_currencycode">PUF-004-CURRENCY
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cac:InvoiceLine&gt;</span>
-    <span class="tag">&lt;ext:UBLExtensions&gt;</span>
-        <span class="tag">&lt;ext:UBLExtension&gt;</span>
-            <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:LineExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
-            <span class="tag">&lt;ext:ExtensionContent&gt;</span>
-                <span class="tag">&lt;puf:PageroExtension&gt;</span>
-                    <span class="tag">&lt;puf:LineExtension&gt;</span>
-                        <span class="tag">&lt;puf:ProjectReference</span><span class="tag">/&gt;</span> <i class="conum" data-value="2"></i><b>(2)</b>
-                    <span class="tag">&lt;/puf:LineExtension&gt;</span>
-                <span class="tag">&lt;/puf:PageroExtension&gt;</span>
-            <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
-        <span class="tag">&lt;/ext:UBLExtension&gt;</span>
-    <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
-    <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
-<span class="tag">&lt;/cac:InvoiceLine&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;Invoice&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;cac:InvoiceLine&gt;</span>
+      <span class="tag">&lt;ext:UBLExtensions&gt;</span>
+          <span class="tag">&lt;ext:UBLExtension&gt;</span>
+              <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:LineExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
+              <span class="tag">&lt;ext:ExtensionContent&gt;</span>
+                  <span class="tag">&lt;puf:PageroExtension&gt;</span>
+                      <span class="tag">&lt;puf:LineExtension&gt;</span>
+                          <span class="tag">&lt;puf:ProjectReference</span><span class="tag">/&gt;</span> <i class="conum" data-value="2"></i><b>(2)</b>
+                      <span class="tag">&lt;/puf:LineExtension&gt;</span>
+                  <span class="tag">&lt;/puf:PageroExtension&gt;</span>
+              <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
+          <span class="tag">&lt;/ext:UBLExtension&gt;</span>
+      <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
+      <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;/cac:InvoiceLine&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+<span class="tag">&lt;/Invoice&gt;</span></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -6068,23 +6087,27 @@ For valid values see code list <a href="#_puf_004_currencycode">PUF-004-CURRENCY
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cac:InvoiceLine&gt;</span>
-    <span class="tag">&lt;ext:UBLExtensions&gt;</span>
-        <span class="tag">&lt;ext:UBLExtension&gt;</span>
-            <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:LineExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span>
-            <span class="tag">&lt;ext:ExtensionContent&gt;</span>
-                <span class="tag">&lt;puf:PageroExtension&gt;</span>
-                    <span class="tag">&lt;puf:LineExtension&gt;</span>
-                        <span class="tag">&lt;puf:ProjectReference&gt;</span>
-                            <span class="tag">&lt;cbc:ID&gt;</span>123456<span class="tag">&lt;/cbc:ID&gt;</span>
-                        <span class="tag">&lt;/puf:ProjectReference&gt;</span>
-                    <span class="tag">&lt;/puf:LineExtension&gt;</span>
-                <span class="tag">&lt;/puf:PageroExtension&gt;</span>
-            <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
-        <span class="tag">&lt;/ext:UBLExtension&gt;</span>
-    <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
-    <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
-<span class="tag">&lt;/cac:InvoiceLine&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;Invoice&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;cac:InvoiceLine&gt;</span>
+      <span class="tag">&lt;ext:UBLExtensions&gt;</span>
+          <span class="tag">&lt;ext:UBLExtension&gt;</span>
+              <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:LineExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span>
+              <span class="tag">&lt;ext:ExtensionContent&gt;</span>
+                  <span class="tag">&lt;puf:PageroExtension&gt;</span>
+                      <span class="tag">&lt;puf:LineExtension&gt;</span>
+                          <span class="tag">&lt;puf:ProjectReference&gt;</span>
+                              <span class="tag">&lt;cbc:ID&gt;</span>123456<span class="tag">&lt;/cbc:ID&gt;</span>
+                          <span class="tag">&lt;/puf:ProjectReference&gt;</span>
+                      <span class="tag">&lt;/puf:LineExtension&gt;</span>
+                  <span class="tag">&lt;/puf:PageroExtension&gt;</span>
+              <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
+          <span class="tag">&lt;/ext:UBLExtension&gt;</span>
+      <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
+      <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;/cac:InvoiceLine&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+<span class="tag">&lt;/Invoice&gt;</span></code></pre>
 </div>
 </div>
 </div>
@@ -6105,25 +6128,31 @@ For valid values see code list <a href="#_puf_004_currencycode">PUF-004-CURRENCY
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cac:InvoiceLine&gt;</span>
-    <span class="tag">&lt;cac:OrderLineReference&gt;</span>
-        <span class="tag">&lt;cac:OrderReference&gt;</span>
-            <span class="tag">&lt;ext:UBLExtensions&gt;</span>
-                <span class="tag">&lt;ext:UBLExtension&gt;</span>
-                    <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:LineExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
-                    <span class="tag">&lt;ext:ExtensionContent&gt;</span>
-                        <span class="tag">&lt;puf:PageroExtension&gt;</span>
-                            <span class="tag">&lt;puf:LineExtension&gt;</span>
-                                <span class="tag">&lt;puf:OrderLineReference</span><span class="tag">/&gt;</span> <i class="conum" data-value="2"></i><b>(2)</b>
-                            <span class="tag">&lt;/puf:LineExtension&gt;</span>
-                        <span class="tag">&lt;/puf:PageroExtension&gt;</span>
-                    <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
-                <span class="tag">&lt;/ext:UBLExtension&gt;</span>
-            <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
-            <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
-        <span class="tag">&lt;/cac:OrderLineReference&gt;</span>
-    <span class="tag">&lt;/cac:OrderReference&gt;</span>
-<span class="tag">&lt;/cac:InvoiceLine&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;Invoice&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;cac:InvoiceLine&gt;</span>
+      <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+      <span class="tag">&lt;cac:OrderLineReference&gt;</span>
+          <span class="tag">&lt;cac:OrderReference&gt;</span>
+              <span class="tag">&lt;ext:UBLExtensions&gt;</span>
+                  <span class="tag">&lt;ext:UBLExtension&gt;</span>
+                      <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:LineExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
+                      <span class="tag">&lt;ext:ExtensionContent&gt;</span>
+                          <span class="tag">&lt;puf:PageroExtension&gt;</span>
+                              <span class="tag">&lt;puf:LineExtension&gt;</span>
+                                  <span class="tag">&lt;puf:OrderLineReference</span><span class="tag">/&gt;</span> <i class="conum" data-value="2"></i><b>(2)</b>
+                              <span class="tag">&lt;/puf:LineExtension&gt;</span>
+                          <span class="tag">&lt;/puf:PageroExtension&gt;</span>
+                      <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
+                  <span class="tag">&lt;/ext:UBLExtension&gt;</span>
+              <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
+              <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+          <span class="tag">&lt;/cac:OrderReference&gt;</span>
+      <span class="tag">&lt;/cac:OrderLineReference&gt;</span>
+      <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;/cac:InvoiceLine&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+<span class="tag">&lt;/Invoice&gt;</span></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -6166,32 +6195,36 @@ For valid values see code list <a href="#_puf_004_currencycode">PUF-004-CURRENCY
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cac:InvoiceLine&gt;</span>
-    <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
-    <span class="tag">&lt;cac:OrderLineReference&gt;</span>
-        <span class="tag">&lt;cbc:LineID&gt;</span>1<span class="tag">&lt;/cbc:LineID&gt;</span>
-        <span class="tag">&lt;cac:OrderReference&gt;</span>
-            <span class="tag">&lt;ext:UBLExtensions&gt;</span>
-                <span class="tag">&lt;ext:UBLExtension&gt;</span>
-                    <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:LineExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span>
-                    <span class="tag">&lt;ext:ExtensionContent&gt;</span>
-                        <span class="tag">&lt;puf:PageroExtension&gt;</span>
-                            <span class="tag">&lt;puf:LineExtension&gt;</span>
-                                <span class="tag">&lt;puf:OrderLineReference&gt;</span>
-                                    <span class="tag">&lt;puf:SalesOrderIssueDate&gt;</span>2019-01-01<span class="tag">&lt;/puf:SalesOrderIssueDate&gt;</span>
-                                <span class="tag">&lt;/puf:OrderLineReference&gt;</span>
-                            <span class="tag">&lt;/puf:LineExtension&gt;</span>
-                        <span class="tag">&lt;/puf:PageroExtension&gt;</span>
-                    <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
-                <span class="tag">&lt;/ext:UBLExtension&gt;</span>
-            <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
-            <span class="tag">&lt;cbc:ID&gt;</span>Purchase Order ID<span class="tag">&lt;/cbc:ID&gt;</span>
-            <span class="tag">&lt;cbc:SalesOrderID&gt;</span>Sales Order ID<span class="tag">&lt;/cbc:SalesOrderID&gt;</span>
-            <span class="tag">&lt;cbc:IssueDate&gt;</span>2019-01-01<span class="tag">&lt;/cbc:IssueDate&gt;</span>
-        <span class="tag">&lt;/cac:OrderReference&gt;</span>
-    <span class="tag">&lt;/cac:OrderLineReference&gt;</span>
-    <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
-<span class="tag">&lt;/cac:InvoiceLine&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;Invoice&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;cac:InvoiceLine&gt;</span>
+      <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+      <span class="tag">&lt;cac:OrderLineReference&gt;</span>
+          <span class="tag">&lt;cbc:LineID&gt;</span>1<span class="tag">&lt;/cbc:LineID&gt;</span>
+          <span class="tag">&lt;cac:OrderReference&gt;</span>
+              <span class="tag">&lt;ext:UBLExtensions&gt;</span>
+                  <span class="tag">&lt;ext:UBLExtension&gt;</span>
+                      <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:LineExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span>
+                      <span class="tag">&lt;ext:ExtensionContent&gt;</span>
+                          <span class="tag">&lt;puf:PageroExtension&gt;</span>
+                              <span class="tag">&lt;puf:LineExtension&gt;</span>
+                                  <span class="tag">&lt;puf:OrderLineReference&gt;</span>
+                                      <span class="tag">&lt;puf:SalesOrderIssueDate&gt;</span>2019-01-01<span class="tag">&lt;/puf:SalesOrderIssueDate&gt;</span>
+                                  <span class="tag">&lt;/puf:OrderLineReference&gt;</span>
+                              <span class="tag">&lt;/puf:LineExtension&gt;</span>
+                          <span class="tag">&lt;/puf:PageroExtension&gt;</span>
+                      <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
+                  <span class="tag">&lt;/ext:UBLExtension&gt;</span>
+              <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
+              <span class="tag">&lt;cbc:ID&gt;</span>Purchase Order ID<span class="tag">&lt;/cbc:ID&gt;</span>
+              <span class="tag">&lt;cbc:SalesOrderID&gt;</span>Sales Order ID<span class="tag">&lt;/cbc:SalesOrderID&gt;</span>
+              <span class="tag">&lt;cbc:IssueDate&gt;</span>2019-01-01<span class="tag">&lt;/cbc:IssueDate&gt;</span>
+          <span class="tag">&lt;/cac:OrderReference&gt;</span>
+      <span class="tag">&lt;/cac:OrderLineReference&gt;</span>
+      <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;/cac:InvoiceLine&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+<span class="tag">&lt;/Invoice&gt;</span></code></pre>
 </div>
 </div>
 </div>
@@ -6211,21 +6244,25 @@ For valid values see code list <a href="#_puf_004_currencycode">PUF-004-CURRENCY
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cac:InvoiceLine&gt;</span>
-    <span class="tag">&lt;ext:UBLExtensions&gt;</span>
-        <span class="tag">&lt;ext:UBLExtension&gt;</span>
-            <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:LineExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
-            <span class="tag">&lt;ext:ExtensionContent&gt;</span>
-                <span class="tag">&lt;puf:PageroExtension&gt;</span>
-                    <span class="tag">&lt;puf:LineExtension&gt;</span>
-                        <span class="tag">&lt;puf:ContractDocumentReference</span><span class="tag">/&gt;</span> <i class="conum" data-value="2"></i><b>(2)</b>
-                    <span class="tag">&lt;/puf:LineExtension&gt;</span>
-                <span class="tag">&lt;/puf:PageroExtension&gt;</span>
-            <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
-        <span class="tag">&lt;/ext:UBLExtension&gt;</span>
-    <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
-    <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
-<span class="tag">&lt;/cac:InvoiceLine&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;Invoice&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;cac:InvoiceLine&gt;</span>
+      <span class="tag">&lt;ext:UBLExtensions&gt;</span>
+          <span class="tag">&lt;ext:UBLExtension&gt;</span>
+              <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:LineExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
+              <span class="tag">&lt;ext:ExtensionContent&gt;</span>
+                  <span class="tag">&lt;puf:PageroExtension&gt;</span>
+                      <span class="tag">&lt;puf:LineExtension&gt;</span>
+                          <span class="tag">&lt;puf:ContractDocumentReference</span><span class="tag">/&gt;</span> <i class="conum" data-value="2"></i><b>(2)</b>
+                      <span class="tag">&lt;/puf:LineExtension&gt;</span>
+                  <span class="tag">&lt;/puf:PageroExtension&gt;</span>
+              <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
+          <span class="tag">&lt;/ext:UBLExtension&gt;</span>
+      <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
+      <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;/cac:InvoiceLine&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+<span class="tag">&lt;/Invoice&gt;</span></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -6280,26 +6317,30 @@ For valid values see code list <a href="#_puf_004_currencycode">PUF-004-CURRENCY
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cac:InvoiceLine&gt;</span>
-    <span class="tag">&lt;ext:UBLExtensions&gt;</span>
-        <span class="tag">&lt;ext:UBLExtension&gt;</span>
-            <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:LineExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span>
-            <span class="tag">&lt;ext:ExtensionContent&gt;</span>
-                <span class="tag">&lt;puf:PageroExtension&gt;</span>
-                    <span class="tag">&lt;puf:LineExtension&gt;</span>
-                        <span class="tag">&lt;puf:ContractDocumentReference&gt;</span>
-                            <span class="tag">&lt;cbc:ID&gt;</span>123456<span class="tag">&lt;/cbc:ID&gt;</span>
-                            <span class="tag">&lt;cbc:IssueDate&gt;</span>2018-01-01<span class="tag">&lt;/cbc:IssueDate&gt;</span>
-                            <span class="tag">&lt;puf:BuyerContractID&gt;</span>BuyerContractID<span class="tag">&lt;/puf:BuyerContractID&gt;</span>
-                                                                <span class="tag">&lt;puf:BuyerContractIssueDate&gt;</span>2019-01-01<span class="tag">&lt;/puf:BuyerContractIssueDate&gt;</span>
-                        <span class="tag">&lt;/puf:ContractDocumentReference&gt;</span>
-                    <span class="tag">&lt;/puf:LineExtension&gt;</span>
-                <span class="tag">&lt;/puf:PageroExtension&gt;</span>
-            <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
-        <span class="tag">&lt;/ext:UBLExtension&gt;</span>
-    <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
-    <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
-<span class="tag">&lt;/cac:InvoiceLine&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;Invoice&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;cac:InvoiceLine&gt;</span>
+      <span class="tag">&lt;ext:UBLExtensions&gt;</span>
+          <span class="tag">&lt;ext:UBLExtension&gt;</span>
+              <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:LineExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span>
+              <span class="tag">&lt;ext:ExtensionContent&gt;</span>
+                  <span class="tag">&lt;puf:PageroExtension&gt;</span>
+                      <span class="tag">&lt;puf:LineExtension&gt;</span>
+                          <span class="tag">&lt;puf:ContractDocumentReference&gt;</span>
+                              <span class="tag">&lt;cbc:ID&gt;</span>123456<span class="tag">&lt;/cbc:ID&gt;</span>
+                              <span class="tag">&lt;cbc:IssueDate&gt;</span>2018-01-01<span class="tag">&lt;/cbc:IssueDate&gt;</span>
+                              <span class="tag">&lt;puf:BuyerContractID&gt;</span>BuyerContractID<span class="tag">&lt;/puf:BuyerContractID&gt;</span>
+                                                                  <span class="tag">&lt;puf:BuyerContractIssueDate&gt;</span>2019-01-01<span class="tag">&lt;/puf:BuyerContractIssueDate&gt;</span>
+                          <span class="tag">&lt;/puf:ContractDocumentReference&gt;</span>
+                      <span class="tag">&lt;/puf:LineExtension&gt;</span>
+                  <span class="tag">&lt;/puf:PageroExtension&gt;</span>
+              <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
+          <span class="tag">&lt;/ext:UBLExtension&gt;</span>
+      <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
+      <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;/cac:InvoiceLine&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+<span class="tag">&lt;/Invoice&gt;</span></code></pre>
 </div>
 </div>
 </div>
@@ -6320,22 +6361,26 @@ Note that the new element PriceInclAllowanceChargeAmount should include the <cod
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cac:InvoiceLine&gt;</span>
-    <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
-    <span class="tag">&lt;cac:Price&gt;</span>
-        <span class="tag">&lt;ext:UBLExtensions&gt;</span>
-            <span class="tag">&lt;ext:UBLExtension&gt;</span>
-                <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:PriceExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
-                <span class="tag">&lt;ext:ExtensionContent&gt;</span>
-                    <span class="tag">&lt;puf:PageroExtension&gt;</span>
-                        <span class="tag">&lt;puf:PriceExtension</span><span class="tag">/&gt;</span> <i class="conum" data-value="2"></i><b>(2)</b>
-                    <span class="tag">&lt;/puf:PageroExtension&gt;</span>
-                <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
-            <span class="tag">&lt;/ext:UBLExtension&gt;</span>
-        <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
-        <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
-    <span class="tag">&lt;/cac:Price&gt;</span>
-<span class="tag">&lt;/cac:InvoiceLine&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;Invoice&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;cac:InvoiceLine&gt;</span>
+      <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+      <span class="tag">&lt;cac:Price&gt;</span>
+          <span class="tag">&lt;ext:UBLExtensions&gt;</span>
+              <span class="tag">&lt;ext:UBLExtension&gt;</span>
+                  <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:PriceExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
+                  <span class="tag">&lt;ext:ExtensionContent&gt;</span>
+                      <span class="tag">&lt;puf:PageroExtension&gt;</span>
+                          <span class="tag">&lt;puf:PriceExtension</span><span class="tag">/&gt;</span> <i class="conum" data-value="2"></i><b>(2)</b>
+                      <span class="tag">&lt;/puf:PageroExtension&gt;</span>
+                  <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
+              <span class="tag">&lt;/ext:UBLExtension&gt;</span>
+          <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
+          <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+      <span class="tag">&lt;/cac:Price&gt;</span>
+  <span class="tag">&lt;/cac:InvoiceLine&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+<span class="tag">&lt;/Invoice&gt;</span></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -6383,30 +6428,34 @@ For valid values see code list <a href="#_puf_004_currencycode">PUF-004-CURRENCY
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cac:InvoiceLine&gt;</span>
-    <span class="tag">&lt;cbc:InvoicedQuantity</span> <span class="attribute-name">unitCode</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EA</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>1<span class="tag">&lt;/cbc:InvoicedQuantity&gt;</span>
-    <span class="tag">&lt;cbc:LineExtensionAmount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>900<span class="tag">&lt;/cbc:LineExtensionAmount&gt;</span>
-    <span class="tag">&lt;cac:AllowanceCharge&gt;</span>
-        <span class="tag">&lt;cbc:ChargeIndicator&gt;</span>false<span class="tag">&lt;/cbc:ChargeIndicator&gt;</span>
-        <span class="tag">&lt;cbc:Amount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>100<span class="tag">&lt;/cbc:Amount&gt;</span>
-    <span class="tag">&lt;/cac:AllowanceCharge&gt;</span>
-    <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
-    <span class="tag">&lt;cac:Price&gt;</span>
-      <span class="tag">&lt;ext:UBLExtensions&gt;</span>
-          <span class="tag">&lt;ext:UBLExtension&gt;</span>
-              <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:PriceExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span>
-              <span class="tag">&lt;ext:ExtensionContent&gt;</span>
-                  <span class="tag">&lt;puf:PageroExtension&gt;</span>
-                      <span class="tag">&lt;puf:PriceExtension&gt;</span>
-                          <span class="tag">&lt;puf:PriceInclAllowanceChargeAmount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>900<span class="tag">&lt;/puf:PriceInclAllowanceChargeAmount&gt;</span> <i class="conum" data-value="2"></i><b>(2)</b>
-                      <span class="tag">&lt;/puf:PriceExtension&gt;</span>
-                  <span class="tag">&lt;/puf:PageroExtension&gt;</span>
-              <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
-          <span class="tag">&lt;/ext:UBLExtension&gt;</span>
-      <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
-      <span class="tag">&lt;cbc:PriceAmount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>1000<span class="tag">&lt;/cbc:PriceAmount&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
-    <span class="tag">&lt;/cac:Price&gt;</span>
-<span class="tag">&lt;/cac:InvoiceLine&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;Invoice&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;cac:InvoiceLine&gt;</span>
+      <span class="tag">&lt;cbc:InvoicedQuantity</span> <span class="attribute-name">unitCode</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EA</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>1<span class="tag">&lt;/cbc:InvoicedQuantity&gt;</span>
+      <span class="tag">&lt;cbc:LineExtensionAmount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>900<span class="tag">&lt;/cbc:LineExtensionAmount&gt;</span>
+      <span class="tag">&lt;cac:AllowanceCharge&gt;</span>
+          <span class="tag">&lt;cbc:ChargeIndicator&gt;</span>false<span class="tag">&lt;/cbc:ChargeIndicator&gt;</span>
+          <span class="tag">&lt;cbc:Amount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>100<span class="tag">&lt;/cbc:Amount&gt;</span>
+      <span class="tag">&lt;/cac:AllowanceCharge&gt;</span>
+      <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+      <span class="tag">&lt;cac:Price&gt;</span>
+        <span class="tag">&lt;ext:UBLExtensions&gt;</span>
+            <span class="tag">&lt;ext:UBLExtension&gt;</span>
+                <span class="tag">&lt;ext:ExtensionURI&gt;</span>urn:pagero:ExtensionComponent:1.0:PageroExtension:PriceExtension<span class="tag">&lt;/ext:ExtensionURI&gt;</span>
+                <span class="tag">&lt;ext:ExtensionContent&gt;</span>
+                    <span class="tag">&lt;puf:PageroExtension&gt;</span>
+                        <span class="tag">&lt;puf:PriceExtension&gt;</span>
+                            <span class="tag">&lt;puf:PriceInclAllowanceChargeAmount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>900<span class="tag">&lt;/puf:PriceInclAllowanceChargeAmount&gt;</span> <i class="conum" data-value="2"></i><b>(2)</b>
+                        <span class="tag">&lt;/puf:PriceExtension&gt;</span>
+                    <span class="tag">&lt;/puf:PageroExtension&gt;</span>
+                <span class="tag">&lt;/ext:ExtensionContent&gt;</span>
+            <span class="tag">&lt;/ext:UBLExtension&gt;</span>
+        <span class="tag">&lt;/ext:UBLExtensions&gt;</span>
+        <span class="tag">&lt;cbc:PriceAmount</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">EUR</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>1000<span class="tag">&lt;/cbc:PriceAmount&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
+      <span class="tag">&lt;/cac:Price&gt;</span>
+  <span class="tag">&lt;/cac:InvoiceLine&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+<span class="tag">&lt;/Invoice&gt;</span></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -7368,7 +7417,7 @@ However, code list <a href="https://docs.peppol.eu/poacc/billing/3.0/codelist/UN
 </div>
 </div>
 <div class="sect1">
-<h2 id="_validation_rules"><a class="anchor" href="#_validation_rules"></a><a class="link" href="#_validation_rules">8. Validation rules</a></h2>
+<h2 id="_validation"><a class="anchor" href="#_validation"></a><a class="link" href="#_validation">8. Validation</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>New validation rules has been created for Pagero UF, some EN16931 rules are in conflict with elements added in Pagero UF and has therefore been re-written to be compatible. This is indicated

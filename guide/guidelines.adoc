@@ -9,19 +9,19 @@ The reason for this is that there would be too many semantic rules to tie each `
 
 === How to get started with Pagero Universal Format
 
-include::howtogetstarted.adoc[]
+include::guidelines/howtogetstarted.adoc[]
 
 === Namespaces
 
-include::namespaces.adoc[]
+include::guidelines/namespaces.adoc[]
 
 === Customization and Profile ID
 
-include::customizationidandProfile.adoc[]
+include::guidelines/customizationidandProfile.adoc[]
 
 === Working with extensions
 
-include::workextensions.adoc[]
+include::guidelines/workextensions.adoc[]
 
 === Continuous development and release management
 

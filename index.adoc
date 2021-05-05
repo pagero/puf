@@ -23,11 +23,11 @@ include::guide/guidelines.adoc[]
 
 == Content
 
-include::guide/Content.adoc[]
+include::guide/content.adoc[]
 
 == Extensions
 
-include::guide/extensionsContent.adoc[]
+include::guide/extensions.adoc[]
 
 == Country Specific
 
@@ -39,11 +39,11 @@ include::guide/codelists.adoc[]
 
 == XML Schemas
 
-include::guide/schemas.adoc[]
+include::guide/xmlschemas.adoc[]
 
-== Validation rules
+== Validation
 
-include::guide/schematron.adoc[]
+include::guide/validation.adoc[]
 
 == Examples
 

@@ -20,8 +20,8 @@ WARNING: Note that most examples are only shown for document type Invoice.
 
 === Invoice
 
-include::documentlevel.adoc[]
+include::content/documentlevel.adoc[]
 
 === cac:InvoiceLine
 
-include::linelevel.adoc[]
+include::content/linelevel.adoc[]
