@@ -5,7 +5,8 @@
 |`cbc:PaymentMeansCode`
 |**Payment means code** +
 Code for how the payment is to be settled. +
-__E.g. 30__
+__E.g. 30__ +
+Value must be according to code list <<_puf_010_paymentmeanscode>>
 |`cbc:PaymentMeansCode/@name`
 |**Payment means name** +
 Name describing the payment means.

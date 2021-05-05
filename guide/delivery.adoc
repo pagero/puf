@@ -18,7 +18,8 @@ __E.g. GLN number__
 |`cac:DeliveryLocation/cbc:ID/@schemeID`
 |**Delivery location identifier scheme identifier** +
 Scheme identifier of the delivery location identifier +
-__E.g. 0088__
+__E.g. 0088__ +
+Value must be according to code list <<_puf_008_identificationscheme>>
 |`cac:DeliveryLocation/cbc:Description`
 |**Delivery location description** +
 Description of the delivery location.

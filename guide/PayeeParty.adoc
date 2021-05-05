@@ -7,7 +7,8 @@
 Identifier of the payee.
 |`cac:PartyIdentification/cbc:ID/@schemeID`
 |**Payee scheme Identifier** +
-Scheme identifier of payee identifier.
+Scheme identifier of payee identifier. +
+Value must be according to code list <<_puf_008_identificationscheme>>
 |`cac:PartyName/cbc:Name`
 |**Payee name** +
 Payee name.
@@ -16,7 +17,8 @@ Payee name.
 Payee's legal registration identifier.
 |`cac:PartyLegalEntity/cbc:CompanyID/@schemeID`
 |**Legal company identifier scheme identifier** +
-Payee's legal registration identifier scheme identifier.
+Payee's legal registration identifier scheme identifier. +
+Value must be according to code list <<_puf_008_identificationscheme>>
 |===
 
 *Example* +

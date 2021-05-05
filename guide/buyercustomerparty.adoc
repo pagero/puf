@@ -19,13 +19,15 @@ Extension is added to provide additional information in the `cac:Party` element,
 Buyer's electronic address
 |`cac:Party/cbc:EndpointID/@schemeID`
 |**Electronic Identifier scheme ID** +
-Scheme identifier of electronic address
+Scheme identifier of electronic address. +
+Value must be according to code list <<_puf_007_endpointscheme>>
 |`cac:Party/cac:PartyIdentification/cbc:ID`
 |**Buyer Identifier** +
 Identifier of the Buyer.
 |`cac:Party/cac:PartyIdentification/cbc:ID/@schemeID`
 |**Buyer Identifier** +
-Scheme identifier of Buyer identifier
+Scheme identifier of Buyer identifier. +
+Value must be according to code list <<_puf_008_identificationscheme>>
 |`cac:Party/cac:PartyName/cbc:Name`
 |**Buyer name** +
 Buyer name
@@ -74,7 +76,8 @@ Buyer's formal name or company name
 Buyer's legal registration identifier
 |`cac:Party/cac:PartyLegalEntity/cbc:CompanyID/@schemeID`
 |**Legal company scheme identifier** +
-Buyer's legal registration identifier scheme identifier
+Buyer's legal registration identifier scheme identifier. +
+Value must be according to code list <<_puf_008_identificationscheme>>
 |`cac:Party/cac:PartyLegalEntity/cbc:CompanyLegalForm`
 |**Company legal form** +
 Relevant legal information regarding the Buyer.

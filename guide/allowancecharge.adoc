@@ -9,7 +9,7 @@ __Value must be either true or false__
 |`cbc:AllowanceChargeReasonCode`
 |**Allowance or charge reason code** +
 Reason code for allowance or charge. +
-__For allowances a subset of codelist UNCL5189 is to be used, and for charges codelist UNCL7161 applies__
+See code list <<_puf_011_allowancechargereasoncode>> for recommendations
 |`cbc:AllowanceChargeReason`
 |**Allowance or charge reason** +
 Test describing the reason for allowance or charge.
@@ -22,17 +22,20 @@ __E.g. 10% discount should be expressed as "10"__
 Amount of allowance or charge.
 |`cbc:Amount/@currencyID`
 |**Allowance or charge amount currency** +
-Amount of allowance or charge currency.
+Amount of allowance or charge currency. +
+For valid values see code list <<_puf_004_currencycode>>
 |`cbc:BaseAmount`
 |**Allowance or charge base amount** +
 Base amount which the calcuation is based on.
 |`cbc:BaseAmount/@currencyID`
 |**Allowance or charge base amount currency** +
-Base amount currency.
+Base amount currency. +
+For valid values see code list <<_puf_004_currencycode>>
 |`cac:TaxCategory/cbc:ID`
 |**Allowance or charge tax category code** +
 Code to indicate the tax category +
-__E.g. "S"__
+__E.g. "S"__ +
+For valid values see code list <<_puf_012_taxcategorycode>>
 |`cac:TaxCategory/cbc:Percent`
 |**Allowance or Charge tax percent** +
 Allowance or charge tax percent.
@@ -50,7 +53,8 @@ Tax scheme identifier, possible value is VAT or GST.
 Total tax amount for the allowance or charge.
 |`cac:TaxTotal/cbc:TaxAmount/@currencyID`
 |**Allowance or Charge tax Amount currency** +
-Total tax amount currency for the allowance or charge.
+Total tax amount currency for the allowance or charge. +
+For valid values see code list <<_puf_004_currencycode>>
 |===
 
 *Example* +

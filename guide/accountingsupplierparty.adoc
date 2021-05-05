@@ -12,16 +12,18 @@ Supplier ID, assigned by the buyer.
 Extension is added to provide additional information in the `cac:Party` element, the information available can be found <<_party, here>>
 |`cac:Party/cbc:EndpointID`
 |**Electronic Identifier** +
-Seller's electronic address
+Seller's electronic address +
 |`cac:Party/cbc:EndpointID/@schemeID`
 |**Electronic Identifier scheme ID** +
-Scheme identifier of electronic address
+Scheme identifier of electronic address. +
+Value must be according to code list <<_puf_007_endpointscheme>>
 |`cac:Party/cac:PartyIdentification/cbc:ID`
 |**Seller Identifier** +
 Identifier of the seller.
 |`cac:Party/cac:PartyIdentification/cbc:ID/@schemeID`
 |**Seller Identifier** +
-Scheme identifier of seller identifier
+Scheme identifier of seller identifier +
+Value must be according to code list <<_puf_008_identificationscheme>>
 |`cac:Party/cac:PartyName/cbc:Name`
 |**Seller name** +
 Seller name
@@ -70,7 +72,8 @@ Seller's formal name or company name
 Seller's legal registration identifier
 |`cac:Party/cac:PartyLegalEntity/cbc:CompanyID/@schemeID`
 |**Legal company scheme identifier** +
-Seller's legal registration identifier scheme identifier
+Seller's legal registration identifier scheme identifier +
+Value must be according to code list <<_puf_008_identificationscheme>>
 |`cac:Party/cac:PartyLegalEntity/cbc:CompanyLegalForm`
 |**Company legal form** +
 Relevant legal information regarding the seller.
