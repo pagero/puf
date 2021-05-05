@@ -6,19 +6,23 @@ See example below as well as the URI to be used for this extension.
 *Example*
 [source,xml]
 ----
-<cac:Party>
-    <ext:UBLExtensions>
-        <ext:UBLExtension>
-            <ext:ExtensionURI>urn:pagero:ExtensionComponent:1.0:PageroExtension:PartyExtension</ext:ExtensionURI> <!--1-->
-            <ext:ExtensionContent>
-                <puf:PageroExtension>
-                    <puf:PartyExtension/> <!--2-->
-                </puf:PageroExtension>
-            </ext:ExtensionContent>
-        </ext:UBLExtension>
-    </ext:UBLExtensions>
-    <!-- Code omitted for clarity -->
-</cac:Party>
+<Invoice>
+  <!-- Code omitted for clarity -->
+  <cac:Party>
+      <ext:UBLExtensions>
+          <ext:UBLExtension>
+              <ext:ExtensionURI>urn:pagero:ExtensionComponent:1.0:PageroExtension:PartyExtension</ext:ExtensionURI> <!--1-->
+              <ext:ExtensionContent>
+                  <puf:PageroExtension>
+                      <puf:PartyExtension/> <!--2-->
+                  </puf:PageroExtension>
+              </ext:ExtensionContent>
+          </ext:UBLExtension>
+      </ext:UBLExtensions>
+      <!-- Code omitted for clarity -->
+  </cac:Party>
+  <!-- Code omitted for clarity -->
+</Invoice>
 ----
 <1> URI to be used if this extension is added.
 <2> Structure to be used if information from this extension will be used.
@@ -54,28 +58,32 @@ To identify the type of registration data. The `puf:IDType` must be coded using 
 
 [source,xml]
 ----
-<cac:Party>
-    <ext:UBLExtensions>
-        <ext:UBLExtension>
-            <ext:ExtensionURI>urn:pagero:ExtensionComponent:1.0:PageroExtension:PartyExtension</ext:ExtensionURI>
-            <ext:ExtensionContent>
-                <puf:PageroExtension>
-                    <puf:PartyExtension>
-                        <puf:RegistrationData>
-                            <cbc:ID>SomeRegistrationData</cbc:ID>
-                            <puf:IDType listID="PUF-001-REGISTRATIONDATA">ES:Folio</puf:IDType>
-                        </puf:RegistrationData>
-                        <puf:RegistrationData>
-                            <cbc:ID>SomeRegistrationData</cbc:ID>
-                            <puf:IDType listID="PUF-001-REGISTRATIONDATA">ES:Book</puf:IDType>
-                        </puf:RegistrationData>
-                    </puf:PartyExtension>
-                </puf:PageroExtension>
-            </ext:ExtensionContent>
-        </ext:UBLExtension>
-    </ext:UBLExtensions>
-    <!-- Code omitted for clarity -->
-</cac:Party>
+<Invoice>
+  <!-- Code omitted for clarity -->
+  <cac:Party>
+      <ext:UBLExtensions>
+          <ext:UBLExtension>
+              <ext:ExtensionURI>urn:pagero:ExtensionComponent:1.0:PageroExtension:PartyExtension</ext:ExtensionURI>
+              <ext:ExtensionContent>
+                  <puf:PageroExtension>
+                      <puf:PartyExtension>
+                          <puf:RegistrationData>
+                              <cbc:ID>SomeRegistrationData</cbc:ID>
+                              <puf:IDType listID="PUF-001-REGISTRATIONDATA">ES:Folio</puf:IDType>
+                          </puf:RegistrationData>
+                          <puf:RegistrationData>
+                              <cbc:ID>SomeRegistrationData</cbc:ID>
+                              <puf:IDType listID="PUF-001-REGISTRATIONDATA">ES:Book</puf:IDType>
+                          </puf:RegistrationData>
+                      </puf:PartyExtension>
+                  </puf:PageroExtension>
+              </ext:ExtensionContent>
+          </ext:UBLExtension>
+      </ext:UBLExtensions>
+      <!-- Code omitted for clarity -->
+  </cac:Party>
+  <!-- Code omitted for clarity -->
+</Invoice>
 ----
 
 ===== Additional Destination Address Identifier (ADAID)
@@ -88,23 +96,27 @@ This is mostly used to public entities (e.g. government recipients). To identify
 
 [source,xml]
 ----
-<cac:Party>
-  <ext:UBLExtensions>
-      <ext:UBLExtension>
-          <ext:ExtensionURI>urn:pagero:ExtensionComponent:1.0:PageroExtension:PartyExtension</ext:ExtensionURI>
-          <ext:ExtensionContent>
-              <puf:PageroExtension>
-                  <puf:PartyExtension>
-                      <puf:ADAID>
-                          <cbc:ID>1234567890</cbc:ID>
-                          <cbc:Name>Name of Unit</cbc:Name>
-                          <puf:IDType listID="PUF-002-ADAID">FR:ServiceCode</puf:IDType>
-                      </puf:ADAID>
-                  </puf:PartyExtension>
-              </puf:PageroExtension>
-          </ext:ExtensionContent>
-      </ext:UBLExtension>
-  </ext:UBLExtensions>
+<Invoice>
   <!-- Code omitted for clarity -->
-</cac:Party>
+  <cac:Party>
+    <ext:UBLExtensions>
+        <ext:UBLExtension>
+            <ext:ExtensionURI>urn:pagero:ExtensionComponent:1.0:PageroExtension:PartyExtension</ext:ExtensionURI>
+            <ext:ExtensionContent>
+                <puf:PageroExtension>
+                    <puf:PartyExtension>
+                        <puf:ADAID>
+                            <cbc:ID>1234567890</cbc:ID>
+                            <cbc:Name>Name of Unit</cbc:Name>
+                            <puf:IDType listID="PUF-002-ADAID">FR:ServiceCode</puf:IDType>
+                        </puf:ADAID>
+                    </puf:PartyExtension>
+                </puf:PageroExtension>
+            </ext:ExtensionContent>
+        </ext:UBLExtension>
+    </ext:UBLExtensions>
+    <!-- Code omitted for clarity -->
+  </cac:Party>
+  <!-- Code omitted for clarity -->
+</Invoice>
 ----
