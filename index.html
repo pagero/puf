@@ -138,7 +138,7 @@ b.button:before,b.button:after{position:relative;top:-1px;font-weight:400}
 b.button:before{content:"[";padding:0 3px 0 2px}
 b.button:after{content:"]";padding:0 2px 0 3px}
 p a>code:hover{color:rgba(0,0,0,.9)}
-#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:65em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
 #header:before,#header:after,#content:before,#content:after,#footnotes:before,#footnotes:after,#footer:before,#footer:after{content:" ";display:table}
 #header:after,#content:after,#footnotes:after,#footer:after{clear:both}
 #content{margin-top:1.25em}
@@ -3835,7 +3835,8 @@ The item quantity for this invoice line.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:InvoicedQuantity/@unitCode</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Quantity unit of measure</strong><br>
-Unit of measure for the quantity invoiced</p></td>
+Unit of measure for the quantity invoiced.<br>
+See code list <a href="#_puf_014_uomcode">PUF-014-UOMCODE</a> for recommendations</p></td>
 </tr>
 </tbody>
 </table>
@@ -3879,7 +3880,8 @@ The net amount for the invoice line.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:LineExtensionAmount/@currencyID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Net amount currency</strong><br>
-Currency applied for cbc:LineExtensionAmount, must be the same as cbc:DocumentCurrencyCode.</p></td>
+Currency applied for cbc:LineExtensionAmount, must be the same as cbc:DocumentCurrencyCode.<br>
+For valid values see code list <a href="#_puf_004_currencycode">PUF-004-CURRENCYCODE</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -4148,12 +4150,12 @@ Identifier for the line referenced object.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:ID/@schemeID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Scheme Identifier for line referenced object</strong><br>
 Scheme identifier of the referenced object/document.<br>
-<em>Should be according to the list PUF-005-INVOICEDOBJECTIDENTIFER [TODO - LINK].</em></p></td>
+The schemeID must be according to list <a href="#_puf_005_invoicedobjectidentifier">PUF-005-INVOICEDOBJECTIDENTIFIER</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:DocumentTypeCode</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Document type code</strong><br>
-Document type code should be 130 if referencing an invoiced object.</p></td>
+Document type code should be '130' if referencing an invoiced object.</p></td>
 </tr>
 </tbody>
 </table>
@@ -4201,7 +4203,8 @@ Delivered quantity.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:Quantity/@unitCode</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Delivered quantity unit of measure</strong><br>
-Unit of the delivered quantity.</p></td>
+Unit of the delivered quantity.<br>
+See code list <a href="#_puf_014_uomcode">PUF-014-UOMCODE</a> for recommendations</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:ActualDeliveryDate</code></p></td>
@@ -4217,7 +4220,7 @@ Identifier of the delivery location.<br>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:DeliveryLocation/cbc:ID/@schemeID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Delivery location scheme identifier</strong><br>
-Identifier Scheme should be coded using one [TODO Codelist].</p></td>
+Value must be according to code list <a href="#_puf_008_identificationscheme">PUF-008-IDENTIFICATIONSCHEME</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:DeliveryLocation/cac:Address/cbc:StreetName</code></p></td>
@@ -4315,7 +4318,7 @@ Indicator to express either charge (true) or allowance (false)<br>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:AllowanceChargeReasonCode</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Line allowance or charge reason code</strong><br>
 Reason code for allowance or charge.<br>
-<em>For allowances a subset of codelist UNCL5189 is to be used, and for charges codelist UNCL7161 applies</em></p></td>
+See code list <a href="#_puf_011_allowancechargereasoncode">PUF-011-ALLOWANCECHARGEREASONCODE</a> for recommendations</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:AllowanceChargeReason</code></p></td>
@@ -4336,7 +4339,8 @@ Amount of allowance or charge.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:Amount/@currencyID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Line allowance or charge amount currency</strong><br>
-Amount of allowance or charge currency.</p></td>
+Amount of allowance or charge currency.<br>
+For valid values see code list <a href="#_puf_004_currencycode">PUF-004-CURRENCYCODE</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:BaseAmount</code></p></td>
@@ -4346,7 +4350,8 @@ Base amount which the calcuation is based on.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:BaseAmount/@currencyID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Line allowance or charge base amount currency</strong><br>
-Base amount currency.</p></td>
+Base amount currency.<br>
+For valid values see code list <a href="#_puf_004_currencycode">PUF-004-CURRENCYCODE</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -4398,7 +4403,8 @@ The total tax amount, the sum of the tax subtotals..<br>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:TaxAmount/@currencyID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Line total tax amount currency</strong><br>
-Line total tax amount currency, must be the same as cbc:DocumentCurrencyCode.</p></td>
+Line total tax amount currency, must be the same as cbc:DocumentCurrencyCode.<br>
+For valid values see code list <a href="#_puf_004_currencycode">PUF-004-CURRENCYCODE</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:TaxSubtotal/cbc:TaxableAmount</code></p></td>
@@ -4409,7 +4415,8 @@ Line total taxable amount for each tax category or tax rate.<br>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:TaxSubtotal/cbc:TaxableAmount/@currencyID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Total taxable amount for each tax category currency</strong>*<br>
-Total taxable amount currency, must be the same as cbc:DocumentCurrencyCode..</p></td>
+Total taxable amount currency, must be the same as cbc:DocumentCurrencyCode.<br>
+For valid values see code list <a href="#_puf_004_currencycode">PUF-004-CURRENCYCODE</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:TaxSubtotal/cbc:TaxAmount</code></p></td>
@@ -4419,13 +4426,15 @@ Total tax amount for a certain tax category or tax rate.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:TaxSubtotal/cbc:TaxAmount/@currencyID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Total tax amount currency for each tax category</strong><br>
-Total tax amount currency, must be the same as cbc:DocumentCurrencyCode.</p></td>
+Total tax amount currency, must be the same as cbc:DocumentCurrencyCode.<br>
+For valid values see code list <a href="#_puf_004_currencycode">PUF-004-CURRENCYCODE</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:TaxSubtotal/cac:TaxCategory/cbc:ID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Line tax category code</strong><br>
 Code for identifying the tax category.<br>
-<em>E.g. tax category "S"</em></p></td>
+<em>E.g. tax category "S"</em><br>
+For valid values see code list <a href="#_puf_012_taxcategorycode">PUF-012-TAXCATEGORYCODE</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:TaxSubtotal/cac:TaxCategory/cbc:Percent</code></p></td>
@@ -4435,7 +4444,8 @@ Percentage rate for the tax category.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:TaxSubtotal/cac:TaxCategory/cbc:TaxExemptionReasonCode</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Tax exemption reason code</strong><br>
-Exemption reason code for the tax category, only applicable if the goods or service is exempt from tax.</p></td>
+Exemption reason code for the tax category, only applicable if the goods or service is exempt from tax.<br>
+See code list <a href="#_puf_013_exemptcode">PUF-013-EXEMPTCODE</a> for recommendations</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:TaxSubtotal/cac:TaxCategory/cbc:TaxExemptionReason</code></p></td>
@@ -4445,7 +4455,8 @@ Exemption reason for the tax category, only applicable if the goods or service i
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/cbc:ID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Tax scheme identfier</strong><br>
-Tax scheme for the tax category, can be either VAT or GST.</p></td>
+Tax scheme for the tax category.<br>
+For valid values see code list <a href="#_puf_009_taxtypescheme">PUF-009-TAXTYPESCHEME</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -4539,7 +4550,8 @@ Identifier of the item, based on an official register.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:StandardItemIdentification/cbc:ID/@schemeID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Standard item identifier scheme identifier</strong><br>
-Identifier of the standard item register.</p></td>
+Identifier of the standard item register.<br>
+Value must be according to code list <a href="#_puf_008_identificationscheme">PUF-008-IDENTIFICATIONSCHEME</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:OriginCountry/cbc:IdentificationCode</code></p></td>
@@ -4554,7 +4566,8 @@ The items classification code.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:CommodityClassification/cbc:ItemClassificationCode/@listID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Item classification list identifier</strong><br>
-Scheme identifier of the items classification code.</p></td>
+Scheme identifier of the items classification code.<br>
+For valid values see code list <a href="#_puf_015_itemtypeidentificationcode">PUF-015-ITEMTYPEIDENTIFICATIONCODE</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:CommodityClassification/cbc:ItemClassificationCode/@listVersionID</code></p></td>
@@ -4565,7 +4578,8 @@ Scheme version identifier of the items classification code.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:ClassifiedTaxCategory/cbc:ID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Tax category identifier</strong><br>
 Code for identifying the tax category.<br>
-<em>E.g. tax category "S"</em></p></td>
+<em>E.g. tax category "S".</em><br>
+For valid values see code list <a href="#_puf_012_taxcategorycode">PUF-012-TAXCATEGORYCODE</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:ClassifiedTaxCategory/cbc:Percent</code></p></td>
@@ -4575,7 +4589,8 @@ Percentage rate for the tax category.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:ClassifiedTaxCategory/cac:TaxScheme/cbc:ID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Tax scheme identfier</strong><br>
-Tax scheme for the tax category, can be either VAT or GST.</p></td>
+Tax scheme for the tax category.<br>
+For valid values see code list <a href="#_puf_009_taxtypescheme">PUF-009-TAXTYPESCHEME</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:AdditionalItemProperty/cbc:Name</code></p></td>
@@ -4696,7 +4711,8 @@ Net price of the item, this value must not be negative.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:PriceAmount/@currencyID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Item net price currency</strong><br>
-Currency applied for cbc:PriceAmount, must be the same as cbc:DocumentCurrencyCode.</p></td>
+Currency applied for cbc:PriceAmount, must be the same as cbc:DocumentCurrencyCode.<br>
+For valid values see code list <a href="#_puf_004_currencycode">PUF-004-CURRENCYCODE</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:BaseQuantity</code></p></td>
@@ -4706,7 +4722,8 @@ The number of items to which the price applies.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:BaseQuantity/@unitCode</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Base quantity unit of measure</strong><br>
-The unit of measure of the base quantity.</p></td>
+The unit of measure of the base quantity.<br>
+See code list <a href="#_puf_014_uomcode">PUF-014-UOMCODE</a> for recommendations</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:AllowanceCharge/cbc:ChargeIndicator</code></p></td>
@@ -4721,7 +4738,8 @@ The allowance applied to the price, note that this value is just informative and
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:AllowanceCharge/cbc:Amount/@currencyID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Allowance Amount currency</strong><br>
-Currency applied for cbc:Amount, must be the same as cbc:DocumentCurrencyCode.</p></td>
+Currency applied for cbc:Amount, must be the same as cbc:DocumentCurrencyCode.<br>
+For valid values see code list <a href="#_puf_004_currencycode">PUF-004-CURRENCYCODE</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:AllowanceCharge/cbc:BaseAmount</code></p></td>
@@ -4731,7 +4749,8 @@ The items base price, before any allowance was applied, this value must not be n
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:AllowanceCharge/cbc:BaseAmount/@currencyID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Base amount currency</strong><br>
-Currency applied for cbc:BaseAmount, must be the same as cbc:DocumentCurrencyCode.<br></p></td>
+Currency applied for cbc:BaseAmount, must be the same as cbc:DocumentCurrencyCode.<br>
+For valid values see code list <a href="#_puf_004_currencycode">PUF-004-CURRENCYCODE</a></p></td>
 </tr>
 </tbody>
 </table>
