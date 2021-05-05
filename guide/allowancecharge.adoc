@@ -41,13 +41,14 @@ For valid values see code list <<_puf_012_taxcategorycode>>
 Allowance or charge tax percent.
 |`cac:TaxCategory/cbc:TaxExemptionReasonCode`
 |**Tax exemption reason code** +
-Reason code if the allowance or charge is exempt from tax.
+Reason code if the allowance or charge is exempt from tax. +
+See code list <<_puf_013_exemptcode>> for recommendations
 |`cac:TaxCategory/cbc:TaxExemptionReason`
 |**Tax exemption reason** +
 Reason if the allowance or charge is exempt from tax.
 |`cac:TaxCategory/cac:TaxScheme/cbc:ID`
 |**Allowance or Charge tax scheme identifier** +
-Tax scheme identifier, possible value is VAT or GST.
+For valid values see code list <<_puf_009_taxtypescheme>>
 |`cac:TaxTotal/cbc:TaxAmount`
 |**Allowance or Charge tax Amount** +
 Total tax amount for the allowance or charge.
