@@ -22,7 +22,8 @@ Identifier of the item, assigned by the manufacturer.
 Identifier of the item, based on an official register.
 |`cac:StandardItemIdentification/cbc:ID/@schemeID`
 |**Standard item identifier scheme identifier** +
-Identifier of the standard item register.
+Identifier of the standard item register. +
+Value must be according to code list <<_puf_008_identificationscheme>>
 |`cac:OriginCountry/cbc:IdentificationCode`
 |**Item country origin** +
 Country code from where the item origin.
@@ -31,20 +32,23 @@ Country code from where the item origin.
 The items classification code.
 |`cac:CommodityClassification/cbc:ItemClassificationCode/@listID`
 |**Item classification list identifier** +
-Scheme identifier of the items classification code.
+Scheme identifier of the items classification code. +
+For valid values see code list <<_puf_015_itemtypeidentificationcode>>
 |`cac:CommodityClassification/cbc:ItemClassificationCode/@listVersionID`
 |**Item classification list version identifier** +
 Scheme version identifier of the items classification code.
 |`cac:ClassifiedTaxCategory/cbc:ID`
 |**Tax category identifier** +
 Code for identifying the tax category. +
-__E.g. tax category "S"__
+__E.g. tax category "S".__ +
+For valid values see code list <<_puf_012_taxcategorycode>>
 |`cac:ClassifiedTaxCategory/cbc:Percent`
 |**Tax category percent** +
 Percentage rate for the tax category.
 |`cac:ClassifiedTaxCategory/cac:TaxScheme/cbc:ID`
 |**Tax scheme identfier** +
-Tax scheme for the tax category, can be either VAT or GST.
+Tax scheme for the tax category. +
+For valid values see code list <<_puf_009_taxtypescheme>>
 |`cac:AdditionalItemProperty/cbc:Name`
 |**Additional item property name** +
 The name of the item property. +

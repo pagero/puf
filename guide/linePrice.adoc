@@ -12,13 +12,15 @@ Extension is added to provide additional information in the `cac:Price` element,
 Net price of the item, this value must not be negative.
 |`cbc:PriceAmount/@currencyID`
 |**Item net price currency** +
-Currency applied for cbc:PriceAmount, must be the same as cbc:DocumentCurrencyCode.
+Currency applied for cbc:PriceAmount, must be the same as cbc:DocumentCurrencyCode. +
+For valid values see code list <<_puf_004_currencycode>>
 |`cbc:BaseQuantity`
 |**Base quantity** +
 The number of items to which the price applies.
 |`cbc:BaseQuantity/@unitCode`
 |**Base quantity unit of measure** +
-The unit of measure of the base quantity.
+The unit of measure of the base quantity. +
+See code list <<_puf_014_uomcode>> for recommendations
 |`cac:AllowanceCharge/cbc:ChargeIndicator`
 |**Charge indicator** +
 Only allowance is allowed for cac:Price segment, this value must be "false".
@@ -27,13 +29,15 @@ Only allowance is allowed for cac:Price segment, this value must be "false".
 The allowance applied to the price, note that this value is just informative and the allowance amount should already been subtracted in cbc:PriceAmount element.
 |`cac:AllowanceCharge/cbc:Amount/@currencyID`
 |**Allowance Amount currency** +
-Currency applied for cbc:Amount, must be the same as cbc:DocumentCurrencyCode.
+Currency applied for cbc:Amount, must be the same as cbc:DocumentCurrencyCode. +
+For valid values see code list <<_puf_004_currencycode>>
 |`cac:AllowanceCharge/cbc:BaseAmount`
 |**Base amount** +
 The items base price, before any allowance was applied, this value must not be negative.
 |`cac:AllowanceCharge/cbc:BaseAmount/@currencyID`
 |**Base amount currency** +
 Currency applied for cbc:BaseAmount, must be the same as cbc:DocumentCurrencyCode. +
+For valid values see code list <<_puf_004_currencycode>>
 |===
 
 *Example* +

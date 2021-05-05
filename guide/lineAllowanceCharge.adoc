@@ -9,7 +9,7 @@ __Value must be either true or false__
 |`cbc:AllowanceChargeReasonCode`
 |**Line allowance or charge reason code** +
 Reason code for allowance or charge. +
-__For allowances a subset of codelist UNCL5189 is to be used, and for charges codelist UNCL7161 applies__
+See code list <<_puf_011_allowancechargereasoncode>> for recommendations
 |`cbc:AllowanceChargeReason`
 |**Line allowance or charge reason** +
 Test describing the reason for allowance or charge.
@@ -22,13 +22,15 @@ __E.g. 10% discount should be expressed as "10"__
 Amount of allowance or charge.
 |`cbc:Amount/@currencyID`
 |**Line allowance or charge amount currency** +
-Amount of allowance or charge currency.
+Amount of allowance or charge currency. +
+For valid values see code list <<_puf_004_currencycode>>
 |`cbc:BaseAmount`
 |**Line allowance or charge base amount** +
 Base amount which the calcuation is based on.
 |`cbc:BaseAmount/@currencyID`
 |**Line allowance or charge base amount currency** +
-Base amount currency.
+Base amount currency. +
+For valid values see code list <<_puf_004_currencycode>>
 |===
 
 *Example* +

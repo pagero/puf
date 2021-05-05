@@ -6,7 +6,8 @@
 The item quantity for this invoice line.
 |`cbc:InvoicedQuantity/@unitCode`
 |**Quantity unit of measure** +
-Unit of measure for the quantity invoiced
+Unit of measure for the quantity invoiced. +
+See code list <<_puf_014_uomcode>> for recommendations
 |===
 *Example* +
 _cac:InvoiceLine/cbc:InvoicedQuantity with example value_

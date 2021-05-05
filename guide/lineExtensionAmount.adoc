@@ -6,7 +6,8 @@
 The net amount for the invoice line.
 |`cbc:LineExtensionAmount/@currencyID`
 |**Net amount currency** +
-Currency applied for cbc:LineExtensionAmount, must be the same as cbc:DocumentCurrencyCode.
+Currency applied for cbc:LineExtensionAmount, must be the same as cbc:DocumentCurrencyCode. +
+For valid values see code list <<_puf_004_currencycode>>
 |===
 *Example* +
 _cac:InvoiceLine/cbc:LineExtensionAmount with example value_
