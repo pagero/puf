@@ -33,19 +33,23 @@ Below table shows the definition of the new elements added to the extension.
 |`puf:TaxCurrencyTaxExclusiveAmount`
 |If the document currency and tax currency differs, Tax Exclusive Amount in Tax currency should be specified here.
 |`puf:TaxCurrencyTaxExclusiveAmount/@currencyID`
-|Currency of the Tax Currency Tax ExclusiveAmount.
+|Currency of the Tax Currency Tax ExclusiveAmount. +
+For valid values see code list <<_puf_004_currencycode>>
 |`puf:TaxCurrencyTaxInclusiveAmount`
 |If the document currency and tax currency differs, Tax Inclusive Amount in Tax currency should be specified here.
 |`puf:TaxCurrencyTaxInclusiveAmount/@currencyID`
-|Currency of the Tax Currency TaxInclusive Amount.
+|Currency of the Tax Currency TaxInclusive Amount. +
+For valid values see code list <<_puf_004_currencycode>>
 |`puf:TaxCurrencyPayableAmount`
 |If the document currency and tax currency differs, Payable Amount in Tax currency should be specified here.
 |`puf:TaxCurrencyPayableAmount/@currencyID`
-|Currency of the Tax Currency Payable Amount.
+|Currency of the Tax Currency Payable Amount. +
+For valid values see code list <<_puf_004_currencycode>>
 |`puf:PaymentInKind/puf:Amount`
 |Payment in kind amount on invoice.
 |`puf:PaymentInKind/puf:Amount/@currencyID`
-|Currency of the Payment in kind amount.
+|Currency of the Payment in kind amount. +
+For valid values see code list <<_puf_004_currencycode>>
 |`puf:PaymentInKind/cbc:Note`
 |Description of payment in kind.
 |===

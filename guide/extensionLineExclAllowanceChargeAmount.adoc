@@ -32,7 +32,8 @@ Below table shows the definition of the new elements added to the extension.
 |`puf:LineExclAllowanceChargeAmount`
 |Sum of the line amounts, the amount is excluded VAT, Tax, allowances and charges.
 |`puf:LineExclAllowanceChargeAmount/@currencyID`
-|Currency of the Line Excl Allowance Charge Amount.
+|Currency of the Line Excl Allowance Charge Amount. +
+For valid values see code list <<_puf_004_currencycode>>
 |===
 
 *Example* +

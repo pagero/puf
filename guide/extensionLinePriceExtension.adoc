@@ -37,7 +37,8 @@ Below table show the definition of the new element added to the extension.
 |`puf:PriceInclAllowanceChargeAmount`
 |Unit price including allowances or charges.
 |`puf:PriceInclAllowanceChargeAmount/@currencyID`
-|Currency of the unit price including allowances or charges.
+|Currency of the unit price including allowances or charges. +
+For valid values see code list <<_puf_004_currencycode>>
 |===
 
 *Example* +
