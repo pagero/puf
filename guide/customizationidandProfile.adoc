@@ -1,3 +1,5 @@
+To indicate the correct PUF specification identifer and the profile identifier, the values in below table must be sent in `cbc:CustomizationID` and `cbc:ProfileID`.
+
 [%autowidth.stretch]
 |===
 |Type |Element `cbc:CustomizationID` |Element `cbc:ProfileID`
@@ -13,4 +15,3 @@
 <cbc:CustomizationID>urn:pagero.com:puf:billing:1.0</cbc:CustomizationID>
 <cbc:ProfileID>urn:pagero.com:puf:billing:1.0</cbc:ProfileID>
 ----
-NOTE: Note that "conformant" must be specified before the PUF extension id.
