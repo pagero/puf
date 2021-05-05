@@ -1,6 +1,14 @@
-*Target name space - Invoice:* `urn:pagero:PageroUniversalFormat:Invoice:1:0` +
-*Target name space - Credit note:* `urn:pagero:PageroUniversalFormat:CreditNote:1:0` +
-*CommonAggregateComponents - Invoice/CreditNote:* `urn:pagero:CommonAggregateComponents:1.0`
+*Target name space - Invoice:* 
+
+- `urn:pagero:PageroUniversalFormat:Invoice:1:0` +
+
+*Target name space - CreditNote:* 
+
+- `urn:pagero:PageroUniversalFormat:CreditNote:1:0` +
+
+*CommonAggregateComponents - Invoice/CreditNote:* 
+
+- `urn:pagero:CommonAggregateComponents:1.0`
 
 *Example:* +
 _Invoice example for target namespace_
@@ -12,7 +20,7 @@ _Invoice example for target namespace_
 ----
 
 *Example:* +
-_Credit note example for targetnamespace_
+_Credit note example for target namespace_
 [source,xml]
 ----
 <CreditNote xmlns="urn:pagero:PageroUniversalFormat:CreditNote:1.0">

@@ -2,7 +2,7 @@
 |Path |Description
 
 |`cbc:DueDate`
-|**Due date of invoice.** +
+|**Due date of invoice** +
 __Format "YYYY-MM-DD"__
 |===
 *Example* +

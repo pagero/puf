@@ -183,4 +183,4 @@ _Party structure with both invoice recipient party and buyer party_
 <1> Information in `cac:AccountingCustomerParty` will be used to identify the _receiver_ of the document.
 <2> Information in `cac:BuyerCustomerParty` will be sent to the receiver as _buyer_ information.
 
-WARNING: Please note that all e-invoice formats do not support both invoice recipient and buyer party information, therefore only use both structures when needed.
+WARNING: Please note that NOT all e-invoice formats support both invoice recipient and buyer party information, therefore only use both structures when needed.

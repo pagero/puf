@@ -99,7 +99,7 @@ NOTE: Please note that tax has been excluded in above example.
 ===== Payment in Kind
 
 Payment in kind is a way to use goods or services as payment instead of a cash. +
-The elements available in Pagero UF allow the possibility to provide the corresponding amount of the goods and services and a description.
+The elements available in PUF allow the possibility to provide the corresponding amount of the goods and services and a description.
 
 *Example* +
 _Payment In Kind is 100 EUR_

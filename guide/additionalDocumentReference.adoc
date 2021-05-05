@@ -1,5 +1,6 @@
-Aggregate AdditionalDocumentReference is in EN16931 based specifications used to reference reference a supporting document. These can be either be provided as a
-base64 embedded document within the Invoice or CreditNote but it can also reference an invoiced object by a document number or referencing an external document via a URL.
+The aggregate `cac:AdditionalDocumentReference` is in EN16931 based specifications used to reference reference a supporting document. These can either be provided as a
+base64 encoded document embedded within the Invoice or CreditNote itself but can also reference an invoiced object by a document number or referencing an external document via a URL.
+
 Pagero Universal Format support this handling but also has additional support in order to provide invoice or credit notes image/presentation.
 
 .Elements available in cac:AdditionalDocumentReference
@@ -32,7 +33,7 @@ Supported mime codes can be found in the code list +
 ===== Invoice image/presentation and  Credit Note image/presentation
 
 Providing an invoice presentation/image or credit note image/presentation is sometimes useful. This can be done in PUF as shown in the below examples.
-If cbc:DocumentDescription is "Commercial Invoice" or "Credit Note" the attachment will be interpreted as a presentation otherwise the attachment will be interpreted as a miscellaneous or other type of document. +
+If `cbc:DocumentDescription` is "Commercial Invoice" or "Credit Note" the attachment will be interpreted as a an invoice presentation/image otherwise the attachment will be interpreted as a miscellaneous or other type of document. +
 
 
 *Example* +
@@ -73,7 +74,7 @@ _Credit Note with (PDF-image)_
 
 ===== Invoiced object reference
 If there is a need to reference a document/object number without providing a link to the location and without embedding it in the Invoice/CreditNote this can be done
-in PUF within the cac:AdditionalDocumentReference as shown in below example. Note that it is possible to provide more than one invoiced object reference.
+in PUF within the `cac:AdditionalDocumentReference` as shown in below example. Note that it is possible to provide more than one invoiced object reference.
 
 *Example* +
 _Invoice with reference to an invoiced object with a document number_

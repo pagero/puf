@@ -1,4 +1,4 @@
-Information in the following section (3.2.x) concerns the document in its entirety.
+Information in the following section (3.1.x) concerns the document in its entirety.
 
 ==== cbc:CustomizationID
 

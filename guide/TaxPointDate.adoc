@@ -2,7 +2,7 @@
 |Path |Description
 
 |`cbc:TaxPointDate`
-|**VAT point date.** +
+|**VAT point date** +
 This element should be filled in if the date when VAT become liable for seller and buyer is different from the invoice issue date. +
 __Format "YYYY-MM-DD"__
 |===

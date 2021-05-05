@@ -1,4 +1,4 @@
-Below table show available fields in `cac:ContractDocumentReference`, note that additional elements has also been added to the extension available in <<_contractdocumentreference>>
+Below table show available fields in `cac:ContractDocumentReference`, note that additional elements has also been added to the extension available in <<_contractdocumentreference>>.
 
 .Elements added in cac:ContractDocumentReference
 |===

@@ -15,7 +15,11 @@ _Example from Invoice_
 <1> Note that the namespace is the same for CreditNote-root element.
 
 Depending on in which context the `UBLExtensions` are used there are different options of what types of values you are able to provide.
-To identify which context the `UBLExtensions` is in the element ExtensionURI is used. When using these Pagero extensions, the URI has the same base: `urn:pagero:ExtensionComponent:1.0:PageroExtension`. After the URI, the specific resource name is added.
+To identify which context the `UBLExtensions` is in the element ExtensionURI is used. When using these Pagero extensions, the URI has the same base: 
+
+- `urn:pagero:ExtensionComponent:1.0:PageroExtension`. 
+
+After the URI, the specific resource name is added.
 
 *Example* +
 _UBLExtension used in the Party structure._

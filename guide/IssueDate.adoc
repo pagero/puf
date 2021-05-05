@@ -2,7 +2,7 @@
 |Path |Description
 
 |`cbc:IssueDate`
-|**Issue date of invoice.** +
+|**Issue date of invoice** +
 __Format "YYYY-MM-DD"__
 |===
 *Example* +
