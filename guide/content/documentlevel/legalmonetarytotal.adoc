@@ -4,6 +4,9 @@ Below table show available fields in cac:LegalMonetaryTotal, note that additiona
 |===
 |Element |Description
 
+|`ext:UBLExtensions`
+|**Extension Content** +
+Extension is added to provide additional information in the `cac:LegalMonetaryTotal` element, the information available can be found <<_legalmonetarytotal, here>>
 |`cbc:LineExtensionAmount`
 |**Summary of all lines net amount** +
 Summary of all lines net amount. +
