@@ -1,5 +1,10 @@
-An extension has been created for providing additional information not supported in UBL 2.1.
-The UBL extension to be used for below elements is `cac:Party/ext:UBLExtensions` and the structure used from `PUF-ExtensionComponent.xsd` is `PageroExtension/PartyExtension`. +
+The UBL extension to be used for below elements can be found in the below parties: +
+<<_cacaccountingsupplierparty, cac:AccountingSupplierParty>> +
+<<_cacaccountingcustomerparty, cac:AccountingCustomerParty>> +
+<<_cacbuyercustomerparty, cac:BuyerCustomerParty>> +
+<<_cacdelivery, cac:Delivery/cac:DeliveryParty>> +
+
+The structure used from `PUF-ExtensionComponent.xsd` is `PageroExtension/PartyExtension`. +
 
 See example below as well as the URI to be used for this extension.
 

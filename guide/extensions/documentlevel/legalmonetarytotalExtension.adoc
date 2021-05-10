@@ -1,6 +1,5 @@
-The LegalMonetaryTotal-UBLExtension provides the means to add more information about the total amount of the invoice. +
-
-The UBL extension to be used for below elements is `(Invoice|CreditNote)/cac:LegalMonetaryTotal/ext:UBLExtensions` and the structure used from `PUF-ExtensionComponent.xsd` is `PageroExtension/LegalMonetaryTotalExtension`. +
+The UBL extension to be used for below elements can be found <<_caclegalmonetarytotal, here>>. +
+The structure used from `PUF-ExtensionComponent.xsd` is `PageroExtension/LegalMonetaryTotalExtension`. +
 
 See example below as well as the URI to be used for this extension.
 

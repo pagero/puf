@@ -1,4 +1,5 @@
-The UBL extension to be used for below elements is `(Invoice|CreditNote)/cac:ContractDocumentReference/ext:UBLExtensions` and the structure used from `PUF-ExtensionComponent.xsd` is `PageroExtension/ContractDocumentReferenceExtension`.
+The UBL extension to be used for below elements can be found <<_caccontractdocumentreference, here>>. +
+The structure used from `PUF-ExtensionComponent.xsd` is `PageroExtension/ContractDocumentReferenceExtension`.
 
 *Example* +
 _Example below how the URI is used for this extension._

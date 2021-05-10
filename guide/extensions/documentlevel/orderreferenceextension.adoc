@@ -1,4 +1,5 @@
-The UBL extension to be used for below elements is `(Invoice|CreditNote)/cac:OrderReference/ext:UBLExtensions` and the structure used from `PUF-ExtensionComponent.xsd` is `PageroExtension/OrderReferenceExtension`. +
+The UBL extension to be used for below elements can be found <<_cacorderreference, here>>. +
+The structure used from `PUF-ExtensionComponent.xsd` is `PageroExtension/OrderReferenceExtension`. +
 
 See example below as well as the URI to be used for this extension.
 

@@ -1,6 +1,5 @@
-Also, an extension has been created for providing additional information not supported in UBL 2.1 in order to provide further information regarding payment terms. +
-
-The UBL extension to be used for below elements is `cac:PaymentTerms/ext:UBLExtensions` and the structure used from `PUF-ExtensionComponent.xsd` is `puf:PageroExtension/puf:PaymentTermsExtension`. +
+The UBL extension to be used for below elements can be found <<_cacpaymentterms, here>>. +
+The structure used from `PUF-ExtensionComponent.xsd` is `puf:PageroExtension/puf:PaymentTermsExtension`. +
 
 See example below as well as the URI to be used for this extension.
 

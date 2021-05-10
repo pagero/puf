@@ -1,6 +1,5 @@
-In addition, an extension has been created for providing additional information not supported in UBL 2.1. +
-
-The UBL extension to be used for below elements is `(Invoice|CreditNote)/cac:Delivery/ext:UBLExtensions` and the structure used from `PUF-ExtensionComponent.xsd` is `PageroExtension/DeliveryExtension`. +
+The UBL extension to be used for below elements can be found <<_cacdelivery, here>>. +
+The structure used from `PUF-ExtensionComponent.xsd` is `PageroExtension/DeliveryExtension`. +
 
 See example below as well as the URI to be used for this extension.
 
