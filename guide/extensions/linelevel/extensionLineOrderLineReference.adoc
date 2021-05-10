@@ -1,8 +1,8 @@
 
 In addition, an extension has been created for providing additional information not supported in UBL 2.1. +
 
-The UBL extension to be used for below elements is `Invoice/cac:InvoiceLine/cac:OrderLineReference/cac:OrderReference/ext:UBLExtensions` and the structure used from `PUF-ExtensionComponent.xsd` is
-`PageroExtension/LineExtension`. +
+The UBL extension to be used for below elements can be found <<_cacorderlinereference, here>>. +
+The structure used from `PUF-ExtensionComponent.xsd` is `PageroExtension/LineExtension`. +
 
 See example below as well as the URI to be used for this extension.
 
