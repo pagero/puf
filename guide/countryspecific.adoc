@@ -1,4 +1,4 @@
-This section will provide information regarding on how to include common country specific data in Pagero UF.
+This section will provide information regarding on how to include common country specific data in PUF.
 
 === Spain
 

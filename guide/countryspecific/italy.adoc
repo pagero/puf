@@ -80,7 +80,7 @@ Possible values to provide:
 
 ==== VAT number and Fiscal Code
 
-It is possible to send a VAT number and/or a Fiscal code (Codice Fiscale) in Pagero UF, below is a description and example how to provide this.
+It is possible to send a VAT number and/or a Fiscal code (Codice Fiscale) in PUF, below is a description and example how to provide this.
 
 VAT number in Italy::
 * CompanyID - _Must start with a country code (two characters) followed by 1 to 28 characters_ +
