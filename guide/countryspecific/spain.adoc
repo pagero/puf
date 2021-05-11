@@ -8,7 +8,7 @@ To send documents to the Spanish government you are required to provide DIR3 cod
 3. Processing Authority Unit (Unidad Tramitadora)
 4. Proposing Agency (Órgano Proponente)
 
-The DIR3 codes should be provided in the extension block under `(Invoice|CreditNote)/cac:AccountingCustomerParty/cac:Party`, in the structure `PageroExtension/PartyExtension/ADAID`.
+The DIR3 codes should be provided in the extension element in <<_cacaccountingcustomerparty, cac:AccountingCustomerParty/cac:Party>>, in the structure `PageroExtension/PartyExtension/ADAID`.
 More information how to use ADAID can be found <<_additional_destination_address_identifier_adaid, here>>.
 
 *Example*

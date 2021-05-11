@@ -5,7 +5,7 @@ This section contains information about requirements and other info concerning i
 Service code is a routing code required by some customers to identify the correct recipient in French Government Portal.
 It's used as an addition to the SIRET number, which is the main identifier for all government recipients.
 
-The Service code should be provided in the extension block under `(Invoice|CreditNote)/cac:AccountingCustomerParty/cac:Party`, in the structure `PageroExtension/PartyExtension/ADAID` (More information how to use ADAID can be found <<_additional_destination_address_identifier_adaid, here>>).
+The Service code should be provided in the extension block under <<_cacaccountingcustomerparty, cac:AccountingCustomerParty/cac:Party>>, in the structure `puf:PageroExtension/puf:PartyExtension/puf:ADAID` (More information how to use ADAID can be found <<_additional_destination_address_identifier_adaid, here>>).
 
 See example below, note that the Name is not mandatory to send, but opens up the possibility to provide the name of the receiving unit.
 
@@ -42,8 +42,7 @@ Entities behind French Government portal can set up validation of certain elemen
 to support the below values in order to fulfill the requirements of this validation.
 
 Customer contract defined as “Contrat”::
-* Contract number - `(Invoice|CreditNote)/cac:ContractDocumentReference/cbc:ID` +
-* Contract date - `(Invoice|CreditNote)/cac:ContractDocumentReference/cbc:IssueDate`
+* <<_caccontractdocumentreference, Contract reference identifier and Date>>
 
 *Example*
 [source,xml]
@@ -55,8 +54,7 @@ Customer contract defined as “Contrat”::
 ----
 
 Tender reference defined as “Marché Public”::
-* Tender number - `(Invoice|CreditNote)/cac:OriginatorDocumentReference/cbc:ID` +
-* Tender date - `(Invoice|CreditNote)/cac:OriginatorDocumentReference/cbc:IssueDate`
+* <<_cacoriginatordocumentreference, Tender reference identifier and Date>>
 
 *Example*
 [source,xml]
@@ -68,8 +66,7 @@ Tender reference defined as “Marché Public”::
 ----
 
 Purchase order number defined as “Engagement”::
-* Purchase order number - `(Invoice|CreditNote)/cac:OrderReference/cbc:ID` +
-* Purchase order date - `(Invoice|CreditNote)/cac:OrderReference/cbc:IssueDate`
+* <<_cacorderreference, Order reference identifier and Date>>
 
 *Example*
 [source,xml]
