@@ -1,4 +1,4 @@
-In order to specify a duty stamp for the invoice, below element has been added in the below extension. +
+In order to specify a duty stamp for the invoice, following elements has been added in the below extension. +
 
 The UBL extension to be used for below elements can be found <<_extublextensions, here>>. +
 The structure used from `PUF-ExtensionComponent.xsd` is `PageroExtension/DutyStamp`. +

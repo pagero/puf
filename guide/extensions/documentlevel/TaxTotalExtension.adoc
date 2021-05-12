@@ -36,11 +36,14 @@ Below table lists all additional elements added to the extension.
 |Element |Description
 
 |`puf:TaxCurrencyTaxableAmount`
-|Taxable amount in tax currency per subtotal
+|**Tax currency taxable amount** +
+Taxable amount in tax currency per subtotal
 |`puf:TaxCurrencyTaxAmount`
-|Tax amount in tax currency per subtotal
+|**Tax currency tax amount** +
+Tax amount in tax currency per subtotal
 |`puf:TaxChargeability/cbc:TaxTypeCode`
-|Chargeability per tax (see Italy section <<_tax_chargeability_esigibilita_iva, here>>)
+|**Tax chargeability** +
+Tax chargeability per tax (see Italy section <<_tax_chargeability_esigibilita_iva, here>>)
 |===
 
 ===== Tax currency amounts

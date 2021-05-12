@@ -4903,7 +4903,7 @@ For valid values see code list <a href="#_puf_004_currencycode">PUF-004-CURRENCY
 <div class="sect3">
 <h4 id="_dutystamp"><a class="anchor" href="#_dutystamp"></a><a class="link" href="#_dutystamp">4.1.1. DutyStamp</a></h4>
 <div class="paragraph">
-<p>In order to specify a duty stamp for the invoice, below element has been added in the below extension.<br></p>
+<p>In order to specify a duty stamp for the invoice, following elements has been added in the below extension.<br></p>
 </div>
 <div class="paragraph">
 <p>The UBL extension to be used for below elements can be found <a href="#_extublextensions">here</a>.<br>
@@ -5628,15 +5628,18 @@ The structure used from <code>PUF-ExtensionComponent.xsd</code> is <code>PageroE
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>puf:TaxCurrencyTaxableAmount</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Taxable amount in tax currency per subtotal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Tax currency taxable amount</strong><br>
+Taxable amount in tax currency per subtotal</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>puf:TaxCurrencyTaxAmount</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tax amount in tax currency per subtotal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Tax currency tax amount</strong><br>
+Tax amount in tax currency per subtotal</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>puf:TaxChargeability/cbc:TaxTypeCode</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Chargeability per tax (see Italy section <a href="#_tax_chargeability_esigibilita_iva">here</a>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Tax chargeability</strong><br>
+Tax chargeability per tax (see Italy section <a href="#_tax_chargeability_esigibilita_iva">here</a>)</p></td>
 </tr>
 </tbody>
 </table>
