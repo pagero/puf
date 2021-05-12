@@ -67,12 +67,12 @@ _Example with EUR as document currency and USD as Tax currency_
 ----
 <Invoice>
   <!-- Code omitted for clarity -->
-  <cbc:DocumentCurrencyCode listID="ISO4217">EUR</cbc:DocumentCurrencyCode>
-  <cbc:TaxCurrencyCode listID="ISO4217">USD</cbc:TaxCurrencyCode>
+  <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+  <cbc:TaxCurrencyCode>USD</cbc:TaxCurrencyCode>
   <!-- Code omitted for clarity -->
   <cac:TaxExchangeRate>
-    <cbc:SourceCurrencyCode listID="ISO4217">EUR</cbc:SourceCurrencyCode>
-    <cbc:TargetCurrencyCode listID="ISO4217">USD</cbc:TargetCurrencyCode>
+    <cbc:SourceCurrencyCode>EUR</cbc:SourceCurrencyCode>
+    <cbc:TargetCurrencyCode>USD</cbc:TargetCurrencyCode>
     <cbc:CalculationRate>1.16</cbc:CalculationRate> <!--1-->
     <cbc:MathematicOperatorCode>Multiply</cbc:MathematicOperatorCode>
     <cbc:Date>2017-12-01</cbc:Date>

@@ -61,7 +61,7 @@ _cac:InvoiceLine/cac:Delivery example_
               <cbc:PostalZone>12345</cbc:PostalZone>
               <cbc:CountrySubentity>Delivery Province</cbc:CountrySubentity>
               <cac:Country>
-                  <cbc:IdentificationCode listID="ISO3166-1:Alpha2">SE</cbc:IdentificationCode>
+                  <cbc:IdentificationCode>SE</cbc:IdentificationCode>
                   <cbc:Name>Sweden</cbc:Name>
               </cac:Country>
           </cac:Address>
