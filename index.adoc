@@ -24,7 +24,7 @@ include::guide/guidelines.adoc[]
 == Content
 
 include::guide/content.adoc[]
-
+:sectnums:
 == Extensions
 
 include::guide/extensions.adoc[]

@@ -1,4 +1,10 @@
+:sectnums!:
+
 Information in the following section (3.1.x) concerns the document in its entirety.
+
+==== ext:UBLExtensions
+
+include::documentlevel/UBLExtensions.adoc[]
 
 ==== cbc:CustomizationID
 

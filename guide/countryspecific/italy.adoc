@@ -20,10 +20,10 @@ The destination code should be sent in `cac:AccountingCustomerParty/cac:Party/cb
 
 ==== Duty Stamp (Dati Bollo)
 
-The duty stamp amount should be provided in the extension block under Invoice, in the structure `(Invoice|CreditNote)/PageroExtension/DutyStamp`, see example below.
+In order to provide Dati Bollo (Duty Stamp) required on some invoices in Italy the value can be provided in the following element <<_dutystamp, Duty Stamp>>.
 
 *Example* +
-_Example from invoice_
+_Example for Dati Bollo in Italy_
 [source,xml]
 ----
 <Invoice>
@@ -39,7 +39,6 @@ _Example from invoice_
           </ext:ExtensionContent>
       </ext:UBLExtension>
   </ext:UBLExtensions>
-  <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
   <!-- Code omitted for clarity -->
 </Invoice>
 ----

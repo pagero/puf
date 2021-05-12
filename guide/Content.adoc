@@ -21,7 +21,7 @@ WARNING: Note that most examples are only shown for document type Invoice.
 === Invoice
 
 include::content/documentlevel.adoc[]
-
+:sectnums:
 === cac:InvoiceLine
 
 include::content/linelevel.adoc[]

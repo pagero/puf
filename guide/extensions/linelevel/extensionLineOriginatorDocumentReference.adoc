@@ -1,6 +1,6 @@
 In order to specify the tender reference on line level, Originator document reference has been added to line extension. +
 
-The UBL extension to be used for below elements can be found <<_extublextensions, here>>. +
+The UBL extension to be used for OriginatorDocumentReference on line level is <<line-extension>>. +
 The structure used from `PUF-ExtensionComponent.xsd` is `PageroExtension/LineExtension`. +
 
 See example below as well as the URI to be used for this extension.

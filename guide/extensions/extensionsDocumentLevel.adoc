@@ -1,5 +1,9 @@
 Below chapters describe the different extensions added on document level.
 
+==== DutyStamp
+
+include::documentlevel/DutyStamp.adoc[]
+
 ==== OrderReference
 
 include::documentlevel/orderreferenceextension.adoc[]

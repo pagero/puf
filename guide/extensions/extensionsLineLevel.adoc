@@ -16,6 +16,7 @@ include::linelevel/extensionLineProjectReference.adoc[]
 
 include::linelevel/extensionLineOrderLineReference.adoc[]
 
+[#line-contract]
 ==== ContractDocumentReference
 
 include::linelevel/extensionLineContractDocumentReference.adoc[]

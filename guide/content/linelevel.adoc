@@ -1,5 +1,7 @@
+:sectnums!:
 Examples shown below are based on Invoice, for the use of credit note the corresponding element replacing `Invoice/cac:InvoiceLine` is `CreditNote/cac:CreditNoteLine`
 
+[#line-extension]
 ==== ext:UBLExtensions
 
 include::linelevel/lineUBLExtensions.adoc[]

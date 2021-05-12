@@ -8,6 +8,6 @@ Extension is added to provide additional information in the `cac:InvoiceLine` el
 <<_lineexclallowancechargeamount>> +
 <<_originatordocumentreference>> +
 <<_projectreference>> +
-<<_contractdocumentreference>>
+<<line-contract>>
 
 |===
