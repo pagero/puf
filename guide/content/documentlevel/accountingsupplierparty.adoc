@@ -62,8 +62,8 @@ Seller's postal address country name
 Seller's tax registration number
 |`cac:Party/cac:PartyTaxScheme/cac:TaxScheme/cbc:ID`
 |**Tax scheme identifier** +
-Seller's tax registration number tax scheme Identifier +
-__Allowed values can be VAT or GST [LINK?]__
+Seller's tax registration number tax scheme Identifier. +
+__If `cac:PartyTaxScheme/cbc:CompanyID` is to be intepreted as a VAT registration text e.g. "Godkänd för F-Skatt" or "Foretaksregisteret", `cac:TaxScheme/cbc:ID` must be "TAX".__
 |`cac:Party/cac:PartyLegalEntity/cbc:RegistrationName`
 |**Registration name** +
 Seller's formal name or company name

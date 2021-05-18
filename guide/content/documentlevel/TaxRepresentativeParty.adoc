@@ -40,8 +40,7 @@ Seller's tax representative's postal address country name
 Seller's tax representative's tax registration number
 |`cac:Party/cac:PartyTaxScheme/cac:TaxScheme/cbc:ID`
 |**Tax scheme identifier** +
-Seller's tax representative's tax registration number tax scheme Identifier +
-__Allowed values can be VAT or GST [LINK?]__
+Seller's tax representative's tax registration number tax scheme Identifier.
 |===
 
 *Example* +

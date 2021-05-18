@@ -62,8 +62,7 @@ Buyer's postal address country name
 Buyer's tax registration number
 |`cac:Party/cac:PartyTaxScheme/cac:TaxScheme/cbc:ID`
 |**Tax scheme identifier** +
-Buyer's tax registration number tax scheme Identifier +
-__Allowed values can be VAT or GST [LINK?]__
+Buyer's tax registration number tax scheme Identifier.
 |`cac:Party/cac:PartyLegalEntity/cbc:RegistrationName`
 |**Registration name** +
 Buyer's formal name or company name
