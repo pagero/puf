@@ -264,7 +264,42 @@ Below you will find links to recommended lists
 |===
 
 ==== PUF-012-TAXCATEGORYCODE
-Supported values can be found here https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/[Duty or tax or fee category code]
+Standard european tax category codes can be found here https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/[Duty or tax or fee category code] +
+
+For additional codes added in Pagero Universal format see below code recommendations.
+
+===== Tax category codes Singapore
+|===
+|Value |Description
+
+|`SR`
+|Local supply of goods and services
+
+|`SRCA-S`
+|Customer accounting supply made by the supplier
+
+|`SRCA-C`
+|Customer accounting supply made by the customer on supplier’s behalf
+
+|`ZR`
+|Supplies involving goods for export/ provision of international services
+
+|`ES33`
+|Specific categories of exempt supplies listed under regulation 33 of the GST (General) Regulations
+
+|`ESN33`
+|Exempt supplies other than those listed under regulation 33 of the GST (General) Regulations
+
+|`DS`
+|Supplies required to be reported pursuant to the GST legislation
+
+|`OS`
+|Supplies outside the scope of the GST Act
+
+|`NG`
+|Supplies from a company which is not registered for GST
+
+|===
 
 ==== PUF-013-EXEMPTCODE
 Values can differ depending on which legal domain you are in or if there are other types of business requirements.

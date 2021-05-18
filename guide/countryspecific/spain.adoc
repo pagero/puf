@@ -1,4 +1,4 @@
-This section contains information about requirements and other info concerning invoicing in Spain.
+This section contains information about requirements and other information concerning invoicing in Spain.
 
 ==== Routing Codes (DIR3)
 To send documents to the Spanish government you are required to provide DIR3 codes. These are used as routing codes, definition of the codes can be found below.
