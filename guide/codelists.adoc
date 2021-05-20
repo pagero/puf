@@ -240,6 +240,21 @@ List of available tax type scheme codes.
 |`GST`
 |Goods and Services Tax
 
+|`LOC`
+|Sales tax
+
+|`STT`
+|State/provincial sales tax
+
+|`AAG`
+|Harmonised sales tax, Canadian
+
+|`AAH`
+|Quebec sales tax
+
+|`AAI`
+|Canadian provincial sales tax
+
 |===
 
 ==== PUF-010-PAYMENTMEANSCODE
