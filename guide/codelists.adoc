@@ -261,10 +261,32 @@ List of available tax type scheme codes.
 |===
 |Value |Description
 
-|`TODO`
-|TODO
+|`30`
+|Credit transfer
+
+|`31`
+|Debit transfer
+
+|`42`
+|Payment to bank account
+
+|`56`
+|Bankgiro
+
+|`58`
+|SEPA credit transfer +
+__Credit transfer inside the Single Euro Payment Area (SEPA) system.__
+
+|`59`
+|Direct debit inside the Single Euro Payment Area (SEPA) system.
+
+|`93`
+|Reference giro +
+__Ordering customer tells the bank to use the payment system 'Reference giro'. Used in the Finnish national banking system.__
 
 |===
+
+For all available codes see list https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL4461/[Payment means code]
 
 ==== PUF-011-ALLOWANCECHARGEREASONCODE
 Values can differ depending on which legal domain you are in or if there are other types of business requirements.

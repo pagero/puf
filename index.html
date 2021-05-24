@@ -3234,7 +3234,7 @@ Identifier for the payment.<br>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:CardAccount/cbc:PrimaryAccountNumberID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Primary account number identifier</strong><br>
-TODO Description.</p></td>
+The Primary Account Number (PAN) of the card used for payment. In accordance with card payments security standards, an invoice should never include a full card primary account number.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:CardAccount/cbc:NetworkID</code></p></td>
@@ -3254,11 +3254,10 @@ Account number e.g.IBAN och BBAN.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:PayeeFinancialAccount/cbc:Name</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Payment account name</strong><br>
-TODO Description.</p></td>
+The name of the payment account, at a payment service provider, to which payment should be made.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch/
-cbc:ID</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch/cbc:ID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Payment account identifier </strong><br>
 Payment account identifier e.g. a BIC or Swift.</p></td>
 </tr>
@@ -3268,8 +3267,7 @@ Payment account identifier e.g. a BIC or Swift.</p></td>
 Payment mandate identifier used for referencing direct debit payments.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:PayeeFinancialAccount/cac:PaymentMandate/
-cac:PayerFinancialAccount/cbc:ID</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:PayeeFinancialAccount/cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Payer account identifier</strong><br>
 Account to be debited in a direct debit payment.</p></td>
 </tr>
@@ -7588,11 +7586,40 @@ For <code>cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID/@
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>TODO</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TODO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>30</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Credit transfer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>31</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Debit transfer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>42</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Payment to bank account</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>56</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bankgiro</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>58</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SEPA credit transfer<br>
+<em>Credit transfer inside the Single Euro Payment Area (SEPA) system.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>59</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Direct debit inside the Single Euro Payment Area (SEPA) system.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>93</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reference giro<br>
+<em>Ordering customer tells the bank to use the payment system 'Reference giro'. Used in the Finnish national banking system.</em></p></td>
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>For all available codes see list <a href="https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL4461/">Payment means code</a></p>
+</div>
 </div>
 <div class="sect3">
 <h4 id="_puf_011_allowancechargereasoncode"><a class="anchor" href="#_puf_011_allowancechargereasoncode"></a><a class="link" href="#_puf_011_allowancechargereasoncode">6.1.11. PUF-011-ALLOWANCECHARGEREASONCODE</a></h4>
