@@ -39,7 +39,7 @@ _QR code and ATCUD provided in cac:AdditionalDocumentReference_
 ----
 <Invoice>
   <!-- Code omitted for clarity -->
-  <cac:AdditionalDocumentReference> 
+  <cac:AdditionalDocumentReference>
         <cbc:ID schemeID="ANG">12345678-123456789123</cbc:ID> <!--ATCUD, use the schemeID ANG-->
         <cbc:DocumentDescription>QR_CODE</cbc:DocumentDescription><!-- DocumentDescription must be QR_CODE -->
         <cac:Attachment> <!--QR Code encoded in base64-->
@@ -50,3 +50,6 @@ _QR code and ATCUD provided in cac:AdditionalDocumentReference_
 </Invoice>
 ----
 
+==== Tax Category codes
+
+Tax category codes for Portugal can be found <<_tax_category_codes_portugal, here>>. Note that multiple tax category codes overlap due to previous portugese standards. The recommendation is to use the official UNCL5305 codes in the list if supported.

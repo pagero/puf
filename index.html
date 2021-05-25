@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.12">
-<title>Pagero Universal Format Billing 1.0</title>
+<title>Pagero Universal Format Billing 2.0</title>
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";
@@ -517,7 +517,7 @@ table.CodeRay td.code{padding:0 0 0 .75em}
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1><span class="image center"><img src="images/logo.png" alt="logo" width="100%"></span> Pagero Universal Format Billing 1.0</h1>
+<h1><span class="image center"><img src="images/logo.png" alt="logo" width="100%"></span> Pagero Universal Format Billing 2.0</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
@@ -658,11 +658,12 @@ table.CodeRay td.code{padding:0 0 0 .75em}
 <ul class="sectlevel3">
 <li><a href="#_billing_software_certification">5.4.1. Billing Software Certification</a></li>
 <li><a href="#_qr_code_and_atcud">5.4.2. QR Code and ATCUD</a></li>
+<li><a href="#_tax_category_codes">5.4.3. Tax Category codes</a></li>
 </ul>
 </li>
 <li><a href="#_singapore">5.5. Singapore</a>
 <ul class="sectlevel3">
-<li><a href="#_tax_category_codes">5.5.1. Tax Category codes</a></li>
+<li><a href="#_tax_category_codes_2">5.5.1. Tax Category codes</a></li>
 </ul>
 </li>
 </ul>
@@ -935,7 +936,7 @@ on which specific country, region or business requirements you will have to comp
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Invoice and credit note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">urn:pagero.com:puf:billing:1.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">urn:pagero.com:puf:billing:2.0</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">urn:pagero.com:puf:billing:1.0</p></td>
 </tr>
 </tbody>
@@ -945,7 +946,7 @@ on which specific country, region or business requirements you will have to comp
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cbc:CustomizationID&gt;</span>urn:pagero.com:puf:billing:1.0<span class="tag">&lt;/cbc:CustomizationID&gt;</span>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cbc:CustomizationID&gt;</span>urn:pagero.com:puf:billing:2.0<span class="tag">&lt;/cbc:CustomizationID&gt;</span>
 <span class="tag">&lt;cbc:ProfileID&gt;</span>urn:pagero.com:puf:billing:1.0<span class="tag">&lt;/cbc:ProfileID&gt;</span></code></pre>
 </div>
 </div>
@@ -1132,7 +1133,7 @@ Added elements in regards to <code>ext:UBLExtensions</code> for <code>Invoice</c
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:CustomizationID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Document specification identifier</strong><br>
-<em>Must be value urn:pagero.com:puf:billing:1.0</em></p></td>
+<em>Must be value urn:pagero.com:puf:billing:2.0</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -1144,7 +1145,7 @@ Added elements in regards to <code>ext:UBLExtensions</code> for <code>Invoice</c
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;Invoice&gt;</span>
   <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
-  <span class="tag">&lt;cbc:CustomizationID&gt;</span>urn:pagero.com:puf:billing:1.0<span class="tag">&lt;/cbc:CustomizationID&gt;</span>
+  <span class="tag">&lt;cbc:CustomizationID&gt;</span>urn:pagero.com:puf:billing:2.0<span class="tag">&lt;/cbc:CustomizationID&gt;</span>
   <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
 <span class="tag">&lt;/Invoice&gt;</span></code></pre>
 </div>
@@ -7164,6 +7165,12 @@ Peppol BIS 3 and therefore also exist in Pagero Universal Format. Below you will
 </div>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_tax_category_codes"><a class="anchor" href="#_tax_category_codes"></a><a class="link" href="#_tax_category_codes">5.4.3. Tax Category codes</a></h4>
+<div class="paragraph">
+<p>Tax category codes for Portugal can be found <a href="#_tax_category_codes_portugal">here</a>. Note that multiple tax category codes overlap due to previous portugese standards. The recommendation is to use the official UNCL5305 codes in the list if supported.</p>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_singapore"><a class="anchor" href="#_singapore"></a><a class="link" href="#_singapore">5.5. Singapore</a></h3>
@@ -7171,7 +7178,7 @@ Peppol BIS 3 and therefore also exist in Pagero Universal Format. Below you will
 <p>This section contains information about requirements and other information concerning invoicing in Singapore.</p>
 </div>
 <div class="sect3">
-<h4 id="_tax_category_codes"><a class="anchor" href="#_tax_category_codes"></a><a class="link" href="#_tax_category_codes">5.5.1. Tax Category codes</a></h4>
+<h4 id="_tax_category_codes_2"><a class="anchor" href="#_tax_category_codes_2"></a><a class="link" href="#_tax_category_codes_2">5.5.1. Tax Category codes</a></h4>
 <div class="paragraph">
 <p>Tax category codes for Singapore can be found <a href="#_tax_category_codes_singapore">here</a>.</p>
 </div>
@@ -7715,6 +7722,79 @@ Below you will find links to recommended lists</p>
 </tbody>
 </table>
 </div>
+<div class="sect4">
+<h5 id="_tax_category_codes_portugal"><a class="anchor" href="#_tax_category_codes_portugal"></a><a class="link" href="#_tax_category_codes_portugal">Tax category codes Portugal</a></h5>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>AA</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lower rate</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>S</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard rate</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>E</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exempt</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Z</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zero rated goods</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>AE</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vat Reverse Charge</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>G</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Free export item, VAT not charged</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>O</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Services outside scope of tax</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RED</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reduced rate</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>INT</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intermediate rate</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOR</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Normal rate</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ISE</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exempt</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OUT</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Others, applicable to special VAT schemes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NA</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">In case of non-subjection to VAT or IS. On receipts issued without itemized tax must be filled with "NA"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>IC</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">intra-Community VAT</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 <div class="sect3">
 <h4 id="_puf_013_exemptcode"><a class="anchor" href="#_puf_013_exemptcode"></a><a class="link" href="#_puf_013_exemptcode">6.1.13. PUF-013-EXEMPTCODE</a></h4>
@@ -7798,7 +7878,7 @@ The validations available on validex are:</p>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">PUF-R001</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[PUF-R001]-Specification identifier MUST have the value 'urn:pagero.com:puf:billing:1.0' or 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0#conformant'<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[PUF-R001]-Specification identifier MUST have the value 'urn:pagero.com:puf:billing:2.0' or 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0#conformant'<br>
 <em>Note that the old specification identifier 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0#conformant' will also be accepted during the migration phase to ensure backwards compability </em></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Fatal</p></td>
 </tr>

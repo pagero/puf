@@ -1,4 +1,4 @@
-:doctitle: image:images/logo.png[float="center", width=100%] Pagero Universal Format Billing 1.0
+:doctitle: image:images/logo.png[float="center", width=100%] Pagero Universal Format Billing 2.0
 :name-op-en: Customer Integration, Pagero
 :minor: 1.0
 :revision: 1.0

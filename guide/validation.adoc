@@ -15,7 +15,7 @@ The validation artefacts are also available on https://github.com/pagero/puf[Git
 |Rule name |Description of rule | Flag
 
 |PUF-R001
-|[PUF-R001]-Specification identifier MUST have the value 'urn:pagero.com:puf:billing:1.0' or 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0#conformant' +
+|[PUF-R001]-Specification identifier MUST have the value 'urn:pagero.com:puf:billing:2.0' or 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0#conformant' +
 __Note that the old specification identifier 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0#conformant' will also be accepted during the migration phase to ensure backwards compability __
 |Fatal
 |PUF-R002

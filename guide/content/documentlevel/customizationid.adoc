@@ -6,7 +6,7 @@ To indicate which specification and which ruleset that should be applied to the 
 
 |`cbc:CustomizationID`
 |**Document specification identifier** +
-__Must be value urn:pagero.com:puf:billing:1.0__
+__Must be value urn:pagero.com:puf:billing:2.0__
 |===
 
 *Example* +
@@ -15,7 +15,7 @@ _cbc:CustomizationID populated with correct value_
 ----
 <Invoice>
   <!-- Code omitted for clarity -->
-  <cbc:CustomizationID>urn:pagero.com:puf:billing:1.0</cbc:CustomizationID>
+  <cbc:CustomizationID>urn:pagero.com:puf:billing:2.0</cbc:CustomizationID>
   <!-- Code omitted for clarity -->
 </Invoice>
 ----

@@ -344,6 +344,54 @@ For additional codes added in Pagero Universal format see below code recommendat
 
 |===
 
+===== Tax category codes Portugal
+|===
+|Value |Description
+
+|`AA`
+|Lower rate
+
+|`S`
+|Standard rate
+
+|`E`
+|Exempt
+
+|`Z`
+|Zero rated goods
+
+|`AE`
+|Vat Reverse Charge
+
+|`G`
+|Free export item, VAT not charged
+
+|`O`
+|Services outside scope of tax
+
+|`RED`
+|Reduced rate
+
+|`INT`
+|Intermediate rate
+
+|`NOR`
+|Normal rate
+
+|`ISE`
+|Exempt
+
+|`OUT`
+|Others, applicable to special VAT schemes
+
+|`NA`
+|In case of non-subjection to VAT or IS. On receipts issued without itemized tax must be filled with "NA"
+
+|`IC`
+|intra-Community VAT
+
+|===
+
 ==== PUF-013-EXEMPTCODE
 Values can differ depending on which legal domain you are in or if there are other types of business requirements.
 For Europe the code list https://docs.peppol.eu/poacc/billing/3.0/codelist/vatex/[Vatex code list] can be recommended.
