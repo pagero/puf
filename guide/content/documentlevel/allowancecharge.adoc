@@ -22,11 +22,11 @@ __E.g. 10% discount should be expressed as "10"__
 Amount of allowance or charge.
 |`cbc:Amount/@currencyID`
 |**Allowance or charge amount currency** +
-Amount of allowance or charge currency. +
+Allowance or charge amount currency. +
 For valid values see code list <<_puf_004_currencycode>>
 |`cbc:BaseAmount`
 |**Allowance or charge base amount** +
-Base amount which the calcuation is based on.
+Base amount which the calculation is based on.
 |`cbc:BaseAmount/@currencyID`
 |**Allowance or charge base amount currency** +
 Base amount currency. +

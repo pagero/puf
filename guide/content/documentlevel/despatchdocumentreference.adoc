@@ -4,10 +4,10 @@
 
 |`cbc:ID`
 |**Despatch advice reference** +
-ID of issued despatch advice
+Identifier of issued despatch advice.
 |`cbc:IssueDate`
 |**Issue date** +
-Issue date of despatch advice +
+Issue date of despatch advice. +
 __Format "YYYY-MM-DD"__
 |===
 

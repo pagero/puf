@@ -1042,25 +1042,6 @@ will prevent validation error for customers who do not frequently keep the XSD s
 <h2 id="_content"><a class="anchor" href="#_content"></a><a class="link" href="#_content">3. Content</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>PUF principally extends <a href="http://docs.peppol.eu/poacc/billing/3.0/">PEPPOL BIS Billing 3.0</a> in two ways:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>the use of additional segments/elements that are included in UBL 2.1, but excluded from the <a href="http://docs.peppol.eu/poacc/billing/3.0/">PEPPOL BIS Billing 3.0</a>-subset of UBL 2.1.</p>
-</li>
-<li>
-<p>via the use of <a href="https://wiki.oasis-open.org/ubl/UBLExtensions">UBL Extensions</a>.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>PUF is to be considered as an extension, thus existing EN and Peppol rules may be overriden due to support extended content.</p>
-</div>
-<div class="paragraph">
-<p>This chapter defines and specifies the available options of <strong>adding information that is not available in the core PEPPOL BIS.</strong><br></p>
-</div>
-<div class="paragraph">
 <p>The chapter is divided into two parts for easier navigation:</p>
 </div>
 <div class="olist arabic">
@@ -1088,7 +1069,7 @@ Note that most examples are only shown for document type Invoice.
 <div class="sect2">
 <h3 id="_invoice"><a class="anchor" href="#_invoice"></a><a class="link" href="#_invoice">3.1. Invoice</a></h3>
 <div class="paragraph">
-<p>Information in the following section (3.1.x) concerns the document in its entirety.</p>
+<p>Information in this section (3.1) describe the elements available on document level.</p>
 </div>
 <div class="sect3">
 <h4 id="_extublextensions"><a class="anchor" href="#_extublextensions"></a><a class="link" href="#_extublextensions">ext:UBLExtensions</a></h4>
@@ -1115,13 +1096,10 @@ Added elements in regards to <code>ext:UBLExtensions</code> for <code>Invoice</c
 </div>
 <div class="sect3">
 <h4 id="_cbccustomizationid"><a class="anchor" href="#_cbccustomizationid"></a><a class="link" href="#_cbccustomizationid">cbc:CustomizationID</a></h4>
-<div class="paragraph">
-<p>To indicate which specification and which ruleset that should be applied to the document instance, the CustomizationID and ProfileID must be provided.</p>
-</div>
-<table class="tableblock frame-all grid-all fit-content stretch">
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col>
-<col>
+<col style="width: 50%;">
+<col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
@@ -1458,7 +1436,7 @@ For valid values see code list <a href="#_puf_004_currencycode">PUF-004-CURRENCY
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:TaxCurrencyCode</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Tax currency code</strong><br>
-The accounting currency, this must be filled in if the elements used tax amounts in accounting currency is populated. Should only be filled in if the currency is different from the document currency.<br>
+The accounting currency, this must be filled in if tax amount in accounting currency is populated in the document. Should only be filled in if the currency is different from the document currency.<br>
 <em>Value must be according to ISO 4217 Currency codes</em><br>
 For valid values see code list <a href="#_puf_004_currencycode">PUF-004-CURRENCYCODE</a></p></td>
 </tr>
@@ -1674,12 +1652,12 @@ Date of issue of the referenced purchase order<br>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:ID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Preceding invoice number</strong><br>
-Reference to a previous issued invoice.</p></td>
+Identifier of a previous issued invoice.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:IssueDate</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Issue date</strong><br>
-Issue date of previous issued invoice<br>
+Issue date of previous issued invoice.<br>
 <em>Format "YYYY-MM-DD"</em></p></td>
 </tr>
 </tbody>
@@ -1721,12 +1699,12 @@ Issue date of previous issued invoice<br>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:ID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Despatch advice reference</strong><br>
-ID of issued despatch advice</p></td>
+Identifier of issued despatch advice.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:IssueDate</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Issue date</strong><br>
-Issue date of despatch advice<br>
+Issue date of despatch advice.<br>
 <em>Format "YYYY-MM-DD"</em></p></td>
 </tr>
 </tbody>
@@ -2257,54 +2235,54 @@ The e-mail address for the accounting contact of the organization.</p></td>
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;Invoice&gt;</span>
   <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
   <span class="tag">&lt;cac:AccountingSupplierParty&gt;</span>
-    <span class="tag">&lt;cbc:CustomerAssignedAccountID&gt;</span>SupplierId<span class="tag">&lt;/cbc:CustomerAssignedAccountID&gt;</span>
-        <span class="tag">&lt;cac:Party&gt;</span>
-            <span class="tag">&lt;cbc:EndpointID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0088</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>7300010000001<span class="tag">&lt;/cbc:EndpointID&gt;</span>
-            <span class="tag">&lt;cac:PartyIdentification&gt;</span>
-                <span class="tag">&lt;cbc:ID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0088</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>7300010000001<span class="tag">&lt;/cbc:ID&gt;</span>
-            <span class="tag">&lt;/cac:PartyIdentification&gt;</span>
-            <span class="tag">&lt;cac:PartyName&gt;</span>
-                <span class="tag">&lt;cbc:Name&gt;</span>Supplier Name<span class="tag">&lt;/cbc:Name&gt;</span>
-            <span class="tag">&lt;/cac:PartyName&gt;</span>
-            <span class="tag">&lt;cac:PostalAddress&gt;</span>
-                <span class="tag">&lt;cbc:Postbox&gt;</span>12345<span class="tag">&lt;/cbc:Postbox&gt;</span>
-                <span class="tag">&lt;cbc:StreetName&gt;</span>Test Street 1<span class="tag">&lt;/cbc:StreetName&gt;</span>
-                <span class="tag">&lt;cbc:Department&gt;</span>Department<span class="tag">&lt;/cbc:Department&gt;</span>
-                <span class="tag">&lt;cbc:CityName&gt;</span>Town<span class="tag">&lt;/cbc:CityName&gt;</span>
-                <span class="tag">&lt;cbc:PostalZone&gt;</span>00000<span class="tag">&lt;/cbc:PostalZone&gt;</span>
-                <span class="tag">&lt;cbc:CountrySubentity&gt;</span>Province<span class="tag">&lt;/cbc:CountrySubentity&gt;</span>
-                <span class="tag">&lt;cac:Country&gt;</span>
-                    <span class="tag">&lt;cbc:IdentificationCode&gt;</span>SE<span class="tag">&lt;/cbc:IdentificationCode&gt;</span>
-                    <span class="tag">&lt;cbc:Name&gt;</span>Sweden<span class="tag">&lt;/cbc:Name&gt;</span>
-                <span class="tag">&lt;/cac:Country&gt;</span>
-            <span class="tag">&lt;/cac:PostalAddress&gt;</span>
-            <span class="tag">&lt;cac:PartyTaxScheme&gt;</span>
-                <span class="tag">&lt;cbc:CompanyID&gt;</span>SE123456123401<span class="tag">&lt;/cbc:CompanyID&gt;</span>
-                <span class="tag">&lt;cac:TaxScheme&gt;</span>
-                    <span class="tag">&lt;cbc:ID&gt;</span>VAT<span class="tag">&lt;/cbc:ID&gt;</span>
-                <span class="tag">&lt;/cac:TaxScheme&gt;</span>
-            <span class="tag">&lt;/cac:PartyTaxScheme&gt;</span>
-            <span class="tag">&lt;cac:PartyLegalEntity&gt;</span>
-                <span class="tag">&lt;cbc:RegistrationName&gt;</span>Supplier Registration Name<span class="tag">&lt;/cbc:RegistrationName&gt;</span>
-                <span class="tag">&lt;cbc:CompanyID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0007</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>1234561234<span class="tag">&lt;/cbc:CompanyID&gt;</span>
-                <span class="tag">&lt;cac:RegistrationAddress&gt;</span>
-                    <span class="tag">&lt;cbc:CityName&gt;</span>Supplier Hometown<span class="tag">&lt;/cbc:CityName&gt;</span>
-                    <span class="tag">&lt;cac:Country&gt;</span>
-                        <span class="tag">&lt;cbc:IdentificationCode&gt;</span>SE<span class="tag">&lt;/cbc:IdentificationCode&gt;</span>
-                    <span class="tag">&lt;/cac:Country&gt;</span>
-                <span class="tag">&lt;/cac:RegistrationAddress&gt;</span>
-            <span class="tag">&lt;/cac:PartyLegalEntity&gt;</span>
-            <span class="tag">&lt;cac:Contact&gt;</span>
-                <span class="tag">&lt;cbc:Name&gt;</span>Supplier Contact Name<span class="tag">&lt;/cbc:Name&gt;</span>
-                <span class="tag">&lt;cbc:Telephone&gt;</span>11111111<span class="tag">&lt;/cbc:Telephone&gt;</span>
-                <span class="tag">&lt;cbc:ElectronicMail&gt;</span>supplier@contact.com<span class="tag">&lt;/cbc:ElectronicMail&gt;</span>
-            <span class="tag">&lt;/cac:Contact&gt;</span>
-        <span class="tag">&lt;/cac:Party&gt;</span>
-        <span class="tag">&lt;cac:AccountingContact&gt;</span>
-            <span class="tag">&lt;cbc:Telephone&gt;</span>Supplier tel<span class="tag">&lt;/cbc:Telephone&gt;</span>
-            <span class="tag">&lt;cbc:Telefax&gt;</span>Supplier Fax<span class="tag">&lt;/cbc:Telefax&gt;</span>
-            <span class="tag">&lt;cbc:ElectronicMail&gt;</span>Supplier@mainContact.com<span class="tag">&lt;/cbc:ElectronicMail&gt;</span>
-        <span class="tag">&lt;/cac:AccountingContact&gt;</span>
+      <span class="tag">&lt;cbc:CustomerAssignedAccountID&gt;</span>SupplierId<span class="tag">&lt;/cbc:CustomerAssignedAccountID&gt;</span>
+      <span class="tag">&lt;cac:Party&gt;</span>
+          <span class="tag">&lt;cbc:EndpointID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0088</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>7300010000001<span class="tag">&lt;/cbc:EndpointID&gt;</span>
+          <span class="tag">&lt;cac:PartyIdentification&gt;</span>
+              <span class="tag">&lt;cbc:ID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0088</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>7300010000001<span class="tag">&lt;/cbc:ID&gt;</span>
+          <span class="tag">&lt;/cac:PartyIdentification&gt;</span>
+          <span class="tag">&lt;cac:PartyName&gt;</span>
+              <span class="tag">&lt;cbc:Name&gt;</span>Supplier Name<span class="tag">&lt;/cbc:Name&gt;</span>
+          <span class="tag">&lt;/cac:PartyName&gt;</span>
+          <span class="tag">&lt;cac:PostalAddress&gt;</span>
+              <span class="tag">&lt;cbc:Postbox&gt;</span>12345<span class="tag">&lt;/cbc:Postbox&gt;</span>
+              <span class="tag">&lt;cbc:StreetName&gt;</span>Test Street 1<span class="tag">&lt;/cbc:StreetName&gt;</span>
+              <span class="tag">&lt;cbc:Department&gt;</span>Department<span class="tag">&lt;/cbc:Department&gt;</span>
+              <span class="tag">&lt;cbc:CityName&gt;</span>Town<span class="tag">&lt;/cbc:CityName&gt;</span>
+              <span class="tag">&lt;cbc:PostalZone&gt;</span>00000<span class="tag">&lt;/cbc:PostalZone&gt;</span>
+              <span class="tag">&lt;cbc:CountrySubentity&gt;</span>Province<span class="tag">&lt;/cbc:CountrySubentity&gt;</span>
+              <span class="tag">&lt;cac:Country&gt;</span>
+                  <span class="tag">&lt;cbc:IdentificationCode&gt;</span>SE<span class="tag">&lt;/cbc:IdentificationCode&gt;</span>
+                  <span class="tag">&lt;cbc:Name&gt;</span>Sweden<span class="tag">&lt;/cbc:Name&gt;</span>
+              <span class="tag">&lt;/cac:Country&gt;</span>
+          <span class="tag">&lt;/cac:PostalAddress&gt;</span>
+          <span class="tag">&lt;cac:PartyTaxScheme&gt;</span>
+              <span class="tag">&lt;cbc:CompanyID&gt;</span>SE123456123401<span class="tag">&lt;/cbc:CompanyID&gt;</span>
+              <span class="tag">&lt;cac:TaxScheme&gt;</span>
+                  <span class="tag">&lt;cbc:ID&gt;</span>VAT<span class="tag">&lt;/cbc:ID&gt;</span>
+              <span class="tag">&lt;/cac:TaxScheme&gt;</span>
+          <span class="tag">&lt;/cac:PartyTaxScheme&gt;</span>
+          <span class="tag">&lt;cac:PartyLegalEntity&gt;</span>
+              <span class="tag">&lt;cbc:RegistrationName&gt;</span>Supplier Registration Name<span class="tag">&lt;/cbc:RegistrationName&gt;</span>
+              <span class="tag">&lt;cbc:CompanyID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0007</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>1234561234<span class="tag">&lt;/cbc:CompanyID&gt;</span>
+              <span class="tag">&lt;cac:RegistrationAddress&gt;</span>
+                  <span class="tag">&lt;cbc:CityName&gt;</span>Supplier Hometown<span class="tag">&lt;/cbc:CityName&gt;</span>
+                  <span class="tag">&lt;cac:Country&gt;</span>
+                      <span class="tag">&lt;cbc:IdentificationCode&gt;</span>SE<span class="tag">&lt;/cbc:IdentificationCode&gt;</span>
+                  <span class="tag">&lt;/cac:Country&gt;</span>
+              <span class="tag">&lt;/cac:RegistrationAddress&gt;</span>
+          <span class="tag">&lt;/cac:PartyLegalEntity&gt;</span>
+          <span class="tag">&lt;cac:Contact&gt;</span>
+              <span class="tag">&lt;cbc:Name&gt;</span>Supplier Contact Name<span class="tag">&lt;/cbc:Name&gt;</span>
+              <span class="tag">&lt;cbc:Telephone&gt;</span>11111111<span class="tag">&lt;/cbc:Telephone&gt;</span>
+              <span class="tag">&lt;cbc:ElectronicMail&gt;</span>supplier@contact.com<span class="tag">&lt;/cbc:ElectronicMail&gt;</span>
+          <span class="tag">&lt;/cac:Contact&gt;</span>
+      <span class="tag">&lt;/cac:Party&gt;</span>
+      <span class="tag">&lt;cac:AccountingContact&gt;</span>
+          <span class="tag">&lt;cbc:Telephone&gt;</span>Supplier tel<span class="tag">&lt;/cbc:Telephone&gt;</span>
+          <span class="tag">&lt;cbc:Telefax&gt;</span>Supplier Fax<span class="tag">&lt;/cbc:Telefax&gt;</span>
+          <span class="tag">&lt;cbc:ElectronicMail&gt;</span>Supplier@mainContact.com<span class="tag">&lt;/cbc:ElectronicMail&gt;</span>
+      <span class="tag">&lt;/cac:AccountingContact&gt;</span>
   <span class="tag">&lt;/cac:AccountingSupplierParty&gt;</span>
   <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
 <span class="tag">&lt;/Invoice&gt;</span></code></pre>
@@ -2488,48 +2466,48 @@ The e-mail address for the accounting contact of the organization.</p></td>
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;Invoice&gt;</span>
   <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
   <span class="tag">&lt;cac:AccountingCustomerParty&gt;</span>
-    <span class="tag">&lt;cbc:SupplierAssignedAccountID&gt;</span>Customer Number<span class="tag">&lt;/cbc:SupplierAssignedAccountID&gt;</span>
-        <span class="tag">&lt;cac:Party&gt;</span>
-            <span class="tag">&lt;cbc:EndpointID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0088</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>7300010000001<span class="tag">&lt;/cbc:EndpointID&gt;</span>
-            <span class="tag">&lt;cac:PartyIdentification&gt;</span>
-                <span class="tag">&lt;cbc:ID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0088</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>7300010000001<span class="tag">&lt;/cbc:ID&gt;</span>
-            <span class="tag">&lt;/cac:PartyIdentification&gt;</span>
-            <span class="tag">&lt;cac:PartyName&gt;</span>
-                <span class="tag">&lt;cbc:Name&gt;</span>Customer Name<span class="tag">&lt;/cbc:Name&gt;</span>
-            <span class="tag">&lt;/cac:PartyName&gt;</span>
-            <span class="tag">&lt;cac:PostalAddress&gt;</span>
-                <span class="tag">&lt;cbc:Postbox&gt;</span>54321<span class="tag">&lt;/cbc:Postbox&gt;</span>
-                <span class="tag">&lt;cbc:StreetName&gt;</span>Customer Street<span class="tag">&lt;/cbc:StreetName&gt;</span>
-                <span class="tag">&lt;cbc:Department&gt;</span>Customer Department<span class="tag">&lt;/cbc:Department&gt;</span>
-                <span class="tag">&lt;cbc:CityName&gt;</span>Customer City<span class="tag">&lt;/cbc:CityName&gt;</span>
-                <span class="tag">&lt;cbc:PostalZone&gt;</span>00000<span class="tag">&lt;/cbc:PostalZone&gt;</span>
-                <span class="tag">&lt;cbc:CountrySubentity&gt;</span>Customer Province<span class="tag">&lt;/cbc:CountrySubentity&gt;</span>
-                <span class="tag">&lt;cac:Country&gt;</span>
-                    <span class="tag">&lt;cbc:IdentificationCode&gt;</span>SE<span class="tag">&lt;/cbc:IdentificationCode&gt;</span>
-                    <span class="tag">&lt;cbc:Name&gt;</span>Sweden<span class="tag">&lt;/cbc:Name&gt;</span>
-                <span class="tag">&lt;/cac:Country&gt;</span>
-            <span class="tag">&lt;/cac:PostalAddress&gt;</span>
-            <span class="tag">&lt;cac:PartyTaxScheme&gt;</span>
-                <span class="tag">&lt;cbc:CompanyID&gt;</span>SE987654321001<span class="tag">&lt;/cbc:CompanyID&gt;</span>
-                <span class="tag">&lt;cac:TaxScheme&gt;</span>
-                    <span class="tag">&lt;cbc:ID&gt;</span>VAT<span class="tag">&lt;/cbc:ID&gt;</span>
-                <span class="tag">&lt;/cac:TaxScheme&gt;</span>
-            <span class="tag">&lt;/cac:PartyTaxScheme&gt;</span>
-            <span class="tag">&lt;cac:PartyLegalEntity&gt;</span>
-                <span class="tag">&lt;cbc:RegistrationName&gt;</span>Customer Registration Name<span class="tag">&lt;/cbc:RegistrationName&gt;</span>
-                <span class="tag">&lt;cbc:CompanyID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0007</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>987654-4321<span class="tag">&lt;/cbc:CompanyID&gt;</span>
-            <span class="tag">&lt;/cac:PartyLegalEntity&gt;</span>
-            <span class="tag">&lt;cac:Contact&gt;</span>
-                <span class="tag">&lt;cbc:Name&gt;</span>Customer Contact Name<span class="tag">&lt;/cbc:Name&gt;</span>
-                <span class="tag">&lt;cbc:Telephone&gt;</span>+465544466<span class="tag">&lt;/cbc:Telephone&gt;</span>
-                <span class="tag">&lt;cbc:ElectronicMail&gt;</span>customer@contact.com<span class="tag">&lt;/cbc:ElectronicMail&gt;</span>
-            <span class="tag">&lt;/cac:Contact&gt;</span>
-        <span class="tag">&lt;/cac:Party&gt;</span>
-        <span class="tag">&lt;cac:AccountingContact&gt;</span>
-            <span class="tag">&lt;cbc:Telephone&gt;</span>Customer tel<span class="tag">&lt;/cbc:Telephone&gt;</span>
-            <span class="tag">&lt;cbc:Telefax&gt;</span>Customer Fax<span class="tag">&lt;/cbc:Telefax&gt;</span>
-            <span class="tag">&lt;cbc:ElectronicMail&gt;</span>Customer@mainContact.com<span class="tag">&lt;/cbc:ElectronicMail&gt;</span>
-        <span class="tag">&lt;/cac:AccountingContact&gt;</span>
+      <span class="tag">&lt;cbc:SupplierAssignedAccountID&gt;</span>Customer Number<span class="tag">&lt;/cbc:SupplierAssignedAccountID&gt;</span>
+      <span class="tag">&lt;cac:Party&gt;</span>
+          <span class="tag">&lt;cbc:EndpointID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0088</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>7300010000001<span class="tag">&lt;/cbc:EndpointID&gt;</span>
+          <span class="tag">&lt;cac:PartyIdentification&gt;</span>
+              <span class="tag">&lt;cbc:ID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0088</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>7300010000001<span class="tag">&lt;/cbc:ID&gt;</span>
+          <span class="tag">&lt;/cac:PartyIdentification&gt;</span>
+          <span class="tag">&lt;cac:PartyName&gt;</span>
+              <span class="tag">&lt;cbc:Name&gt;</span>Customer Name<span class="tag">&lt;/cbc:Name&gt;</span>
+          <span class="tag">&lt;/cac:PartyName&gt;</span>
+          <span class="tag">&lt;cac:PostalAddress&gt;</span>
+              <span class="tag">&lt;cbc:Postbox&gt;</span>54321<span class="tag">&lt;/cbc:Postbox&gt;</span>
+              <span class="tag">&lt;cbc:StreetName&gt;</span>Customer Street<span class="tag">&lt;/cbc:StreetName&gt;</span>
+              <span class="tag">&lt;cbc:Department&gt;</span>Customer Department<span class="tag">&lt;/cbc:Department&gt;</span>
+              <span class="tag">&lt;cbc:CityName&gt;</span>Customer City<span class="tag">&lt;/cbc:CityName&gt;</span>
+              <span class="tag">&lt;cbc:PostalZone&gt;</span>00000<span class="tag">&lt;/cbc:PostalZone&gt;</span>
+              <span class="tag">&lt;cbc:CountrySubentity&gt;</span>Customer Province<span class="tag">&lt;/cbc:CountrySubentity&gt;</span>
+              <span class="tag">&lt;cac:Country&gt;</span>
+                  <span class="tag">&lt;cbc:IdentificationCode&gt;</span>SE<span class="tag">&lt;/cbc:IdentificationCode&gt;</span>
+                  <span class="tag">&lt;cbc:Name&gt;</span>Sweden<span class="tag">&lt;/cbc:Name&gt;</span>
+              <span class="tag">&lt;/cac:Country&gt;</span>
+          <span class="tag">&lt;/cac:PostalAddress&gt;</span>
+          <span class="tag">&lt;cac:PartyTaxScheme&gt;</span>
+              <span class="tag">&lt;cbc:CompanyID&gt;</span>SE987654321001<span class="tag">&lt;/cbc:CompanyID&gt;</span>
+              <span class="tag">&lt;cac:TaxScheme&gt;</span>
+                  <span class="tag">&lt;cbc:ID&gt;</span>VAT<span class="tag">&lt;/cbc:ID&gt;</span>
+              <span class="tag">&lt;/cac:TaxScheme&gt;</span>
+          <span class="tag">&lt;/cac:PartyTaxScheme&gt;</span>
+          <span class="tag">&lt;cac:PartyLegalEntity&gt;</span>
+              <span class="tag">&lt;cbc:RegistrationName&gt;</span>Customer Registration Name<span class="tag">&lt;/cbc:RegistrationName&gt;</span>
+              <span class="tag">&lt;cbc:CompanyID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0007</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>987654-4321<span class="tag">&lt;/cbc:CompanyID&gt;</span>
+          <span class="tag">&lt;/cac:PartyLegalEntity&gt;</span>
+          <span class="tag">&lt;cac:Contact&gt;</span>
+              <span class="tag">&lt;cbc:Name&gt;</span>Customer Contact Name<span class="tag">&lt;/cbc:Name&gt;</span>
+              <span class="tag">&lt;cbc:Telephone&gt;</span>+465544466<span class="tag">&lt;/cbc:Telephone&gt;</span>
+              <span class="tag">&lt;cbc:ElectronicMail&gt;</span>customer@contact.com<span class="tag">&lt;/cbc:ElectronicMail&gt;</span>
+          <span class="tag">&lt;/cac:Contact&gt;</span>
+      <span class="tag">&lt;/cac:Party&gt;</span>
+      <span class="tag">&lt;cac:AccountingContact&gt;</span>
+          <span class="tag">&lt;cbc:Telephone&gt;</span>Customer tel<span class="tag">&lt;/cbc:Telephone&gt;</span>
+          <span class="tag">&lt;cbc:Telefax&gt;</span>Customer Fax<span class="tag">&lt;/cbc:Telefax&gt;</span>
+          <span class="tag">&lt;cbc:ElectronicMail&gt;</span>Customer@mainContact.com<span class="tag">&lt;/cbc:ElectronicMail&gt;</span>
+      <span class="tag">&lt;/cac:AccountingContact&gt;</span>
   <span class="tag">&lt;/cac:AccountingCustomerParty&gt;</span>
   <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
 <span class="tag">&lt;/Invoice&gt;</span></code></pre>
@@ -3396,13 +3374,13 @@ Amount of allowance or charge.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:Amount/@currencyID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Allowance or charge amount currency</strong><br>
-Amount of allowance or charge currency.<br>
+Allowance or charge amount currency.<br>
 For valid values see code list <a href="#_puf_004_currencycode">PUF-004-CURRENCYCODE</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:BaseAmount</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Allowance or charge base amount</strong><br>
-Base amount which the calcuation is based on.</p></td>
+Base amount which the calculation is based on.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:BaseAmount/@currencyID</code></p></td>
@@ -3940,13 +3918,15 @@ Free text information</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:InvoicedQuantity</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Quantity invoiced</strong><br>
-The item quantity for this invoice line.</p></td>
+The item quantity for this invoice line.<br>
+<em>Note that corresponding element in UBL message/document type CreditNote is named cbc:CreditedQuantity</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:InvoicedQuantity/@unitCode</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Quantity unit of measure</strong><br>
 Unit of measure for the quantity invoiced.<br>
-See code list <a href="#_puf_014_uomcode">PUF-014-UOMCODE</a> for recommendations</p></td>
+See code list <a href="#_puf_014_uomcode">PUF-014-UOMCODE</a> for recommendations<br>
+<em>Note that corresponding element in UBL message/document type CreditNote is named cbc:CreditedQuantity/@unitCode</em></p></td>
 </tr>
 </tbody>
 </table>

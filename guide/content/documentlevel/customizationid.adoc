@@ -1,6 +1,3 @@
-To indicate which specification and which ruleset that should be applied to the document instance, the CustomizationID and ProfileID must be provided.
-
-[%autowidth.stretch]
 |===
 |Path |Description
 

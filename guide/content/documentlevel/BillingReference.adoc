@@ -4,10 +4,10 @@
 
 |`cbc:ID`
 |**Preceding invoice number** +
-Reference to a previous issued invoice.
+Identifier of a previous issued invoice.
 |`cbc:IssueDate`
 |**Issue date** +
-Issue date of previous issued invoice +
+Issue date of previous issued invoice. +
 __Format "YYYY-MM-DD"__
 |===
 

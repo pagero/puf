@@ -1,6 +1,6 @@
 :sectnums!:
 
-Information in the following section (3.1.x) concerns the document in its entirety.
+Information in this section (3.1) describe the elements available on document level.
 
 ==== ext:UBLExtensions
 
