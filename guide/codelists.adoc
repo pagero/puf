@@ -247,7 +247,8 @@ List of available tax type scheme codes.
 |State/provincial sales tax
 
 |`AAG`
-|Harmonised sales tax, Canadian
+|Harmonised sales tax, Canadian +
+__A harmonized sales tax consisting of a goods and service tax, a Canadian provincial sales tax and, as applicable, a Quebec sales tax which is recoverable.__
 
 |`AAH`
 |Quebec sales tax
