@@ -1,3 +1,5 @@
+If multiple taxes is provided on one line, note that `cac:InvoiceLine/cac:TaxTotal/cac:TaxSubtotal` must be provided for each tax.
+
 .Elements added in cac:InvoiceLine/cac:TaxTotal
 |===
 |Path |Description
