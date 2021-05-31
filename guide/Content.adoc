@@ -5,14 +5,11 @@ The chapter is divided into two parts for easier navigation:
 
 WARNING: Note that most examples are only shown for document type Invoice.
 
-//=== Parties
-
-//include::parties.adoc[]
-
 === Invoice
 
 include::content/documentlevel.adoc[]
 :sectnums:
+
 === cac:InvoiceLine
 
 include::content/linelevel.adoc[]

@@ -16,12 +16,11 @@ To be able to provide the broadest support possible, PUF has been designed with 
 
 *	Country specific information found in domestic formats in various legal domains.
 
-Based on extensive analysis of the above, Pagero Universal Format has been designed to meet these country-, industry-, format- and/or system-specific requirements. +
+Based on extensive analysis of the above, PUF has been designed to meet these country-, industry-, format- and/or system-specific requirements.
 
 Another intention of PUF has been to create a flexible, extendable format which can be updated quickly to be able to meet the requirements of the fast-changing global electronic document landscape.
 
-Pagero Universal Format is not to be considered as a CIUS based on EN16931 or any other CIUS or format. PUF will, however, to a large extent try to follow the work done in EN16931, Peppol and other UBL based
-invoicing specifications. If one can create a valid and syntactically correct EN16931 based UBL-format; the threshold for implementing PUF should be negligible.
+PUF is not to be considered a CIUS based on EN16931 or any other CIUS or format. PUF will, however, to a large extent try to follow the work done in EN16931, Peppol and other UBL based invoicing specifications. If one can create a valid and syntactically correct EN16931 based UBL-format; the threshold for implementing PUF should be negligible.
 
 === Version and Changelog
 
@@ -29,6 +28,6 @@ invoicing specifications. If one can create a valid and syntactically correct EN
 |===
 |Version |Date |Description
 
-|2.0 |2021-05-04 |Second version published
+|2.0 |2021-06-01 |Second version published
 |1.0 |2019-05-02 |First version published
 |===

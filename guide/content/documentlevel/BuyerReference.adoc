@@ -5,6 +5,7 @@
 |**Buyer Reference** +
 Reference assigned by the buyer for internal routing.
 |===
+
 *Example* +
 _cbc:BuyerReference populated with example value_
 [source,xml]

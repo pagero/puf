@@ -109,7 +109,8 @@ NOTE: Please note that tax has been excluded in above example.
 
 ===== Payment in Kind
 
-Payment in kind is a way to use goods or services as payment instead of a cash. +
+Payment in kind is a way to use goods or services as payment instead of cash.
+
 The elements available in PUF allow the possibility to provide the corresponding amount of the goods and services and a description.
 
 *Example* +

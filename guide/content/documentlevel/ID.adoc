@@ -5,6 +5,7 @@
 |**Invoice number** +
 A unique identifier of the invoice.
 |===
+
 *Example* +
 _cbc:ID with example value_
 [source,xml]

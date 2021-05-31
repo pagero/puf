@@ -5,13 +5,14 @@ If your ERP already can create Invoices and CreditNotes in https://docs.oasis-op
 
 ==== Moving from other UBL formats to PUF
 
-1. Download Pagero Universal Format <<_xml_schemas>>.
+1. Download the PUF <<_xml_schemas>>.
 2. Change namespaces (see chapter <<_namespaces>>).
 3. Verify that your interpretation of the UBL elements mentioned in this specification are the same.
 4. Change the Customization ID and Profile ID (see chapter <<_customization_and_profile_id>>)
 5. If elements from extensions are needed see chapter <<_working_with_extensions>> for details on how this is implemented.
 6. Before implementing additional elements available in PUF, validate the document with the XSD schema downloaded in step 1 above.
 
-NOTE: In the XML schemas provided in chapter <<_xml_schemas>> you will see the structure and the occurrences of every element available in Pagero Universal Format.
-This specification will not include any cardinality from a schema perspective nor from what is required in a specific legal domain since this might differ depending
-on which specific country, region or business requirements you will have to comply with. In order to know what information is sufficient to provide you should first check what the requirements from a legal and business perspective and then refer to this specification on where to provide this information. Also note that the elements and their sequence order provided in specification is done with the `Invoice` document type. When using `CreditNote` please take note to use the separate XML schema provided for possible differences in element names or sequence order.
+NOTE: In the XML schemas provided in chapter <<_xml_schemas>> you will see the structure and the occurrences of every element available in PUF. +
+This specification will not include any cardinality from a schema perspective nor from what is required in a specific legal domain since this might differ depending on which specific country, region or business requirements you will have to comply with. In order to know what information is sufficient to provide you should first check what the requirements from a legal and business perspective and then refer to this specification on where to provide this information. +
+Also note that the elements and their sequence order provided in specification is done with the `Invoice` document type. +
+When using `CreditNote` please take note to use the separate XML schema provided for possible differences in element names or sequence order.

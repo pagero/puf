@@ -5,6 +5,7 @@
 |**Due date of invoice** +
 __Format "YYYY-MM-DD"__
 |===
+
 *Example* +
 _cbc:DueDate with example value_
 [source,xml]

@@ -1,7 +1,6 @@
-The aggregate `cac:AdditionalDocumentReference` is in EN16931 based specifications used to reference reference a supporting document. These can either be provided as a
-base64 encoded document embedded within the Invoice or CreditNote itself but can also reference an invoiced object by a document number or referencing an external document via a URL.
+In EN16931 based specifications, the `cac:AdditionalDocumentReference` aggregate is used to reference a supporting document. These can either be provided as a base64 encoded document embedded within the Invoice or CreditNote itself but can also reference an invoiced object by a document number or referencing an external document via a URL.
 
-Pagero Universal Format support this handling but also has additional support in order to provide invoice or credit notes image/presentation.
+PUF supports this handling but also has additional support in order to provide invoice or credit notes image/presentation.
 
 .Elements available in cac:AdditionalDocumentReference
 |===
@@ -29,12 +28,10 @@ Supported mime codes can be found in the code list +
 |A URL to where the referenced document can be found.
 |===
 
-
 ===== Invoice image/presentation and  Credit Note image/presentation
 
-Providing an invoice presentation/image or credit note image/presentation is sometimes useful. This can be done in PUF as shown in the below examples.
-If `cbc:DocumentDescription` is "Commercial Invoice" or "Credit Note" the attachment will be interpreted as a an invoice presentation/image otherwise the attachment will be interpreted as a miscellaneous or other type of document. +
-
+Providing an invoice presentation/image or credit note image/presentation is sometimes useful. This can be done in PUF as shown in the examples below.
+If `cbc:DocumentDescription` is "Commercial Invoice" or "Credit Note" the attachment will be interpreted as a an invoice presentation/image otherwise the attachment will be interpreted as a miscellaneous or "other" type of document. +
 
 *Example* +
 _Invoice with presentation (PDF-image)_
@@ -46,7 +43,7 @@ _Invoice with presentation (PDF-image)_
       <cbc:ID>123456</cbc:ID>
       <cbc:DocumentDescription>Commercial Invoice</cbc:DocumentDescription> <!--1-->
       <cac:Attachment>
-        <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="presentation.pdf">MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
+        <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="presentation.pdf">MvYmlsbGluZy...8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
       </cac:Attachment>
   </cac:AdditionalDocumentReference>
 <!-- Code omitted for clarity -->
@@ -64,7 +61,7 @@ _Credit Note with (PDF-image)_
       <cbc:ID>123456</cbc:ID>
       <cbc:DocumentDescription>Credit Note</cbc:DocumentDescription> <!--1-->
       <cac:Attachment>
-        <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="presentation.pdf">MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
+        <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="presentation.pdf">MvYmlsbGluZy...8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
       </cac:Attachment>
   </cac:AdditionalDocumentReference>
 <!-- Code omitted for clarity -->
@@ -73,6 +70,7 @@ _Credit Note with (PDF-image)_
 <1> If "Credit Note" is stated in the Credit Note the attachment will be interpreted as a presentation.
 
 ===== Invoiced object reference
+
 If there is a need to reference a document/object number without providing a link to the location and without embedding it in the Invoice/CreditNote this can be done
 in PUF within the `cac:AdditionalDocumentReference` as shown in below example. Note that it is possible to provide more than one invoiced object reference.
 

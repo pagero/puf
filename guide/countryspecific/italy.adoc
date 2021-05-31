@@ -115,5 +115,4 @@ _AccountingCustomerParty with both VAT number and Fiscal code_
 
 ==== Registration data
 
-To provide the registration data (Ufficio, NumeroREA, Capitale Sociale, Socio Unico and Stato Liquidazione) in the XML file please check
-the extension for AccountingSupplierParty structure <<_registration_data, here>>.
+To provide the registration data (Ufficio, NumeroREA, Capitale Sociale, Socio Unico and Stato Liquidazione) in the XML file please check the extension for AccountingSupplierParty structure <<_registration_data, here>>.

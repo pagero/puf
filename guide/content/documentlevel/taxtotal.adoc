@@ -1,4 +1,4 @@
-Below table show available fields in `cac:TaxTotal/cac:TaxSubtotal`, note that additional elements has also been added to the extension available in <<_taxtotal, cac:TaxTotal/cac:TaxSubtotal>>
+Below table show available fields in `cac:TaxTotal/cac:TaxSubtotal`, note that additional elements has also been added to the extension available in <<_taxtotal, cac:TaxTotal/cac:TaxSubtotal>>.
 
 .Elements added in cac:TaxTotal
 |===

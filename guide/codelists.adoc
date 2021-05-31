@@ -1,6 +1,6 @@
 Certain elements require the use of PUF specific Code list. Below you will find the lists and where the lists are applicable.
 In some of these code lists PUF only points towards an external code list to be used. Other times the code list to be used is a mix between
-values defined specifically for PUF and other external list(s). Other times all the values are defined solely for Pagero Universal Format.
+values defined specifically for PUF and other external list(s). Other times all the values are defined solely for PUF.
 
 === Code lists for coded elements
 
@@ -85,6 +85,7 @@ cbc:ItemClassificationCode/@listID`
 
 
 ==== PUF-001-REGISTRATIONDATA
+
 The value consist of "country code:type of value". Country code states which country the value is applicable for.
 
 |===
@@ -154,6 +155,7 @@ LN : Not in liquidation
 
 
 ==== PUF-002-ADAID
+
 The value consist of "country code:type of value". Country code states which country the value is applicable for.
 
 |===
@@ -179,8 +181,8 @@ The value consist of "country code:type of value". Country code states which cou
 
 |===
 
-
 ==== PUF-003-INVOICETYPECODE
+
 List of available invoice type codes.
 
 |===
@@ -196,13 +198,17 @@ List of available invoice type codes.
 |Debit note, only applicable only with UBL message/document type Invoice.
 
 |===
+
 ==== PUF-004-CURRENCYCODE
+
 For available values see code list of three character currency codes see https://en.wikipedia.org/wiki/ISO_4217[Currency Codes]
 
 ==== PUF-005-INVOICEDOBJECTIDENTIFIER
+
 For available values see code list https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL1153/[Invoice Object identifier schemes]
 
 ==== PUF-006-MIMECODES
+
 List of available mime codes.
 
 |===
@@ -221,14 +227,17 @@ List of available mime codes.
 |===
 
 ==== PUF-007-ENDPOINTSCHEME
+
 For available values see code list https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/[Electronic address scheme]
 
 ==== PUF-008-IDENTIFICATIONSCHEME
+
 Supported values can be found here https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/[ISO 6523 ICD list] +
 For `cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID/@schemeID` and
 `cac:PayeeParty/cac:PartyIdentification/cbc:ID/@schemeID` an additional code list is also applicable: https://docs.peppol.eu/poacc/billing/3.0/codelist/SEPA/[Sepa indicator]
 
 ==== PUF-009-TAXTYPESCHEME
+
 List of available tax type scheme codes.
 
 |===
@@ -259,6 +268,7 @@ __A harmonized sales tax consisting of a goods and service tax, a Canadian provi
 |===
 
 ==== PUF-010-PAYMENTMEANSCODE
+
 |===
 |Value |Description
 
@@ -290,6 +300,7 @@ __Ordering customer tells the bank to use the payment system 'Reference giro'. U
 For all available codes see list https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL4461/[Payment means code]
 
 ==== PUF-011-ALLOWANCECHARGEREASONCODE
+
 Values can differ depending on which legal domain you are in or if there are other types of business requirements.
 Below you will find links to recommended lists
 |===
@@ -302,11 +313,13 @@ Below you will find links to recommended lists
 |===
 
 ==== PUF-012-TAXCATEGORYCODE
+
 Standard european tax category codes can be found here https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/[Duty or tax or fee category code] +
 
-For additional codes added in Pagero Universal format see below code recommendations.
+For additional codes added in PUF see below code recommendations.
 
 ===== Tax category codes Singapore
+
 |===
 |Value |Description
 
@@ -346,6 +359,7 @@ For additional codes added in Pagero Universal format see below code recommendat
 |===
 
 ===== Tax category codes Portugal
+
 |===
 |Value |Description
 
@@ -394,13 +408,16 @@ For additional codes added in Pagero Universal format see below code recommendat
 |===
 
 ==== PUF-013-EXEMPTCODE
+
 Values can differ depending on which legal domain you are in or if there are other types of business requirements.
 For Europe the code list https://docs.peppol.eu/poacc/billing/3.0/codelist/vatex/[Vatex code list] can be recommended.
 
 ==== PUF-014-UOMCODE
+
 Values can differ depending on which legal domain you are in or if there are other types of business requirements.
 However, code list https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/[UN/ECE Recommendation 20] and
 https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec21/[UN/ECE Recommendation 21] can be recommended.
 
 ==== PUF-015-ITEMTYPEIDENTIFICATIONCODE
+
 Values must be from code list https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL7143/[Item type identification code]

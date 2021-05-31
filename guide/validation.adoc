@@ -1,4 +1,4 @@
-Available validation rules for Pagero Universal Format.
+Available validation rules for PUF.
 
 To validate PUF-documents please create an account on https://pagero.validex.net.
 The validations available on validex are:
@@ -9,7 +9,7 @@ The validations available on validex are:
 
 The validation artefacts are also available on https://github.com/pagero/puf[GitHub]
 
-.Schematron rules in Pagero Universal Format
+.Schematron rules in PUF
 [%autowidth.stretch]
 |===
 |Rule name |Description of rule | Flag

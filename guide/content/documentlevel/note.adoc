@@ -3,8 +3,9 @@
 
 |`cbc:Note`
 |**Note** +
-Free text, the element can be iterated multiple times .
+Free text, the element can be iterated multiple times.
 |===
+
 *Example* +
 _cbc:Note example_
 [source,xml]

@@ -1,4 +1,4 @@
-Below table show available fields in cac:LegalMonetaryTotal, note that additional elements has also been added to the extension available in <<_legalmonetarytotal, cac:LegalMonetaryTotal>>
+Below table show available fields in cac:LegalMonetaryTotal, note that additional elements has also been added to the extension available in <<_legalmonetarytotal, cac:LegalMonetaryTotal>>.
 
 .Elements added in cac:LegalMonetaryTotal
 |===

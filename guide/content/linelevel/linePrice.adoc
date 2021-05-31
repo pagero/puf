@@ -1,4 +1,4 @@
-Below table show available fields in `cac:Price`, note that additional elements has also been added to the extension available in <<_price>>
+Below table show available fields in `cac:Price`, note that additional elements has also been added to the extension available in <<_price>>.
 
 .Elements added in cac:InvoiceLine/cac:Price
 |===

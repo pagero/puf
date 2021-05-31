@@ -1,4 +1,4 @@
-Below table show available fields in `cac:PaymentTerms`, note that additional elements has also been added to the extension available in <<_paymentterms>>
+Below table show available fields in `cac:PaymentTerms`, note that additional elements has also been added to the extension available in <<_paymentterms>>.
 
 .Elements added in cac:PaymentTerms
 |===

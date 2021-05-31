@@ -38,8 +38,7 @@ See example below, note that the Name is not mandatory to send, but opens up the
 
 ==== Legal Commitments
 
-Entities behind French Government portal can set up validation of certain elements called legal commitments. Therefore it's recommended
-to support the below values in order to fulfill the requirements of this validation.
+Entities behind French Government portal can set up validation of certain elements called legal commitments. Therefore it's recommended to support the below values in order to fulfill the requirements of this validation.
 
 Customer contract defined as “Contrat”::
 * <<_caccontractdocumentreference, Contract reference identifier and Date>>

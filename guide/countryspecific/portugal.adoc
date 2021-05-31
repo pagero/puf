@@ -31,7 +31,7 @@ _Extension with the billing software details populated_
 
 ==== QR Code and ATCUD
 In Portugal it can be required to provide a QR code and ATCUD. The portugese government has specified that this can be provided in elements that exist in
-Peppol BIS 3 and therefore also exist in Pagero Universal Format. Below you will find a guide on how to provide it to comply with the portugese specification.
+Peppol BIS 3 and therefore also exist in PUF. Below you will find a guide on how to provide it to comply with the portugese specification.
 
 *Example* +
 _QR code and ATCUD provided in cac:AdditionalDocumentReference_

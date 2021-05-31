@@ -1,4 +1,4 @@
-Below table show available fields in `cac:AccountingSupplierParty`, note that additional elements has also been added to the extension available in <<_party>>
+Below table show available fields in `cac:AccountingSupplierParty`, note that additional elements has also been added to the extension available in <<_party>>.
 
 .Additional elements added within cac:AccountingSupplierParty
 |===

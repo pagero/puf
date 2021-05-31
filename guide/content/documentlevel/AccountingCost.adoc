@@ -5,6 +5,7 @@
 |**Accounting cost** +
 Book keeping reference for buyers financial system
 |===
+
 *Example* +
 _cbc:AccountingCost populated with example value_
 [source,xml]

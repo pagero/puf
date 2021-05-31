@@ -1,4 +1,4 @@
-Below table show available fields in `cac:OrderLineReference`, note that additional elements has also been added to the extension available in <<_orderlinereference>>
+Below table show available fields in `cac:OrderLineReference`, note that additional elements has also been added to the extension available in <<_orderlinereference>>.
 
 .Elements added to cac:OrderLineReference
 |===
