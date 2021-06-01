@@ -473,6 +473,7 @@
         <cbc:LineExtensionAmount currencyID="EUR">100.00</cbc:LineExtensionAmount>
         <cac:OrderLineReference>
             <cbc:LineID>1</cbc:LineID>
+            <cbc:SalesOrderLineID>10</cbc:SalesOrderLineID>
             <cac:OrderReference>
                 <ext:UBLExtensions>
                     <ext:UBLExtension>
@@ -554,7 +555,7 @@
                 <cbc:ID schemeID="UNCL5305">S</cbc:ID>
                 <cbc:Percent>25</cbc:Percent>
                 <cac:TaxScheme>
-                    <cbc:ID>VAT</cbc:ID>
+                    <cbc:ID>GST</cbc:ID>
                 </cac:TaxScheme>
             </cac:ClassifiedTaxCategory>
             <cac:ItemInstance>
