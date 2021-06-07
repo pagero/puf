@@ -125,7 +125,7 @@ _Party structure with both invoice recipient party and buyer party_
               <cbc:StreetName>Street 32</cbc:StreetName>
               <cbc:AdditionalStreetName>Po box 878</cbc:AdditionalStreetName>
               <cbc:PlotIdentification>0000</cbc:PlotIdentification>
-              <cbc:cbc:CitySubdivisionName>City Subdivision Name</cbc:CitySubdivisionName>
+              <cbc:CitySubdivisionName>City Subdivision Name</cbc:CitySubdivisionName>
               <cbc:CityName>Stockholm</cbc:CityName>
               <cbc:PostalZone>123 12</cbc:PostalZone>
               <cac:Country>
@@ -162,7 +162,7 @@ _Party structure with both invoice recipient party and buyer party_
               <cbc:StreetName>Street 32</cbc:StreetName>
               <cbc:AdditionalStreetName>Po box 878</cbc:AdditionalStreetName>
               <cbc:PlotIdentification>0000<cbc:PlotIdentification>
-              <cbc:cbc:CitySubdivisionName>City Subdivision Name</cbc:CitySubdivisionName>
+              <cbc:CitySubdivisionName>City Subdivision Name</cbc:CitySubdivisionName>
               <cbc:CityName>Stockholm</cbc:CityName>
               <cbc:PostalZone>123 12</cbc:PostalZone>
               <cac:Country>

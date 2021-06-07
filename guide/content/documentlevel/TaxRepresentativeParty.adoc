@@ -64,7 +64,7 @@ _cac:TaxRepresentativeParty example_
           <cbc:StreetName>Street</cbc:StreetName>
           <cbc:Department>Department</cbc:Department>
           <cbc:PlotIdentification>0000</cbc:PlotIdentification>
-          <cbc:cbc:CitySubdivisionName>City Subdivision Name</cbc:CitySubdivisionName>
+          <cbc:CitySubdivisionName>City Subdivision Name</cbc:CitySubdivisionName>
           <cbc:CityName>City</cbc:CityName>
           <cbc:PostalZone>00000</cbc:PostalZone>
           <cbc:CountrySubentity>Province</cbc:CountrySubentity>
