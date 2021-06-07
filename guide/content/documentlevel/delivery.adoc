@@ -59,6 +59,15 @@ Extension is added to provide additional information in the `cac:Party` element,
 |`cac:DeliveryParty/cac:PartyName/cbc:Name`
 |**Delivery party name** +
 Name of the party that the goods/services is sent to.
+|`cac:DeliveryParty/cac:Contact/cbc:Name`
+|**Delivery party contact email** +
+Name of the contact to which the goods/services is sent to.
+|`cac:DeliveryParty/cac:Contact/cbc:Telephone`
+|**Delivery party contact email** +
+Telephone of the contact to which the goods/services is sent to.
+|`cac:DeliveryParty/cac:Contact/cbc:ElectronicMail`
+|**Delivery party contact email** +
+Email of the contact to which the goods/services is sent to.
 |===
 
 *Example* +
@@ -89,6 +98,11 @@ _cac:Delivery populated with example value_
           <cac:PartyName>
               <cbc:Name>Delivery Name</cbc:Name>
           </cac:PartyName>
+          <cac:Contact>
+              <cbc:Name>Anders Andersson</cbc:Name>
+              <cbc:Telephone>01113354</cbc:Telephone>
+              <cbc:ElectronicMail>DeliveryContact@mail.com</cbc:ElectronicMail>
+          </cac:Contact>
       </cac:DeliveryParty>
   </cac:Delivery>
   <!-- Code omitted for clarity -->
