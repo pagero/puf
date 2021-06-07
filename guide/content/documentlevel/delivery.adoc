@@ -60,10 +60,10 @@ Extension is added to provide additional information in the `cac:Party` element,
 |**Delivery party name** +
 Name of the party that the goods/services is sent to.
 |`cac:DeliveryParty/cac:Contact/cbc:Name`
-|**Delivery party contact email** +
+|**Delivery party contact name** +
 Name of the contact to which the goods/services is sent to.
 |`cac:DeliveryParty/cac:Contact/cbc:Telephone`
-|**Delivery party contact email** +
+|**Delivery party contact telephone** +
 Telephone of the contact to which the goods/services is sent to.
 |`cac:DeliveryParty/cac:Contact/cbc:ElectronicMail`
 |**Delivery party contact email** +
