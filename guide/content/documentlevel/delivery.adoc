@@ -34,7 +34,13 @@ Delivery location address street name
 Delivery location address additional street name
 |`cac:DeliveryLocation/cac:Address/cbc:Department`
 |**Department** +
-Delivery location address department
+Delivery address department
+|`cac:Party/cac:PostalAddress/cbc:PlotIdentification`
+|**Plot Identification** +
+Delivery postal address plot identification. Additional address number. An identifier for the piece of land associated with this address.
+|`cac:Party/cac:PostalAddress/cbc:CitySubdivisionName`
+|**City Subdvision Name** +
+Delivery postal address city subdivision name. The name of the subdivision of the delivery city, town, or village in which its address is located, such as the name of its district or borough.
 |`cac:DeliveryLocation/cac:Address/cbc:CityName`
 |**City name** +
 Delivery location address city name
@@ -85,6 +91,8 @@ _cac:Delivery populated with example value_
               <cbc:Postbox>121212</cbc:Postbox>
               <cbc:StreetName>Delivery Street</cbc:StreetName>
               <cbc:Department>Delivery Department</cbc:Department>
+              <cbc:PlotIdentification>0000</cbc:PlotIdentification>
+              <cbc:CitySubdivisionName>Delivery City Subdivision Name</cbc:CitySubdivisionName>
               <cbc:CityName>Delivery City</cbc:CityName>
               <cbc:PostalZone>55555</cbc:PostalZone>
               <cbc:CountrySubentity>Delivery Province</cbc:CountrySubentity>

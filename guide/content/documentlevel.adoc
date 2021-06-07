@@ -22,6 +22,11 @@ include::documentlevel/ID.adoc[]
 
 include::documentlevel/IssueDate.adoc[]
 
+==== cbc:IssueTime
+
+include::documentlevel/IssueTime.adoc[]
+
+
 ==== cbc:DueDate
 
 include::documentlevel/DueDate.adoc[]

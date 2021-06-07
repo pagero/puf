@@ -17,6 +17,12 @@ Seller's tax representative's postal address additional street name
 |`cac:Party/cac:PostalAddress/cbc:Department`
 |**Department** +
 Seller's tax representative's postal address department
+|`cac:Party/cac:PostalAddress/cbc:PlotIdentification`
+|**Plot Identification** +
+Seller's tax representative's postal address plot identification. Additional address number. An identifier for the piece of land associated with this address.
+|`cac:Party/cac:PostalAddress/cbc:CitySubdivisionName`
+|**City Subdvision Name** +
+Seller's tax representative's postal address city subdivision name. The name of the subdivision of the seller's tax representative's city, town, or village in which its address is located, such as the name of its district or borough.
 |`cac:Party/cac:PostalAddress/cbc:CityName`
 |**City name** +
 Seller's tax representative's postal address city name
@@ -57,6 +63,8 @@ _cac:TaxRepresentativeParty example_
           <cbc:Postbox>54321</cbc:Postbox>
           <cbc:StreetName>Street</cbc:StreetName>
           <cbc:Department>Department</cbc:Department>
+          <cbc:PlotIdentification>0000</cbc:PlotIdentification>
+          <cbc:cbc:CitySubdivisionName>City Subdivision Name</cbc:CitySubdivisionName>
           <cbc:CityName>City</cbc:CityName>
           <cbc:PostalZone>00000</cbc:PostalZone>
           <cbc:CountrySubentity>Province</cbc:CountrySubentity>

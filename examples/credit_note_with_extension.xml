@@ -4,6 +4,7 @@
     <cbc:ProfileID>urn:pagero.com:puf:billing:1.0</cbc:ProfileID>
     <cbc:ID>123456</cbc:ID>
     <cbc:IssueDate>2018-01-01</cbc:IssueDate>
+    <cbc:IssueTime>21:32:52</cbc:IssueTime>
     <cbc:TaxPointDate>2018-01-01</cbc:TaxPointDate>
     <cbc:CreditNoteTypeCode>381</cbc:CreditNoteTypeCode>
     <cbc:Note>Header Text 1</cbc:Note>
@@ -95,6 +96,8 @@
                 <cbc:Postbox>12345</cbc:Postbox>
                 <cbc:StreetName>Test Street 1</cbc:StreetName>
                 <cbc:Department>Department</cbc:Department>
+                <cbc:PlotIdentification>0000</cbc:PlotIdentification>
+                <cbc:CitySubdivisionName>City Subdivision Name</cbc:CitySubdivisionName>
                 <cbc:CityName>Town</cbc:CityName>
                 <cbc:PostalZone>00000</cbc:PostalZone>
                 <cbc:CountrySubentity>Province</cbc:CountrySubentity>
@@ -165,6 +168,8 @@
                 <cbc:Postbox>54321</cbc:Postbox>
                 <cbc:StreetName>Customer Street</cbc:StreetName>
                 <cbc:Department>Customer Department</cbc:Department>
+                <cbc:PlotIdentification>0000</cbc:PlotIdentification>
+                <cbc:CitySubdivisionName>Customer City Subdivision Name</cbc:CitySubdivisionName>
                 <cbc:CityName>Customer City</cbc:CityName>
                 <cbc:PostalZone>00000</cbc:PostalZone>
                 <cbc:CountrySubentity>Customer Province</cbc:CountrySubentity>
@@ -208,6 +213,8 @@
                 <cbc:Postbox>112233</cbc:Postbox>
                 <cbc:StreetName>Buyer Street</cbc:StreetName>
                 <cbc:Department>Buyer Department</cbc:Department>
+                <cbc:PlotIdentification>0000</cbc:PlotIdentification>
+                <cbc:CitySubdivisionName>Buyer City Subdivision Name</cbc:CitySubdivisionName>
                 <cbc:CityName>Buyer City</cbc:CityName>
                 <cbc:PostalZone>00000</cbc:PostalZone>
                 <cbc:CountrySubentity>Buyer Province</cbc:CountrySubentity>
@@ -262,6 +269,8 @@
                 <cbc:Postbox>121212</cbc:Postbox>
                 <cbc:StreetName>Delivery Street</cbc:StreetName>
                 <cbc:Department>Delivery Department</cbc:Department>
+                <cbc:PlotIdentification>0000</cbc:PlotIdentification>
+                <cbc:CitySubdivisionName>Delivery City Subdivision Name</cbc:CitySubdivisionName>
                 <cbc:CityName>Delivery City</cbc:CityName>
                 <cbc:PostalZone>55555</cbc:PostalZone>
                 <cbc:CountrySubentity>Delivery Province</cbc:CountrySubentity>
@@ -496,6 +505,8 @@
                 <cbc:ID schemeID="0088">7300010000001</cbc:ID>
                 <cac:Address>
                     <cbc:StreetName>Delivery Street</cbc:StreetName>
+                    <cbc:PlotIdentification>0000</cbc:PlotIdentification>
+                    <cbc:CitySubdivisionName>Delivery City Subdivision Name</cbc:CitySubdivisionName>
                     <cbc:CityName>Delivery City</cbc:CityName>
                     <cbc:PostalZone>12345</cbc:PostalZone>
                     <cbc:CountrySubentity>Delivery Province</cbc:CountrySubentity>

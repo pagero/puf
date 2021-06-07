@@ -553,6 +553,7 @@ table.CodeRay td.code{padding:0 0 0 .75em}
 <li><a href="#_cbcprofileid">cbc:ProfileID</a></li>
 <li><a href="#_cbcid">cbc:ID</a></li>
 <li><a href="#_cbcissuedate">cbc:IssueDate</a></li>
+<li><a href="#_cbcissuetime">cbc:IssueTime</a></li>
 <li><a href="#_cbcduedate">cbc:DueDate</a></li>
 <li><a href="#_cbcinvoicetypecode">cbc:InvoiceTypeCode</a></li>
 <li><a href="#_cbcnote">cbc:Note</a></li>
@@ -1229,6 +1230,41 @@ A unique identifier of the invoice.</p></td>
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;Invoice&gt;</span>
   <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
   <span class="tag">&lt;cbc:IssueDate&gt;</span>2021-01-30<span class="tag">&lt;/cbc:IssueDate&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+<span class="tag">&lt;/Invoice&gt;</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_cbcissuetime"><a class="anchor" href="#_cbcissuetime"></a><a class="link" href="#_cbcissuetime">cbc:IssueTime</a></h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Path</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:IssueTime</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>The time, assigned by the sender, at which this document was issued.</strong><br>
+<em>Format "HH:mm:ss", "HH:mm:ssZZZZ", "HH:mm:ss.SSS&#8217;Z'", or "HH:mm:ss.SSS"</em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Example</strong><br>
+<em>cbc:IssueTime with example value</em></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;Invoice&gt;</span>
+  <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
+  <span class="tag">&lt;cbc:IssueTime&gt;</span>21:32:52<span class="tag">&lt;/cbc:IssueTime&gt;</span>
   <span class="comment">&lt;!-- Code omitted for clarity --&gt;</span>
 <span class="tag">&lt;/Invoice&gt;</span></code></pre>
 </div>
@@ -2131,6 +2167,16 @@ Seller&#8217;s postal address additional street name</p></td>
 Seller&#8217;s postal address department</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Party/cac:PostalAddress/cbc:PlotIdentification</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Plot Identification</strong><br>
+Seller&#8217;s postal address plot identification. Additional address number. An identifier for the piece of land associated with this address.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Party/cac:PostalAddress/cbc:CitySubdivisionName</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>City Subdvision Name</strong><br>
+Seller&#8217;s postal address city subdivision name. The name of the subdivision of the seller city, town, or village in which its address is located, such as the name of its district or borough.</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Party/cac:PostalAddress/cbc:CityName</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>City name</strong><br>
 Seller&#8217;s postal address city name</p></td>
@@ -2246,6 +2292,8 @@ The e-mail address for the accounting contact of the organization.</p></td>
               <span class="tag">&lt;cbc:Postbox&gt;</span>12345<span class="tag">&lt;/cbc:Postbox&gt;</span>
               <span class="tag">&lt;cbc:StreetName&gt;</span>Test Street 1<span class="tag">&lt;/cbc:StreetName&gt;</span>
               <span class="tag">&lt;cbc:Department&gt;</span>Department<span class="tag">&lt;/cbc:Department&gt;</span>
+              <span class="tag">&lt;cbc:PlotIdentification&gt;</span>0000<span class="tag">&lt;/cbc:PlotIdentification&gt;</span>
+              <span class="tag">&lt;cbc:cbc:CitySubdivisionName&gt;</span>City Subdivision Name<span class="tag">&lt;/cbc:CitySubdivisionName&gt;</span>
               <span class="tag">&lt;cbc:CityName&gt;</span>Town<span class="tag">&lt;/cbc:CityName&gt;</span>
               <span class="tag">&lt;cbc:PostalZone&gt;</span>00000<span class="tag">&lt;/cbc:PostalZone&gt;</span>
               <span class="tag">&lt;cbc:CountrySubentity&gt;</span>Province<span class="tag">&lt;/cbc:CountrySubentity&gt;</span>
@@ -2363,6 +2411,16 @@ Buyer&#8217;s postal address additional street name</p></td>
 Buyer&#8217;s postal address department</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Party/cac:PostalAddress/cbc:PlotIdentification</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Plot Identification</strong><br>
+Buyer&#8217;s postal address plot identification. Additional address number. An identifier for the piece of land associated with this address.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Party/cac:PostalAddress/cbc:CitySubdivisionName</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>City Subdvision Name</strong><br>
+Buyer&#8217;s postal address city subdivision name. The name of the subdivision of the Buyer city, town, or village in which its address is located, such as the name of its district or borough.</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Party/cac:PostalAddress/cbc:CityName</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>City name</strong><br>
 Buyer&#8217;s postal address city name</p></td>
@@ -2477,6 +2535,8 @@ The e-mail address for the accounting contact of the organization.</p></td>
               <span class="tag">&lt;cbc:Postbox&gt;</span>54321<span class="tag">&lt;/cbc:Postbox&gt;</span>
               <span class="tag">&lt;cbc:StreetName&gt;</span>Customer Street<span class="tag">&lt;/cbc:StreetName&gt;</span>
               <span class="tag">&lt;cbc:Department&gt;</span>Customer Department<span class="tag">&lt;/cbc:Department&gt;</span>
+              <span class="tag">&lt;cbc:PlotIdentification&gt;</span>0000<span class="tag">&lt;/cbc:PlotIdentification&gt;</span>
+              <span class="tag">&lt;cbc:CitySubdivisionName&gt;</span>Customer City Subdivision Name<span class="tag">&lt;/cbc:CitySubdivisionName&gt;</span>
               <span class="tag">&lt;cbc:CityName&gt;</span>Customer City<span class="tag">&lt;/cbc:CityName&gt;</span>
               <span class="tag">&lt;cbc:PostalZone&gt;</span>00000<span class="tag">&lt;/cbc:PostalZone&gt;</span>
               <span class="tag">&lt;cbc:CountrySubentity&gt;</span>Customer Province<span class="tag">&lt;/cbc:CountrySubentity&gt;</span>
@@ -2662,6 +2722,16 @@ Buyer&#8217;s postal address additional street name</p></td>
 Buyer&#8217;s postal address department</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Party/cac:PostalAddress/cbc:PlotIdentification</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Plot Identification</strong><br>
+Buyer&#8217;s postal address plot identification. Additional address number. An identifier for the piece of land associated with this address.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Party/cac:PostalAddress/cbc:CitySubdivisionName</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>City Subdvision Name</strong><br>
+Buyer&#8217;s postal address city subdivision name. The name of the subdivision of the Buyer city, town, or village in which its address is located, such as the name of its district or borough.</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Party/cac:PostalAddress/cbc:CityName</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>City name</strong><br>
 Buyer&#8217;s postal address city name</p></td>
@@ -2774,6 +2844,8 @@ The e-mail address for the accounting contact of the organization.</p></td>
           <span class="tag">&lt;cac:PostalAddress&gt;</span>
               <span class="tag">&lt;cbc:StreetName&gt;</span>Street 32<span class="tag">&lt;/cbc:StreetName&gt;</span>
               <span class="tag">&lt;cbc:AdditionalStreetName&gt;</span>Po box 878<span class="tag">&lt;/cbc:AdditionalStreetName&gt;</span>
+              <span class="tag">&lt;cbc:PlotIdentification&gt;</span>0000<span class="tag">&lt;/cbc:PlotIdentification&gt;</span>
+              <span class="tag">&lt;cbc:cbc:CitySubdivisionName&gt;</span>City Subdivision Name<span class="tag">&lt;/cbc:CitySubdivisionName&gt;</span>
               <span class="tag">&lt;cbc:CityName&gt;</span>Stockholm<span class="tag">&lt;/cbc:CityName&gt;</span>
               <span class="tag">&lt;cbc:PostalZone&gt;</span>123 12<span class="tag">&lt;/cbc:PostalZone&gt;</span>
               <span class="tag">&lt;cac:Country&gt;</span>
@@ -2809,6 +2881,8 @@ The e-mail address for the accounting contact of the organization.</p></td>
           <span class="tag">&lt;cac:PostalAddress&gt;</span>
               <span class="tag">&lt;cbc:StreetName&gt;</span>Street 32<span class="tag">&lt;/cbc:StreetName&gt;</span>
               <span class="tag">&lt;cbc:AdditionalStreetName&gt;</span>Po box 878<span class="tag">&lt;/cbc:AdditionalStreetName&gt;</span>
+              <span class="tag">&lt;cbc:PlotIdentification&gt;</span>0000<span class="tag">&lt;cbc:PlotIdentification&gt;</span>
+              <span class="tag">&lt;cbc:cbc:CitySubdivisionName&gt;</span>City Subdivision Name<span class="tag">&lt;/cbc:CitySubdivisionName&gt;</span>
               <span class="tag">&lt;cbc:CityName&gt;</span>Stockholm<span class="tag">&lt;/cbc:CityName&gt;</span>
               <span class="tag">&lt;cbc:PostalZone&gt;</span>123 12<span class="tag">&lt;/cbc:PostalZone&gt;</span>
               <span class="tag">&lt;cac:Country&gt;</span>
@@ -2902,6 +2976,16 @@ Seller&#8217;s tax representative&#8217;s postal address additional street name<
 Seller&#8217;s tax representative&#8217;s postal address department</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Party/cac:PostalAddress/cbc:PlotIdentification</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Plot Identification</strong><br>
+Seller&#8217;s tax representative&#8217;s postal address plot identification. Additional address number. An identifier for the piece of land associated with this address.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Party/cac:PostalAddress/cbc:CitySubdivisionName</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>City Subdvision Name</strong><br>
+Seller&#8217;s tax representative&#8217;s postal address city subdivision name. The name of the subdivision of the seller&#8217;s tax representative&#8217;s city, town, or village in which its address is located, such as the name of its district or borough.</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Party/cac:PostalAddress/cbc:CityName</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>City name</strong><br>
 Seller&#8217;s tax representative&#8217;s postal address city name</p></td>
@@ -2959,6 +3043,8 @@ Seller&#8217;s tax representative&#8217;s tax registration number tax scheme Ide
           <span class="tag">&lt;cbc:Postbox&gt;</span>54321<span class="tag">&lt;/cbc:Postbox&gt;</span>
           <span class="tag">&lt;cbc:StreetName&gt;</span>Street<span class="tag">&lt;/cbc:StreetName&gt;</span>
           <span class="tag">&lt;cbc:Department&gt;</span>Department<span class="tag">&lt;/cbc:Department&gt;</span>
+          <span class="tag">&lt;cbc:PlotIdentification&gt;</span>0000<span class="tag">&lt;/cbc:PlotIdentification&gt;</span>
+          <span class="tag">&lt;cbc:cbc:CitySubdivisionName&gt;</span>City Subdivision Name<span class="tag">&lt;/cbc:CitySubdivisionName&gt;</span>
           <span class="tag">&lt;cbc:CityName&gt;</span>City<span class="tag">&lt;/cbc:CityName&gt;</span>
           <span class="tag">&lt;cbc:PostalZone&gt;</span>00000<span class="tag">&lt;/cbc:PostalZone&gt;</span>
           <span class="tag">&lt;cbc:CountrySubentity&gt;</span>Province<span class="tag">&lt;/cbc:CountrySubentity&gt;</span>
@@ -3044,7 +3130,17 @@ Delivery location address additional street name</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:DeliveryLocation/cac:Address/cbc:Department</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Department</strong><br>
-Delivery location address department</p></td>
+Delivery address department</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Party/cac:PostalAddress/cbc:PlotIdentification</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Plot Identification</strong><br>
+Delivery postal address plot identification. Additional address number. An identifier for the piece of land associated with this address.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Party/cac:PostalAddress/cbc:CitySubdivisionName</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>City Subdvision Name</strong><br>
+Delivery postal address city subdivision name. The name of the subdivision of the delivery city, town, or village in which its address is located, such as the name of its district or borough.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:DeliveryLocation/cac:Address/cbc:CityName</code></p></td>
@@ -3120,6 +3216,8 @@ Email of the contact to which the goods/services is sent to.</p></td>
               <span class="tag">&lt;cbc:Postbox&gt;</span>121212<span class="tag">&lt;/cbc:Postbox&gt;</span>
               <span class="tag">&lt;cbc:StreetName&gt;</span>Delivery Street<span class="tag">&lt;/cbc:StreetName&gt;</span>
               <span class="tag">&lt;cbc:Department&gt;</span>Delivery Department<span class="tag">&lt;/cbc:Department&gt;</span>
+              <span class="tag">&lt;cbc:PlotIdentification&gt;</span>0000<span class="tag">&lt;/cbc:PlotIdentification&gt;</span>
+              <span class="tag">&lt;cbc:CitySubdivisionName&gt;</span>Delivery City Subdivision Name<span class="tag">&lt;/cbc:CitySubdivisionName&gt;</span>
               <span class="tag">&lt;cbc:CityName&gt;</span>Delivery City<span class="tag">&lt;/cbc:CityName&gt;</span>
               <span class="tag">&lt;cbc:PostalZone&gt;</span>55555<span class="tag">&lt;/cbc:PostalZone&gt;</span>
               <span class="tag">&lt;cbc:CountrySubentity&gt;</span>Delivery Province<span class="tag">&lt;/cbc:CountrySubentity&gt;</span>
@@ -4342,6 +4440,16 @@ Street name of the delivery location.</p></td>
 Additional street name of the delivery location.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Party/cac:PostalAddress/cbc:PlotIdentification</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Plot Identification</strong><br>
+Delivery postal address plot identification. Additional address number. An identifier for the piece of land associated with this address.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Party/cac:PostalAddress/cbc:CitySubdivisionName</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>City Subdvision Name</strong><br>
+Delivery postal address city subdivision name. The name of the subdivision of the delivery city, town, or village in which its address is located, such as the name of its district or borough.</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:DeliveryLocation/cac:Address/cbc:CityName</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>City name</strong><br>
 City of the delivery location.</p></td>
@@ -4385,6 +4493,8 @@ The country name of the delivery location.</p></td>
           <span class="tag">&lt;cbc:ID</span> <span class="attribute-name">schemeID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0088</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>0000000000000<span class="tag">&lt;/cbc:ID&gt;</span>
           <span class="tag">&lt;cac:Address&gt;</span>
               <span class="tag">&lt;cbc:StreetName&gt;</span>Delivery Street<span class="tag">&lt;/cbc:StreetName&gt;</span>
+              <span class="tag">&lt;cbc:PlotIdentification&gt;</span>0000<span class="tag">&lt;/cbc:PlotIdentification&gt;</span>
+              <span class="tag">&lt;cbc:CitySubdivisionName&gt;</span>Delivery City Subdivision Name<span class="tag">&lt;/cbc:CitySubdivisionName&gt;</span>
               <span class="tag">&lt;cbc:CityName&gt;</span>Delivery City<span class="tag">&lt;/cbc:CityName&gt;</span>
               <span class="tag">&lt;cbc:PostalZone&gt;</span>12345<span class="tag">&lt;/cbc:PostalZone&gt;</span>
               <span class="tag">&lt;cbc:CountrySubentity&gt;</span>Delivery Province<span class="tag">&lt;/cbc:CountrySubentity&gt;</span>
