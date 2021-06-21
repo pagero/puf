@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema queryBinding="xslt2" schemaVersion="iso" xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:u="utils">
 
-    <title>Rules for PUF 1.0 (Pagero Universal Format)</title>
+    <title>Rules for Pagero Universal Format (PUF) 2.0</title>
 
     <ns prefix="cbc" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
     <ns prefix="cac" uri="urn:pagero:CommonAggregateComponents:1.0"/>
