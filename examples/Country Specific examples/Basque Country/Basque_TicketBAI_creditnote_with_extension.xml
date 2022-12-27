@@ -14,7 +14,9 @@
             <ext:ExtensionURI>urn:pagero:ExtensionComponent:1.0:PageroExtension:InvoiceSeries</ext:ExtensionURI>
             <ext:ExtensionContent>
                 <puf:PageroExtension>
-                    <cbc:ID>series2</cbc:ID>
+                    <puf:InvoiceSeries>
+                        <cbc:ID>series2</cbc:ID>
+                    </puf:InvoiceSeries>                    
                 </puf:PageroExtension>
             </ext:ExtensionContent>
         </ext:UBLExtension>
