@@ -15,15 +15,27 @@ _Invoice Description example_
 ----
 
 ==== Invoice Series
-When reporting an invoice to the Basque tax authorities, it is a requirement to provide an invoice description. This is a description of why the invoice exists and what its purpose is. This description is mandatory, and can be sent in the regular Note field. Do note that this information is also shown to any recipients of the invoice. 
+If the invoice follows an invoice series, this should be reported to the Basque tax authorities. 
+Do note that when issuing a credit note it is mandatory to have a series. Furthermore, when issuing a credit note and referencing an earlier invoice's series the structure shown in <<_billingreference, here>> should be used.  
 
 *Example* +
-_Invoice Description example_
+_Invoice Series example_
 [source,xml]
 ----
 <Invoice>
-  <!-- Code omitted for clarity -->
-  <cbc:Note>Reason for document.</cbc:Note>
+  <ext:UBLExtensions>
+    <!-- Invoice Series if applicable -->
+    <ext:UBLExtension>
+      <ext:ExtensionURI>urn:pagero:ExtensionComponent:1.0:PageroExtension:InvoiceSeries</ext:ExtensionURI>
+      <ext:ExtensionContent>
+          <puf:PageroExtension>
+              <puf:InvoiceSeries>
+                  <cbc:ID>InvSeries1</cbc:ID>
+              </puf:InvoiceSeries>  
+          </puf:PageroExtension>
+      </ext:ExtensionContent>
+    </ext:UBLExtension>
+  </ext:UBLExtensions>
   <!-- Code omitted for clarity -->
 </Invoice>
 ----
@@ -211,7 +223,7 @@ The value should be provided in the element `puf:Code` within the <<_billingrefe
 _Credit reason code example_
 [source,xml]
 ----
-<Invoice>
+<CreditNote>
   <ext:UBLExtensions>
     <ext:UBLExtension>
         <ext:ExtensionURI>urn:pagero:ExtensionComponent:1.0:PageroExtension:BillingReferenceExtension</ext:ExtensionURI>
@@ -231,6 +243,6 @@ _Credit reason code example_
     		</ext:UBLExtension>
   </ext:UBLExtensions>
   <!-- Code omitted for clarity -->
-</Invoice>
+</CreditNote>
 ----
 <1> The reason code provided.
