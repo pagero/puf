@@ -4,6 +4,10 @@ Below chapters describe the different extensions added on document level.
 
 include::documentlevel/RestrictedInformation.adoc[]
 
+==== InvoiceSeries
+
+include::documentlevel/InvoiceSeries.adoc[]
+
 ==== SupplyType
 
 include::documentlevel/SupplyType.adoc[]
